@@ -36,3 +36,9 @@ class PhoneVerification(models.Model):
     phone_number = models.CharField(max_length=15, unique=True)
     verification_code = models.CharField(max_length=6)
     expiration_time = models.DateTimeField()
+
+# 用于邮箱验证码认证
+class EmailVerification(models.Model):
+    email = models.EmailField(unique=True)
+    verification_code = models.CharField(max_length=6)
+    expiration_time = models.DateTimeField()

@@ -2,7 +2,7 @@
 
 ## 简介
 
-简短介绍你的Django项目是做什么的，它的主要功能和目标用户是谁。
+本项目为ai编辑器的后端部分，使用Django框架开发。
 
 ## 环境依赖
 
@@ -56,3 +56,7 @@ chmod +x control.sh
    - SILICONFLOW API 配置
 
 ⚠️ **重要提醒**: `config.ini` 文件包含敏感信息，已被添加到 `.gitignore` 中，不会被提交到版本控制。请妥善保管您的配置文件。
+
+## 邮箱验证
+由于SMTP.starttls() got an unexpected keyword argument 'keyfile'报错的原因，python 3.12及以上暂时无法使用邮箱验证功能。
+请保证python环境小于3.12

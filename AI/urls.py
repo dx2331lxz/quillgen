@@ -22,4 +22,10 @@ urlpatterns = [
     path('draw/', views.DrawAPIView.as_view()),  # 新增画图功能
     path('image_agent/', views.ImageAgentAPIView.as_view()),  # 新增图像代理功能
     path('video/', views.VideoOCRAPIView.as_view()),  # 新增视频OCR功能')
+    path('idphoto/', views.IDPhotoAPIView.as_view()),  # 新增身份证照片OCR功能
+    path('function_call/', views.CozeFunctionCallAPIView.as_view()),  # 新增函数调用功能
+    path('chat/<str:type>/', views.ContextAPIView.as_view()),
+    path('completion/', views.CompletionsAPIView.as_view()),
+    path('search/', views.CozeSearchAPIView.as_view()),
+    path('generate-with-context/',views.GenerateWithContextView.as_view())
 ]

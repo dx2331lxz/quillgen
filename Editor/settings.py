@@ -146,8 +146,13 @@ TABLE = conf.get("AI", "TABLE")
 CODE_COMPLETION_1 = conf.get("AI", "CODE_COMPLETION_1")
 CHATOCR = conf.get("AI", "CHATOCR")
 DOCUMENT_OCR = conf.get("AI", "DOCUMENT_OCR")
-SecretId = conf.get("SMS", "SecretId")
-SecretKey = conf.get("SMS", "SecretKey")
+SMS_AccessKey_Secret = conf.get("SMS", "SMS_AccessKey_Secret")
+SMS_AccessKeyID = conf.get("SMS", "SMS_AccessKeyID")
+DeepSeek_APIKEY = conf.get("DeepSeek", "API_KEY")
+SILICONFLOW_APIKEY = conf.get("SILICONFLOW", "API_KEY")
+SILICONFLOW_URL = conf.get("SILICONFLOW", "URL")
+DeepSeek_Chat_URL = conf.get("DeepSeek", "Chat_URL")
+DeepSeek_Completion_URL = conf.get("DeepSeek", "Completion_URL")
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
@@ -182,7 +187,7 @@ REST_FRAMEWORK = {
 # simplejwt
 SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=7),
     'ROTATE_REFRESH_TOKENS': True,
 }
 # ---- 日志配置 ----
@@ -259,13 +264,13 @@ LOGGING = {
 #     }
 # }
 
-CELERY_BROKER_URL = "redis://:1314521@81.70.143.162:6379/0"
+CELERY_BROKER_URL = "redis://:1314521lxz@192.168.5.191:6379/3"
 
 CELERY_TASK_TIME_LIMIT = 10
 CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
 
 # 使用 Redis 作为结果存储后端，连接地址同上，使用相同的密码进行身份验证。
-CELERY_RESULT_BACKEND = 'redis://:1314521@81.70.143.162:6379/1'
+CELERY_RESULT_BACKEND = 'redis://:1314521lxz@192.168.5.191:6379/3'
 
 # 指定发送到代理（broker）的任务消息序列化格式为 JSON 格式。
 CELERY_TASK_SERIALIZER = 'json'

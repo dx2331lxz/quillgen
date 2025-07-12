@@ -1,7 +1,4 @@
-FROM ccr.ccs.tencentyun.com/development-space/developmet-django:v5
-
-#镜像作者
-MAINTAINER Daoxuan
+FROM python:3.9
 
 #设置虚拟环境变量
 ENV PYTHONUNBUFFERED 1
@@ -15,7 +12,7 @@ WORKDIR /www/data
 COPY . .
 #使用 pip 安装依赖
 
-RUN pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip install -r requirements.txt
 
 #CMD ["sh", "-c", "python manage.py runserver 0.0.0.0:8000"]
 # 授予当前目录下的control.sh执行权限，并且执行./control.sh 8000
