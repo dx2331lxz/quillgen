@@ -1,3 +1,4 @@
+> 源项目地址：https://daoxuan.coding.net/p/editor/d/Editor/git，由于coding的更新策略迁移至此
 # 项目名称
 
 ## 简介
@@ -5,7 +6,6 @@
 本项目为ai编辑器的后端部分，使用Django框架开发。
 
 ## 环境依赖
-
 
 - Python >= 3.8
 
