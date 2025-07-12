@@ -1,0 +1,7 @@
+[INFO][2024-08-07 23:56:03,311][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-07 23:56:12,866][middleware.py:12]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-07 23:56:44,648][middleware.py:12]Received GET request to /api/task/ from AnonymousUser with query params: <QueryDict: {'id': ['1']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-07 23:56:44,649][views.py:18]get
+[INFO][2024-08-08 00:03:35,138][middleware.py:12]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 00:04:06,246][middleware.py:12]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 00:39:15,353][autoreload.py:266]/www/data/task/views.py changed, reloading.

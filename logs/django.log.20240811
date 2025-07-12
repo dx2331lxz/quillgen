@@ -1,0 +1,1119 @@
+[INFO][2024-08-11 01:11:34,813][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:11:58,609][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 01:11:58,797][middleware.py:13]Received GET request to /favicon.ico from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 01:16:05,034][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:17:07,888][autoreload.py:677]Watching for file changes with StatReloader
+[ERROR][2024-08-11 01:17:10,426][signal.py:280]Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x7f80a171dc90>> raised: InvalidCacheBackendError("Could not find backend 'django_redis.cache.RedisCache': No module named 'django_redis'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/cache/__init__.py", line 47, in create_connection
+    backend_cls = import_string(backend)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'django_redis'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.11/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.11/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/checks/caches.py", line 65, in check_file_based_cache_is_absolute
+    cache = caches[alias]
+            ~~~~~~^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/connection.py", line 62, in __getitem__
+    conn = self.create_connection(alias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/cache/__init__.py", line 49, in create_connection
+    raise InvalidCacheBackendError(
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find backend 'django_redis.cache.RedisCache': No module named 'django_redis'
+[INFO][2024-08-11 01:18:43,882][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-11 01:18:44,380][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:18:59,142][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-11 01:18:59,648][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:19:09,108][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-11 01:19:09,555][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:21:00,889][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:45:25,506][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 01:45:26,055][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:45:28,001][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 01:45:38,673][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['2']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 01:45:43,725][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 01:46:04,711][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['2']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 01:46:10,019][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 01:46:10,132][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 52, in post
+    self.pulish(data["content"])
+TypeError: TaskLogic.pulish() missing 2 required positional arguments: 'task_id' and 'content'
+[INFO][2024-08-11 01:50:21,050][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 01:50:21,550][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:50:23,277][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 01:50:23,373][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 52, in post
+    self.pulish(uid=uid,task_id=instance.id, content=data["content"])
+                                ^^^^^^^^^^^
+AttributeError: 'Task' object has no attribute 'id'
+[INFO][2024-08-11 01:50:45,569][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 01:50:46,035][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:50:46,727][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 01:50:46,836][views.py:127]'str' object has no attribute 'get'
+[ERROR][2024-08-11 01:50:46,867][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/www/data/task/views.py", line 114, in pulish
+    timeline_list = content.get("timeline")
+                    ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 52, in post
+    self.pulish(uid=uid,task_id=instance.task_id, content=data["content"])
+  File "/www/data/task/views.py", line 128, in pulish
+    raise Exception("发布消息错误")
+Exception: 发布消息错误
+[INFO][2024-08-11 01:50:48,052][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 01:50:48,110][views.py:127]'str' object has no attribute 'get'
+[ERROR][2024-08-11 01:50:48,136][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/www/data/task/views.py", line 114, in pulish
+    timeline_list = content.get("timeline")
+                    ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 52, in post
+    self.pulish(uid=uid,task_id=instance.task_id, content=data["content"])
+  File "/www/data/task/views.py", line 128, in pulish
+    raise Exception("发布消息错误")
+Exception: 发布消息错误
+[INFO][2024-08-11 01:52:43,674][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 01:52:44,173][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:52:59,604][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:58:38,229][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 01:58:38,720][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 01:58:40,011][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 01:58:40,226][views.py:128]task_id: 17, task_item_id: 3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 01:58:40,233][views.py:128]task_id: 17, task_item_id: e50ec2c2-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 01:58:40,240][views.py:128]task_id: 17, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 01:58:40,247][views.py:128]task_id: 17, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 01:58:40,254][views.py:128]task_id: 17, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 01:58:40,260][views.py:128]task_id: 17, task_item_id: 7addb56c-f359-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 01:58:40,267][views.py:128]task_id: 17, task_item_id: c3da8f02-bf4f-4dbe-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 02:16:24,838][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 02:16:25,753][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:17:38,602][autoreload.py:266]/www/data/task/models.py changed, reloading.
+[INFO][2024-08-11 02:17:39,096][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:17:53,497][autoreload.py:266]/www/data/task/models.py changed, reloading.
+[INFO][2024-08-11 02:17:53,900][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:18:11,279][autoreload.py:266]/www/data/task/models.py changed, reloading.
+[INFO][2024-08-11 02:18:11,698][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:19:22,252][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:19:22,471][views.py:130]task_id: 17, task_item_id: 3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 02:19:22,478][views.py:130]task_id: 17, task_item_id: e50ec2c2-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 02:19:22,489][views.py:130]task_id: 17, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 02:19:22,495][views.py:130]task_id: 17, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 02:19:22,501][views.py:130]task_id: 17, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 02:19:22,508][views.py:130]task_id: 17, task_item_id: c3da8f02-bf4f-4dbe-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 02:26:29,242][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 02:26:29,755][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:27:33,367][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 02:27:33,905][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:29:21,387][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 02:29:21,836][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:29:53,074][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:29:53,290][views.py:152]task_id: 17, task_item_id: 3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 02:29:53,298][views.py:152]task_id: 17, task_item_id: e50ec2c2-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 02:29:53,305][views.py:152]task_id: 17, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 02:29:53,312][views.py:152]task_id: 17, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 02:29:53,319][views.py:152]task_id: 17, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 02:32:25,806][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 02:32:26,367][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:34:14,520][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:34:14,717][views.py:152]task_id: 17, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 02:34:14,724][views.py:152]task_id: 17, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 02:34:14,730][views.py:152]task_id: 17, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 02:36:02,854][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:36:02,922][views.py:152]task_id: 17, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 02:36:02,929][views.py:152]task_id: 17, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 02:36:02,935][views.py:152]task_id: 17, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 02:39:02,117][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 02:39:02,692][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:39:04,844][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:39:05,050][views.py:152]task_id: 17, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 02:39:05,057][views.py:152]task_id: 17, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 02:39:05,063][views.py:152]task_id: 17, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 02:39:05,064][views.py:153]enter 删除任务项
+[INFO][2024-08-11 02:39:58,296][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 02:39:58,770][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:39:59,342][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:39:59,546][views.py:152]task_id: 17, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 02:39:59,553][views.py:152]task_id: 17, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 02:39:59,560][views.py:152]task_id: 17, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 02:39:59,560][views.py:153]enter 删除任务项
+[INFO][2024-08-11 02:40:00,960][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:40:01,025][views.py:152]task_id: 17, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 02:40:01,032][views.py:152]task_id: 17, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 02:40:01,040][views.py:152]task_id: 17, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 02:40:01,040][views.py:153]enter 删除任务项
+[INFO][2024-08-11 02:41:17,752][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 02:41:18,278][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:41:19,196][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:41:19,392][views.py:152]task_id: 17, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 02:41:19,401][views.py:152]task_id: 17, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 02:41:19,411][views.py:152]task_id: 17, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 02:41:19,411][views.py:153]enter 删除任务项['70567d88-f82f-4d9d-b845-f18e6bcd0117', '99455f69-8f9c-4e14-be73-cc7db1d19404', '7add1a7f-42a3-4099-a4b2-7686b6e1e608']
+[INFO][2024-08-11 02:47:45,759][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 02:47:46,376][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:47:55,037][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:48:02,495][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:48:23,120][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:48:23,322][views.py:131]task_id: 18, task_item_id: 3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 02:48:23,328][views.py:131]task_id: 18, task_item_id: e50ec2c2-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 02:48:23,335][views.py:131]task_id: 18, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 02:48:23,343][views.py:131]task_id: 18, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 02:48:23,349][views.py:131]task_id: 18, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 02:48:23,355][views.py:131]task_id: 18, task_item_id: 7addb56c-f359-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 02:48:23,362][views.py:131]task_id: 18, task_item_id: c3da8f02-bf4f-4dbe-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 02:50:32,253][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 02:50:32,861][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:52:35,481][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 02:52:35,938][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:52:48,474][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:52:48,708][views.py:131]task_id: 19, task_item_id: 3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 02:52:48,715][views.py:131]task_id: 19, task_item_id: e50ec2c2-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 02:52:48,722][views.py:131]task_id: 19, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 02:52:48,729][views.py:131]task_id: 19, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 02:52:48,738][views.py:131]task_id: 19, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 02:52:48,744][views.py:131]task_id: 19, task_item_id: 7addb56c-f359-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 02:52:48,751][views.py:131]task_id: 19, task_item_id: c3da8f02-bf4f-4dbe-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 02:59:00,486][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 02:59:01,024][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 02:59:07,372][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 02:59:07,578][views.py:132]task_id: 20, task_item_id: 3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 02:59:07,585][views.py:132]task_id: 20, task_item_id: e50ec2c2-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 02:59:07,591][views.py:132]task_id: 20, task_item_id: 70567d88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 02:59:07,598][views.py:132]task_id: 20, task_item_id: 99455f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 02:59:07,604][views.py:132]task_id: 20, task_item_id: 7add1a7f-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 02:59:07,611][views.py:132]task_id: 20, task_item_id: 7addb56c-f359-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 02:59:07,617][views.py:132]task_id: 20, task_item_id: c3da8f02-bf4f-4dbe-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 03:02:26,490][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 03:02:26,558][views.py:132]task_id: 21, task_item_id: e50ec2c2-59d7-465e-a241-3c398d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 03:05:26,602][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 03:05:26,680][views.py:132]task_id: 22, task_item_id: e50ec2c2-59d7-465e-a241-3c398d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 03:06:27,787][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 03:06:27,853][views.py:132]task_id: 23, task_item_id: e50ec2c2-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 03:06:42,153][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 03:06:42,215][views.py:132]task_id: 24, task_item_id: e50ec2c2-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 03:07:23,009][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 03:07:23,077][views.py:132]task_id: 25, task_item_id: e40ec2c2-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 03:09:48,380][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 03:09:48,938][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 03:13:01,840][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 03:13:02,406][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 03:13:13,686][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['25']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 03:13:13,745][views.py:27]e40ec2c2-59d7-465e-a241-12348d5d678b
+e40ec2c259d7465ea24112348d5d678b[INFO][2024-08-11 03:15:49,928][autoreload.py:266]/www/data/task/models.py changed, reloading.
+[INFO][2024-08-11 03:15:50,433][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 03:17:50,102][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 03:17:50,545][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 03:18:16,610][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 03:18:16,812][views.py:133]task_id: 26, task_item_id: 11111115-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 03:19:36,765][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 03:19:36,820][views.py:155]enter 删除任务项[]
+[INFO][2024-08-11 03:22:21,043][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 03:22:21,562][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 03:22:23,656][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 03:22:23,721][views.py:155]enter 删除任务项[]
+[INFO][2024-08-11 03:22:23,728][views.py:159]1111111559d7465ea24112348d5d678b
+[INFO][2024-08-11 04:23:55,793][middleware.py:13]Received GET request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 05:12:51,501][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 07:24:24,092][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['25']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:02:09,037][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:02:14,458][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:02:31,018][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:02:31,244][views.py:133]task_id: 27, task_item_id: 11111115-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:02:31,251][views.py:133]task_id: 27, task_item_id: 12211115-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:02:31,258][views.py:133]task_id: 27, task_item_id: 1114515-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:03:47,386][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:03:47,453][views.py:154]task_id: 27, task_item_id: 11111115-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:03:47,460][views.py:154]task_id: 27, task_item_id: 12211115-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:03:47,460][views.py:155]enter 删除任务项['11111115-59d7-465e-a241-12348d5d678b', '12211115-59d7-465e-a241-12348d5d678b']
+[INFO][2024-08-11 12:03:47,467][views.py:159]1111111559d7465ea24112348d5d678b
+[INFO][2024-08-11 12:03:47,480][views.py:159]1221111559d7465ea24112348d5d678b
+[INFO][2024-08-11 12:05:46,984][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 12:05:47,669][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 12:06:49,304][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:06:49,523][views.py:154]task_id: 27, task_item_id: 11111115-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:06:49,524][views.py:155]enter 删除任务项['11111115-59d7-465e-a241-12348d5d678b']
+[INFO][2024-08-11 12:06:49,533][views.py:159]1111111559d7465ea24112348d5d678b
+[INFO][2024-08-11 12:06:49,534][views.py:161]删除任务项1111111559d7465ea24112348d5d678b
+[INFO][2024-08-11 12:06:49,547][views.py:159]1221111559d7465ea24112348d5d678b
+[INFO][2024-08-11 12:06:49,547][views.py:161]删除任务项1221111559d7465ea24112348d5d678b
+[INFO][2024-08-11 12:12:03,725][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:12:03,780][views.py:155]enter 删除任务项[]
+[INFO][2024-08-11 12:12:07,700][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:12:07,752][views.py:155]enter 删除任务项[]
+[INFO][2024-08-11 12:12:07,759][views.py:159]1111111559d7465ea24112348d5d678b
+[INFO][2024-08-11 12:12:07,759][views.py:161]删除任务项1111111559d7465ea24112348d5d678b
+[INFO][2024-08-11 12:13:09,855][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:13:09,921][views.py:133]task_id: 28, task_item_id: 111235-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:13:09,928][views.py:133]task_id: 28, task_item_id: 12298115-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:13:09,936][views.py:133]task_id: 28, task_item_id: 1167515-59d7-465e-a241-12348d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:14:56,559][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:14:56,627][views.py:133]task_id: 29, task_item_id: 111-59d7-465e-a241-5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:14:56,634][views.py:133]task_id: 29, task_item_id: 1229-59d7-465e-a241-d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:14:56,641][views.py:133]task_id: 29, task_item_id: 116-59d7-465e-a241-678b, task_time: 1719763200000
+[INFO][2024-08-11 12:20:25,450][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 12:20:26,048][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 12:20:33,245][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:20:33,373][views.py:144]task_id: 30, task_item_id: 112221-59d7-465e-a241-5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:20:33,418][views.py:144]task_id: 30, task_item_id: 122229-59d7-465e-a241-d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:20:33,463][views.py:144]task_id: 30, task_item_id: 11622-59d7-465e-a241-678b, task_time: 1719763200000
+[INFO][2024-08-11 12:21:04,296][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 12:21:04,803][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 12:21:10,665][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:21:10,867][views.py:144]task_id: 31, task_item_id: 1122221-59d7-465e-a241-5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:21:10,874][views.py:144]task_id: 31, task_item_id: 1222229-59d7-465e-a241-d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:21:10,881][views.py:144]task_id: 31, task_item_id: 116222-59d7-465e-a241-678b, task_time: 1719763200000
+[INFO][2024-08-11 12:22:41,110][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 12:22:45,350][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 12:23:10,893][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:23:11,087][views.py:144]task_id: 32, task_item_id: 11221221-59d7-465e-a241-5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:23:11,094][views.py:144]task_id: 32, task_item_id: 12222229-59d7-465e-a241-d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:23:11,100][views.py:144]task_id: 32, task_item_id: 1162222-59d7-465e-a241-678b, task_time: 1719763200000
+[INFO][2024-08-11 12:24:35,214][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 12:25:25,424][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:25:25,635][views.py:144]task_id: 33, task_item_id: 1221-59d7-46225e-a241-5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:25:25,642][views.py:144]task_id: 33, task_item_id: 12122229-5947-465e-a241-d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:25:25,649][views.py:144]task_id: 33, task_item_id: 1162222-5922d7-465e-a241-678b, task_time: 1719763200000
+[INFO][2024-08-11 12:34:12,469][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-11 12:34:12,958][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 12:37:24,805][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 12:42:36,806][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-11 12:42:37,430][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 12:43:06,610][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 12:43:06,828][views.py:144]task_id: 34, task_item_id: 122155-59d7-46225e-a241-5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:43:06,835][views.py:144]task_id: 34, task_item_id: 12229-5947-465e-a241-d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 12:43:06,842][views.py:144]task_id: 34, task_item_id: 116-5922d7-465e-a241-678b, task_time: 1719763200000
+[INFO][2024-08-11 13:21:16,210][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:06:27,194][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 14:06:28,043][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 14:09:34,950][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['25']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:09:39,953][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:09:54,168][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 14:09:54,290][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2018, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 26, in get
+    taskitem = models.TaskItem.objects.filter(task_id=task_id).first()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 341, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'task_id' expected a number but got ''.
+[INFO][2024-08-11 14:10:03,348][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 14:10:03,449][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2018, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 26, in get
+    taskitem = models.TaskItem.objects.filter(task_id=task_id).first()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 341, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'task_id' expected a number but got ''.
+[INFO][2024-08-11 14:10:17,123][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['2']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 14:10:17,201][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 27, in get
+    logger.info(taskitem.task_item_id)
+                ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'task_item_id'
+[INFO][2024-08-11 14:10:26,288][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['25']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:10:26,334][views.py:27]e40ec2c259d7465ea24112348d5d678b
+[INFO][2024-08-11 14:11:13,916][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 14:11:14,417][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 14:11:16,785][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 14:11:16,912][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2018, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 27, in get
+    taskitem = models.TaskItem.objects.filter(task_id=task_id).first()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 341, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'task_id' expected a number but got ''.
+[INFO][2024-08-11 14:13:07,005][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 14:13:07,503][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 14:13:11,179][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['25']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:13:11,250][views.py:27]e40ec2c259d7465ea24112348d5d678b
+[INFO][2024-08-11 14:14:13,297][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 14:14:13,762][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 14:14:18,668][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['25']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:14:18,733][views.py:27]task_item_id:  e40ec2c259d7465ea24112348d5d678b
+[INFO][2024-08-11 14:15:14,428][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 14:15:14,908][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 14:20:20,906][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:20:21,023][views.py:142]task_id: 35, task_item_id: 12215-59d7-46225e-a241-5d678b, task_time: 1719763200000
+[INFO][2024-08-11 14:20:21,072][views.py:142]task_id: 35, task_item_id: 1229-5947-465e-a241-d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 14:20:21,120][views.py:142]task_id: 35, task_item_id: 116123-5922d7-465e-a241-678b, task_time: 1719763200000
+[INFO][2024-08-11 14:22:25,967][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:22:26,182][views.py:163]task_id: 35, task_item_id: 12215-59d7-46225e-a241-5d678b, task_time: 1719763200000
+[INFO][2024-08-11 14:22:26,189][views.py:163]task_id: 35, task_item_id: 1229-5947-465e-a241-d5d678b, task_time: 1719763200000
+[INFO][2024-08-11 14:22:26,190][views.py:164]enter 删除任务项['12215-59d7-46225e-a241-5d678b', '1229-5947-465e-a241-d5d678b']
+[INFO][2024-08-11 14:22:26,201][views.py:168]116123-5922d7-465e-a241-678b
+[INFO][2024-08-11 14:22:26,202][views.py:170]删除任务项116123-5922d7-465e-a241-678b
+[INFO][2024-08-11 14:22:26,218][views.py:168]12215-59d7-46225e-a241-5d678b
+[INFO][2024-08-11 14:22:26,219][views.py:168]1229-5947-465e-a241-d5d678b
+[INFO][2024-08-11 14:27:10,418][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-11 14:27:11,036][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 14:32:13,541][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 14:32:14,267][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 14:32:27,350][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 14:33:38,108][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 14:33:38,631][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 14:33:51,777][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:33:52,008][views.py:163]task_id: 35, task_item_id: 12215-59d7-46225e-a241-5d678b, task_time: 1719763200000
+[INFO][2024-08-11 14:33:52,009][views.py:164]enter 删除任务项['12215-59d7-46225e-a241-5d678b']
+[INFO][2024-08-11 14:35:27,777][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:35:27,834][views.py:164]enter 删除任务项[]
+[INFO][2024-08-11 14:36:38,266][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:36:38,324][views.py:164]enter 删除任务项[]
+[INFO][2024-08-11 14:38:14,501][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:38:14,577][views.py:142]task_id: 36, task_item_id: 3e63d4c72-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 14:38:14,585][views.py:142]task_id: 36, task_item_id: e50esc2c2-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 14:38:14,593][views.py:142]task_id: 36, task_item_id: 70567sd88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 14:38:14,601][views.py:142]task_id: 36, task_item_id: 994551f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 14:38:14,609][views.py:142]task_id: 36, task_item_id: 7add1af-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 14:38:14,616][views.py:142]task_id: 36, task_item_id: 7add2b56c-f359-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 14:38:14,623][views.py:142]task_id: 36, task_item_id: c3da8f202-bf4f-4dbe-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 14:38:32,141][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:38:32,210][views.py:142]task_id: 37, task_item_id: 3e63d4c72-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 14:38:32,218][views.py:142]task_id: 37, task_item_id: e50esc2c2-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 14:38:32,226][views.py:142]task_id: 37, task_item_id: 70567sd88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 14:38:32,234][views.py:142]task_id: 37, task_item_id: 994551f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 14:38:32,241][views.py:142]task_id: 37, task_item_id: 7add1af-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 14:38:32,249][views.py:142]task_id: 37, task_item_id: 7add2b56c-f359-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 14:38:32,256][views.py:142]task_id: 37, task_item_id: c3da8f202-bf4f-4dbe-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 14:39:45,750][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:39:45,832][views.py:142]task_id: 38, task_item_id: 3d4c72-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 14:39:45,840][views.py:142]task_id: 38, task_item_id: e5sc2c2-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 14:39:45,848][views.py:142]task_id: 38, task_item_id: 7067sd88-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 14:39:45,855][views.py:142]task_id: 38, task_item_id: 9945351f69-8f9c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 14:39:45,862][views.py:142]task_id: 38, task_item_id: 7ad3d1af-42a3-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 14:39:45,870][views.py:142]task_id: 38, task_item_id: 7add2b536c-f359-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 14:39:45,877][views.py:142]task_id: 38, task_item_id: c3da8f2032-bf4f-4dbe-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 14:42:41,081][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 14:42:41,708][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 14:43:01,040][middleware.py:13]Received DELETE request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:43:17,018][middleware.py:13]Received DELETE request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:43:25,878][middleware.py:13]Received DELETE request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 14:43:30,662][middleware.py:13]Received DELETE request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 15:23:49,174][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 15:23:49,858][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:24:47,048][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 15:24:47,577][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:25:09,511][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 15:25:10,009][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:25:18,652][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 15:25:19,145][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:25:52,189][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 15:25:52,639][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:26:06,405][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 15:26:06,956][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:27:57,430][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-11 15:27:57,946][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:29:03,559][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 15:29:04,047][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:29:22,869][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 15:29:23,342][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:30:14,724][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 15:30:15,222][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:35:45,561][middleware.py:13]Received POST request to /api/ai/chatocr/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 15:36:03,779][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 15:36:23,309][middleware.py:13]Received POST request to /api/ai/chatocr/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 15:38:16,303][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 15:38:16,875][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:44:59,513][autoreload.py:266]/www/data/task/models.py changed, reloading.
+[INFO][2024-08-11 15:45:00,040][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 15:59:16,430][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 15:59:16,904][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:02:35,855][autoreload.py:266]/www/data/task/models.py changed, reloading.
+[INFO][2024-08-11 16:02:36,441][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:03:38,105][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:03:38,684][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:16:43,148][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:16:43,689][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:17:02,337][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:17:50,800][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['38']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:19:07,500][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:19:07,744][views.py:153]task_id: 39, task_item_id: 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 16:19:07,752][views.py:153]task_id: 39, task_item_id: e50ec2c299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 16:19:07,759][views.py:153]task_id: 39, task_item_id: 70567d8899-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 16:19:07,773][views.py:153]task_id: 39, task_item_id: 99455f69-8f999c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 16:19:07,781][views.py:153]task_id: 39, task_item_id: 7add1a7f-42a993-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 16:19:07,788][views.py:153]task_id: 39, task_item_id: 7addb56c-f35999-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 16:19:07,795][views.py:153]task_id: 39, task_item_id: c3da8f02-bf4f-4d99be-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 16:20:00,719][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:20:00,794][views.py:176]task_id: 39, task_item_id: 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 16:20:00,802][views.py:176]task_id: 39, task_item_id: e50ec2c299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 16:20:00,809][views.py:176]task_id: 39, task_item_id: 70567d8899-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 16:20:00,815][views.py:176]task_id: 39, task_item_id: 99455f69-8f999c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 16:20:00,822][views.py:176]task_id: 39, task_item_id: 7add1a7f-42a993-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 16:20:00,829][views.py:176]task_id: 39, task_item_id: 7addb56c-f35999-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 16:20:00,836][views.py:176]task_id: 39, task_item_id: c3da8f02-bf4f-4d99be-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 16:20:00,836][views.py:177]enter 删除任务项['3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3', 'e50ec2c299-59d7-465e-a241-3c398d5d655a', '70567d8899-f82f-4d9d-b845-f18e6bcd0117', '99455f69-8f999c-4e14-be73-cc7db1d19404', '7add1a7f-42a993-4099-a4b2-7686b6e1e608', '7addb56c-f35999-4d37-a21a-328dafaaf2b5', 'c3da8f02-bf4f-4d99be-956d-5774d8470664']
+[INFO][2024-08-11 16:21:00,967][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:21:01,557][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:21:11,421][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:21:11,636][views.py:176]task_id: 39, task_item_id: 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 16:21:11,644][views.py:176]task_id: 39, task_item_id: e50ec2c299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 16:21:11,650][views.py:176]task_id: 39, task_item_id: 70567d8899-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 16:21:11,657][views.py:176]task_id: 39, task_item_id: 99455f69-8f999c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 16:21:11,663][views.py:176]task_id: 39, task_item_id: 7add1a7f-42a993-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 16:21:11,670][views.py:176]task_id: 39, task_item_id: 7addb56c-f35999-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 16:21:11,677][views.py:176]task_id: 39, task_item_id: c3da8f02-bf4f-4d99be-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 16:21:11,677][views.py:177]enter 删除任务项['3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3', 'e50ec2c299-59d7-465e-a241-3c398d5d655a', '70567d8899-f82f-4d9d-b845-f18e6bcd0117', '99455f69-8f999c-4e14-be73-cc7db1d19404', '7add1a7f-42a993-4099-a4b2-7686b6e1e608', '7addb56c-f35999-4d37-a21a-328dafaaf2b5', 'c3da8f02-bf4f-4d99be-956d-5774d8470664']
+[INFO][2024-08-11 16:21:11,684][views.py:191]enter 修改任务39状态200
+[INFO][2024-08-11 16:24:12,662][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:24:13,212][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:24:25,234][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:24:25,466][views.py:176]task_id: 39, task_item_id: 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 16:24:25,473][views.py:176]task_id: 39, task_item_id: e50ec2c299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 16:24:25,480][views.py:176]task_id: 39, task_item_id: 70567d8899-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 16:24:25,487][views.py:176]task_id: 39, task_item_id: 99455f69-8f999c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 16:24:25,494][views.py:176]task_id: 39, task_item_id: 7add1a7f-42a993-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 16:24:25,501][views.py:176]task_id: 39, task_item_id: 7addb56c-f35999-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 16:24:25,507][views.py:176]task_id: 39, task_item_id: c3da8f02-bf4f-4d99be-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 16:24:25,514][views.py:190]enter 修改任务39状态200, score:7, task_item_num:7
+[INFO][2024-08-11 16:26:48,556][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:26:49,121][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:29:21,224][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:29:21,735][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:29:23,807][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:29:24,041][views.py:176]task_id: 39, task_item_id: 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 16:29:24,048][views.py:176]task_id: 39, task_item_id: e50ec2c299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 16:29:24,055][views.py:176]task_id: 39, task_item_id: 70567d8899-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 16:29:24,062][views.py:176]task_id: 39, task_item_id: 99455f69-8f999c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 16:29:24,069][views.py:176]task_id: 39, task_item_id: 7add1a7f-42a993-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 16:29:24,078][views.py:176]task_id: 39, task_item_id: 7addb56c-f35999-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 16:29:24,085][views.py:176]task_id: 39, task_item_id: c3da8f02-bf4f-4d99be-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 16:29:24,092][views.py:190]enter 修改任务39状态50, score:7, task_item_num:7
+[INFO][2024-08-11 16:29:24,121][views.py:197]修改任务39状态50
+[INFO][2024-08-11 16:31:30,514][middleware.py:13]Received POST request to /api/ai/chatocr/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:34:57,794][middleware.py:13]Received POST request to /api/ai/chatocr/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:36:07,757][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:36:08,283][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:36:09,690][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:36:16,772][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:36:35,762][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:36:35,967][views.py:176]task_id: 39, task_item_id: 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 16:36:35,973][views.py:176]task_id: 39, task_item_id: e50ec2c299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 16:36:35,980][views.py:176]task_id: 39, task_item_id: 70567d8899-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 16:36:35,987][views.py:176]task_id: 39, task_item_id: 99455f69-8f999c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 16:36:35,993][views.py:176]task_id: 39, task_item_id: 7add1a7f-42a993-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 16:36:36,000][views.py:176]task_id: 39, task_item_id: 7addb56c-f35999-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 16:36:36,006][views.py:176]task_id: 39, task_item_id: c3da8f02-bf4f-4d99be-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 16:36:36,013][views.py:192]enter 修改任务39状态50, score:7, task_item_num:7
+[INFO][2024-08-11 16:36:36,036][views.py:199]修改任务39状态50
+[INFO][2024-08-11 16:37:28,409][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:37:28,994][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:37:31,588][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:37:31,809][views.py:176]task_id: 39, task_item_id: 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 16:37:31,815][views.py:176]task_id: 39, task_item_id: e50ec2c299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 16:37:31,822][views.py:176]task_id: 39, task_item_id: 70567d8899-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 16:37:31,828][views.py:176]task_id: 39, task_item_id: 99455f69-8f999c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 16:37:31,835][views.py:176]task_id: 39, task_item_id: 7add1a7f-42a993-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 16:37:31,843][views.py:176]task_id: 39, task_item_id: 7addb56c-f35999-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 16:37:31,849][views.py:176]task_id: 39, task_item_id: c3da8f02-bf4f-4d99be-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 16:37:31,855][views.py:192]enter 修改任务39状态50, score:7, task_item_num:7
+[INFO][2024-08-11 16:37:31,882][views.py:200]修改任务39状态50
+[INFO][2024-08-11 16:38:21,935][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['39']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:38:28,625][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:43:55,662][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:43:56,173][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:44:07,269][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:44:07,500][views.py:176]task_id: 39, task_item_id: 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 16:44:07,507][views.py:176]task_id: 39, task_item_id: e50ec2c299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 16:44:07,514][views.py:176]task_id: 39, task_item_id: 70567d8899-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 16:44:07,521][views.py:176]task_id: 39, task_item_id: 99455f69-8f999c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 16:44:07,528][views.py:176]task_id: 39, task_item_id: 7add1a7f-42a993-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 16:44:07,535][views.py:176]task_id: 39, task_item_id: 7addb56c-f35999-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 16:44:07,552][views.py:176]task_id: 39, task_item_id: c3da8f02-bf4f-4d99be-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 16:44:07,563][views.py:192]enter 修改任务39状态50, score:7, task_item_num:7
+[INFO][2024-08-11 16:44:07,588][views.py:200]修改任务391
+[INFO][2024-08-11 16:44:07,595][views.py:202]修改任务39状态50
+[INFO][2024-08-11 16:47:24,489][autoreload.py:266]/www/data/task/urls.py changed, reloading.
+[INFO][2024-08-11 16:47:24,981][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:47:52,929][middleware.py:13]Received GET request to /api/task/change/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 16:47:52,955][log.py:241]Internal Server Error: /api/task/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: change() takes 0 positional arguments but 1 was given
+[INFO][2024-08-11 16:48:15,424][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:48:15,931][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:48:16,944][middleware.py:13]Received GET request to /api/task/change/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 16:48:17,039][log.py:241]Internal Server Error: /api/task/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    if response.status_code == 404 and self.should_redirect_with_slash(request):
+       ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'status_code'
+[INFO][2024-08-11 16:48:18,187][middleware.py:13]Received GET request to /api/task/change/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 16:48:18,262][log.py:241]Internal Server Error: /api/task/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    if response.status_code == 404 and self.should_redirect_with_slash(request):
+       ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'status_code'
+[INFO][2024-08-11 16:49:05,319][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:49:05,857][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:49:07,173][middleware.py:13]Received GET request to /api/task/change/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 16:49:07,250][log.py:241]Internal Server Error: /api/task/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/response.py", line 59, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+           ^^^^^^^^
+AssertionError: .accepted_renderer not set on Response
+[INFO][2024-08-11 16:49:33,868][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:49:34,354][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:49:35,532][middleware.py:13]Received GET request to /api/task/change/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:52:16,617][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:52:17,129][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:53:49,350][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:53:49,588][views.py:177]task_id: 39, task_item_id: 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 16:53:49,596][views.py:177]task_id: 39, task_item_id: e50ec2c299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 16:53:49,603][views.py:177]task_id: 39, task_item_id: 70567d8899-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 16:53:49,610][views.py:177]task_id: 39, task_item_id: 99455f69-8f999c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 16:53:49,617][views.py:177]task_id: 39, task_item_id: 7add1a7f-42a993-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 16:53:49,624][views.py:177]task_id: 39, task_item_id: 7addb56c-f35999-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 16:53:49,631][views.py:177]task_id: 39, task_item_id: c3da8f02-bf4f-4d99be-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 16:55:12,780][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:55:13,298][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:55:14,175][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 16:55:14,393][views.py:177]task_id: 39, task_item_id: 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 16:55:14,401][views.py:177]task_id: 39, task_item_id: e50ec2c299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 16:55:14,408][views.py:177]task_id: 39, task_item_id: 70567d8899-f82f-4d9d-b845-f18e6bcd0117, task_time: 1719849600000
+[INFO][2024-08-11 16:55:14,415][views.py:177]task_id: 39, task_item_id: 99455f69-8f999c-4e14-be73-cc7db1d19404, task_time: 1719936000000
+[INFO][2024-08-11 16:55:14,423][views.py:177]task_id: 39, task_item_id: 7add1a7f-42a993-4099-a4b2-7686b6e1e608, task_time: 1719936000000
+[INFO][2024-08-11 16:55:14,430][views.py:177]task_id: 39, task_item_id: 7addb56c-f35999-4d37-a21a-328dafaaf2b5, task_time: 1720022400000
+[INFO][2024-08-11 16:55:14,437][views.py:177]task_id: 39, task_item_id: c3da8f02-bf4f-4d99be-956d-5774d8470664, task_time: 1720108800000
+[INFO][2024-08-11 16:55:34,167][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 16:55:34,741][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 16:55:38,599][middleware.py:13]Received GET request to /api/task/change/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:01:09,131][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 17:01:09,595][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:01:11,737][middleware.py:13]Received GET request to /api/task/change/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:01:11,805][views.py:195]task_id: 38, status: 50
+[INFO][2024-08-11 17:02:46,409][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:02:46,626][views.py:154]task_id: 40, task_item_id: 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 17:02:46,633][views.py:154]task_id: 40, task_item_id: e50ec2c00299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 17:03:21,320][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:03:21,384][views.py:177]task_id: 40, task_item_id: 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 17:03:21,391][views.py:177]task_id: 40, task_item_id: e50ec2c00299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 17:03:21,417][views.py:195]task_id: 40, status: 100
+[INFO][2024-08-11 17:05:09,604][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 17:05:10,243][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:05:13,289][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:05:13,507][views.py:177]task_id: 40, task_item_id: 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 17:05:13,515][views.py:177]task_id: 40, task_item_id: e50ec2c00299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 17:05:13,545][views.py:197]task_id: 40, status: 100
+[INFO][2024-08-11 17:07:17,182][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-11 17:07:17,674][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:07:19,339][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:07:19,576][views.py:177]task_id: 40, task_item_id: 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 17:07:19,584][views.py:177]task_id: 40, task_item_id: e50ec2c00299-59d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[ERROR][2024-08-11 17:07:19,591][views.py:184]change_status() got an unexpected keyword argument 'count'
+[ERROR][2024-08-11 17:07:19,592][views.py:109]发布消息错误
+[INFO][2024-08-11 17:30:44,756][autoreload.py:266]/www/data/AI/migrations/0002_remove_chart_bar_remove_chart_line_remove_chart_pie_and_more.py changed, reloading.
+[INFO][2024-08-11 17:30:45,223][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:30:48,738][autoreload.py:266]/www/data/Editor/__init__.py changed, reloading.
+[INFO][2024-08-11 17:30:49,311][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:31:12,636][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:33:10,551][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:34:20,670][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:34:51,692][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:34:51,938][views.py:177]task_id: 40, task_item_id: 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 17:36:25,684][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 17:36:26,322][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:37:08,649][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 17:37:09,110][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:37:45,281][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 17:37:45,830][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:37:56,270][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:38:00,988][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:38:17,018][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:38:17,241][views.py:177]task_id: 40, task_item_id: 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 17:39:26,843][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:39:35,364][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:39:35,635][views.py:177]task_id: 40, task_item_id: 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 17:41:41,496][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:59:24,855][autoreload.py:266]/www/data/AI/migrations/__init__.py changed, reloading.
+[INFO][2024-08-11 17:59:25,418][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:59:28,014][autoreload.py:266]/www/data/task/admin.py changed, reloading.
+[INFO][2024-08-11 17:59:28,530][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:59:30,026][autoreload.py:266]/www/data/Editor/celery.py changed, reloading.
+[INFO][2024-08-11 17:59:30,485][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 17:59:58,834][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 17:59:59,060][views.py:154]task_id: 42, task_item_id: 3e69903d4c2-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 17:59:59,068][views.py:154]task_id: 42, task_item_id: e50ec2c00299-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 18:01:25,143][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 18:01:25,649][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 18:01:37,059][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 18:01:37,282][views.py:154]task_id: 43, task_item_id: 3e69903d4c2-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 18:01:37,290][views.py:154]task_id: 43, task_item_id: e50ec2c00299-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 18:02:13,835][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 18:02:49,768][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 18:02:49,980][views.py:154]task_id: 44, task_item_id: 3e69903d4c2-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 18:02:49,987][views.py:154]task_id: 44, task_item_id: e50ec2c00299-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 18:05:10,713][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 18:05:11,339][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 18:06:11,934][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 18:06:12,402][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 18:12:17,274][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 18:12:17,837][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 18:15:11,416][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-11 18:15:11,916][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 18:15:56,212][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-11 18:15:56,678][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 18:20:32,115][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 18:20:32,346][views.py:154]task_id: 45, task_item_id: 3e69903d400-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 18:20:32,354][views.py:154]task_id: 45, task_item_id: e50ec2c002989-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 18:31:47,255][autoreload.py:266]/www/data/AI/migrations/0001_initial.py changed, reloading.
+[INFO][2024-08-11 18:31:47,807][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 18:31:49,352][autoreload.py:266]/www/data/task/models.py changed, reloading.
+[INFO][2024-08-11 18:31:49,904][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 18:33:03,989][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 18:34:59,723][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 18:34:59,961][views.py:154]task_id: 46, task_item_id: 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 18:34:59,968][views.py:154]task_id: 46, task_item_id: e50ec2c002889-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 18:35:26,872][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 18:35:26,940][views.py:177]task_id: 46, task_item_id: 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 18:35:26,948][views.py:177]task_id: 46, task_item_id: e50ec2c002889-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 18:36:13,381][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 18:36:13,448][views.py:177]task_id: 46, task_item_id: 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 18:36:13,455][views.py:177]task_id: 46, task_item_id: e50ec2c002889-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 18:40:22,379][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 18:40:29,334][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 18:40:48,459][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 18:40:48,526][views.py:177]task_id: 46, task_item_id: 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 18:40:48,533][views.py:177]task_id: 46, task_item_id: e50ec2c002889-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 18:44:08,150][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 18:44:58,455][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 18:44:58,732][views.py:177]task_id: 46, task_item_id: 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 18:44:58,740][views.py:177]task_id: 46, task_item_id: e50ec2c002889-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 18:46:53,852][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 18:46:53,917][views.py:177]task_id: 46, task_item_id: 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 18:46:53,931][views.py:177]task_id: 46, task_item_id: e50ec2c002889-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 19:00:15,837][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 19:00:57,387][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 19:00:57,608][views.py:177]task_id: 46, task_item_id: 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 19:00:57,616][views.py:177]task_id: 46, task_item_id: e50ec2c002889-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 19:02:05,622][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 19:03:35,275][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 19:03:57,005][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 19:03:57,226][views.py:177]task_id: 46, task_item_id: 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-11 19:03:57,234][views.py:177]task_id: 46, task_item_id: e50ec2c002889-5977d7-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-11 23:49:49,342][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 23:49:50,332][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 23:52:57,285][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 23:52:57,856][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 23:53:08,260][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 23:53:08,754][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 23:53:27,244][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 23:53:40,901][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 23:53:41,424][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 23:55:39,395][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 23:55:39,830][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 23:56:33,274][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-11 23:56:33,771][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-11 23:57:19,374][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 23:57:28,220][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 23:57:50,362][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-11 23:57:52,195][log.py:241]Internal Server Error: /api/ai/document/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/AI/views.py", line 659, in post
+    return Response(response.json(), status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[INFO][2024-08-12 00:00:35,798][autoreload.py:266]/www/data/AI/views.py changed, reloading.

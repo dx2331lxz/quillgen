@@ -1,0 +1,16 @@
+[INFO][2025-02-09 15:23:04,796][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-09 17:36:38,236][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-09 17:36:59,453][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-09 17:46:19,088][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 00:46:19,997][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 00:51:52,717][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 01:58:52,032][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 03:38:07,083][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 03:38:08,587][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 03:54:25,122][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 10:28:14,453][middleware.py:13]Received GET request to /.env from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 13:14:02,603][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 13:19:31,213][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 14:02:48,646][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 17:16:05,833][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 18:29:02,159][autoreload.py:266]/www/data/user/views.py changed, reloading.

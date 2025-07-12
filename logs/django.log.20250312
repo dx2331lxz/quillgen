@@ -1,0 +1,10 @@
+[INFO][2025-03-12 21:21:34,550][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-12 21:21:50,904][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-12 21:23:04,020][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-12 21:23:06,759][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-12 21:23:07,742][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-12 21:23:13,621][middleware.py:13]Received GET request to /admin/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-12 21:23:13,714][middleware.py:13]Received GET request to /admin/login/ from None with query params: <QueryDict: {'next': ['/admin/']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-12 22:25:14,940][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-12 22:26:16,822][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-12 22:56:41,937][autoreload.py:677]Watching for file changes with StatReloader

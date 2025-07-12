@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    command: ./control.sh 8000
+    volumes:
+      - .:/www/data
+      - ./media:/www/data/media
+      - ./logs:/www/data/logs
+    ports:
+      - "10101:8000"
+    networks:
+      - host-network
+
+networks:
+  host-network:
+    driver: host

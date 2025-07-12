@@ -1,0 +1,86 @@
+[INFO][2025-03-31 15:12:31,048][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-31 21:36:57,828][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-31 21:37:35,553][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:37:44,766][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:38:21,452][middleware.py:13]Received POST request to /api/user/email/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:38:43,639][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:40:21,320][middleware.py:13]Received POST request to /api/user/email/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:40:22,125][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:40:26,946][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:41:01,958][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:43:10,555][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:54:13,150][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:54:14,700][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:55:26,053][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:56:00,202][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:56:13,612][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:56:33,314][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 21:59:11,109][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:00:14,183][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:03:54,371][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:06:09,312][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:07:42,308][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:08:22,952][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:09:10,323][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:13:10,477][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:14:27,157][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:28:36,129][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:29:24,440][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:35:53,682][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:37:11,834][middleware.py:13]Received POST request to /api/ai/completion/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:37:12,196][_client.py:1025]HTTP Request: POST https://api.deepseek.com/beta/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 22:37:37,747][middleware.py:13]Received POST request to /api/ai/completion/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:37:37,988][_client.py:1025]HTTP Request: POST https://api.deepseek.com/beta/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 22:37:47,529][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:37:47,652][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 22:38:47,172][middleware.py:13]Received POST request to /api/ai/completion/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:38:47,319][_client.py:1025]HTTP Request: POST https://api.deepseek.com/beta/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 22:43:10,235][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:43:10,351][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 22:44:39,636][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:56:10,167][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:56:10,290][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 22:57:30,161][middleware.py:13]Received POST request to /api/ai/wrong2right/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:57:49,653][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 22:57:49,777][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 22:58:10,078][_client.py:1025]HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:00:51,589][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:00:51,713][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:04:25,932][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:04:26,041][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:06:58,813][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:07:08,043][middleware.py:13]Received POST request to /api/user/email/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:07:08,562][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:07:12,711][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:08:58,355][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:08:58,490][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:13:57,382][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:13:57,497][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:14:54,926][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:14:55,041][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:15:51,498][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:15:51,615][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:19:34,942][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:19:35,066][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:20:47,897][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:20:57,497][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:20:57,615][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:21:21,029][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:21:21,142][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:24:59,634][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:24:59,772][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:27:55,408][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:28:06,594][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:28:06,707][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:29:07,137][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:29:07,269][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:32:24,651][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:32:24,772][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-31 23:45:12,336][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-31 23:45:12,461][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-04-01 00:03:26,576][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-01 00:03:26,704][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-04-01 00:05:10,182][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-01 00:05:10,290][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-04-01 00:06:28,106][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-01 00:06:28,239][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"

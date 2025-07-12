@@ -1,0 +1,761 @@
+[INFO][2024-08-08 00:39:15,728][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 00:43:19,749][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 00:43:20,143][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 01:08:59,996][autoreload.py:266]/www/data/task/urls.py changed, reloading.
+[INFO][2024-08-08 01:09:00,489][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 01:10:12,193][autoreload.py:266]/www/data/task/urls.py changed, reloading.
+[INFO][2024-08-08 01:10:12,565][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 01:10:17,617][middleware.py:12]Received GET request to /api/task/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:10:27,807][middleware.py:12]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:13:04,541][middleware.py:12]Received GET request to /api/task/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:13:11,540][middleware.py:12]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:13:31,567][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 01:13:32,046][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 01:13:32,633][middleware.py:12]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:13:47,323][middleware.py:12]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:20:23,685][middleware.py:12]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:20:47,113][middleware.py:12]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:22:02,294][middleware.py:12]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 01:22:02,295][views.py:46]{'title': [ErrorDetail(string='该字段是必填项。', code='required')], 'content': [ErrorDetail(string='该字段是必填项。', code='required')]}
+[INFO][2024-08-08 01:23:08,643][middleware.py:12]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:24:04,207][middleware.py:12]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:26:25,140][middleware.py:12]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[WARNING][2024-08-08 01:26:25,141][views.py:53]task_id is None
+[INFO][2024-08-08 01:26:30,895][middleware.py:12]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 01:26:30,979][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 63, in put
+    serializers = serializer.TaskSerializer(data=data, instance=task)
+                                                                ^^^^
+UnboundLocalError: cannot access local variable 'task' where it is not associated with a value
+[INFO][2024-08-08 01:27:03,172][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 01:27:03,570][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 01:27:04,960][middleware.py:12]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:27:46,844][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 01:27:47,277][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 01:27:50,578][middleware.py:12]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[WARNING][2024-08-08 01:27:50,647][views.py:60]修改失败，任务不存在
+[INFO][2024-08-08 01:27:55,856][middleware.py:12]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 01:27:55,916][views.py:71]{'uid': [ErrorDetail(string='该字段是必填项。', code='required')]}
+[INFO][2024-08-08 01:28:27,507][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 01:28:27,877][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 01:28:29,032][middleware.py:12]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:30:25,395][middleware.py:12]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:30:34,525][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 01:30:34,925][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 01:30:54,945][middleware.py:12]Received DELETE request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[WARNING][2024-08-08 01:30:54,950][views.py:79]task_id is None
+[INFO][2024-08-08 01:30:59,033][middleware.py:12]Received DELETE request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:31:21,310][middleware.py:12]Received DELETE request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:31:23,562][middleware.py:12]Received DELETE request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 01:31:30,464][middleware.py:12]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 02:37:26,434][middleware.py:12]Received GET request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 10:07:31,158][middleware.py:12]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 12:58:10,064][middleware.py:12]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 13:11:53,560][autoreload.py:266]/www/data/utils/middleware.py changed, reloading.
+[INFO][2024-08-08 13:11:54,495][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 13:15:41,824][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 13:15:42,201][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 13:16:01,852][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 13:16:02,262][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 13:19:17,550][autoreload.py:266]/www/data/task/models.py changed, reloading.
+[INFO][2024-08-08 13:19:17,931][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 13:22:14,210][autoreload.py:266]/www/data/task/models.py changed, reloading.
+[INFO][2024-08-08 13:22:14,573][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 13:26:12,909][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 13:28:24,292][signals.py:55]All tables created successfully.
+[INFO][2024-08-08 13:28:24,319][signals.py:55]All tables created successfully.
+[INFO][2024-08-08 13:28:24,357][signals.py:55]All tables created successfully.
+[INFO][2024-08-08 13:28:24,381][signals.py:55]All tables created successfully.
+[INFO][2024-08-08 13:28:24,405][signals.py:55]All tables created successfully.
+[INFO][2024-08-08 13:28:24,448][signals.py:55]All tables created successfully.
+[INFO][2024-08-08 13:28:24,491][signals.py:55]All tables created successfully.
+[INFO][2024-08-08 13:28:24,515][signals.py:55]All tables created successfully.
+[INFO][2024-08-08 13:29:16,256][autoreload.py:266]/www/data/utils/signals.py changed, reloading.
+[INFO][2024-08-08 13:29:16,741][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 13:36:00,985][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 13:36:01,454][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 13:41:44,576][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 13:41:44,958][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 13:43:24,425][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 13:43:30,917][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 13:43:50,038][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 13:44:19,351][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 13:46:35,615][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 13:48:06,960][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 13:48:07,476][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 14:09:12,553][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 14:09:12,560][views.py:47]{'content': [ErrorDetail(string='Not a valid string.', code='invalid')]}
+[INFO][2024-08-08 14:09:59,931][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 14:10:00,428][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 14:10:01,002][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 14:10:41,595][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 14:10:41,977][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 14:10:49,257][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 14:10:49,397][views.py:111]{'title': '第一天的任务1', 'status': 'done', 'desc': '你好！这里是任务简介，可以在这里添加任务的简单描述！', 'content': '<h1 style="text-indent: 0em !important;" id="h-27250198">智慧笔匠 - 任务时间轴</h1><p style="text-indent: 0em !important;">你好！这里是智慧笔匠的任务时间轴，我可以帮助你安排并管理工作日程！</p><p style="text-indent: 0em !important;"></p><p style="text-indent: 0em !important;">你可以点击上方的日程栏切换每一天的任务项，并在下方修改您的任务标题、任务状态、任务简介和任务详情。</p><p style="text-indent: 0em !important;"></p><p style="text-indent: 0em !important;">你也可以使用AI助手自动规划工作内容并安排工作时间。</p><ai-plan2></ai-plan2><p style="text-indent: 0em !important;"></p>', 'id': '3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3'}
+[INFO][2024-08-08 14:10:49,398][views.py:111]{'title': '第一天的任务2', 'status': 'done', 'desc': '第一天要做的第二件事...', 'content': '<h1 style="text-indent: 0em !important;" id="h-b4506869">这里可以编写任务详情</h1><p style="text-indent: 0em !important;"></p>', 'id': 'e50ec2c2-59d7-465e-a241-3c398d5d655a'}
+[INFO][2024-08-08 14:10:49,398][views.py:111]{'id': '70567d88-f82f-4d9d-b845-f18e6bcd0117', 'title': '第二天的任务', 'status': 'done', 'desc': '第二天要做的工作简介', 'content': '<h1 style="text-indent: 0em !important;" id="h-037759ce">第二天的工作内容</h1><p style="text-indent: 0em !important;">...</p>'}
+[INFO][2024-08-08 14:10:49,398][views.py:111]{'id': '99455f69-8f9c-4e14-be73-cc7db1d19404', 'title': '第三天的任务1', 'status': 'ongoing', 'desc': '第三天要做的第一件事的工作简介', 'content': '<h1 style="text-indent: 0em !important;" id="h-037e3f96">第三天的第一项任务的具体内容</h1><p style="text-indent: 0em !important;"></p>'}
+[INFO][2024-08-08 14:10:49,398][views.py:111]{'id': '7add1a7f-42a3-4099-a4b2-7686b6e1e608', 'title': '第三天的任务2', 'status': 'pending', 'desc': '第三天要做的第二件事的工作简介', 'content': '<h1 style="text-indent: 0em !important;" id="h-1149b678">第三天的第二项任务的具体内容</h1><p style="text-indent: 0em !important;"></p>'}
+[INFO][2024-08-08 14:10:49,398][views.py:111]{'id': '7addb56c-f359-4d37-a21a-328dafaaf2b5', 'title': '第四天的任务', 'status': 'prime', 'desc': '这里是第四天的任务简介', 'content': '<h1 style="text-indent: 0em !important;" id="h-c5e15f4b">这里是第四天的任务内容</h1><p style="text-indent: 0em !important;"></p>'}
+[INFO][2024-08-08 14:10:49,398][views.py:111]{'id': 'c3da8f02-bf4f-4dbe-956d-5774d8470664', 'title': '第五天的任务', 'status': 'prime', 'desc': '这里是第五天的任务简介', 'content': '<h1 style="text-indent: 0em !important;" id="h-34863faa">这里是第五天的任务内容</h1><p style="text-indent: 0em !important;"></p>'}
+[INFO][2024-08-08 17:13:20,046][middleware.py:13]Received POST request to /api/token/refresh/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:13:20,234][middleware.py:13]Received GET request to /api/user/userinfo/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:13:20,435][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:13:20,668][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:13:37,640][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:13:44,561][middleware.py:13]Received GET request to /api/file/text/ from AnonymousUser with query params: <QueryDict: {'text_id': ['62']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:13:48,974][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:13:48,993][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:13:51,755][middleware.py:13]Received GET request to /api/file/text/ from AnonymousUser with query params: <QueryDict: {'text_id': ['59']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:13:53,173][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:13:53,184][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:13:58,588][middleware.py:13]Received GET request to /api/file/text/ from AnonymousUser with query params: <QueryDict: {'text_id': ['62']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:14:27,117][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:14:27,140][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:18:43,886][middleware.py:13]Received GET request to /api/user/userinfo/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:18:44,068][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:18:44,094][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:18:47,763][middleware.py:13]Received GET request to /api/file/text/ from AnonymousUser with query params: <QueryDict: {'text_id': ['42']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:19:28,285][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:19:28,291][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:24:19,821][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:24:19,827][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:24:19,872][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:25:20,380][middleware.py:13]Received GET request to /api/user/userinfo/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:25:20,586][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:25:20,593][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:25:20,620][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:26:40,027][middleware.py:13]Received GET request to /api/user/userinfo/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:26:40,244][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:26:40,258][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:26:40,271][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:27:20,210][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:27:20,240][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:27:20,270][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:27:24,287][middleware.py:13]Received GET request to /api/user/userinfo/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:27:24,521][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:27:24,536][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:27:24,547][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:27:35,257][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:27:35,286][middleware.py:13]Received GET request to /media/avatar/3_2_ML90heW.jpg from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:27:35,310][middleware.py:13]Received GET request to /api/file/textall/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:38:57,009][middleware.py:13]Received POST request to /api/file/text/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:39:51,275][middleware.py:13]Received POST request to /api/file/text/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:39:59,931][middleware.py:13]Received POST request to /api/file/text/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 17:40:57,856][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 17:40:57,929][views.py:114]json2disk error
+[ERROR][2024-08-08 17:40:57,969][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 45, in post
+    self.json2disk(serializers.data["content"])
+  File "/www/data/task/views.py", line 115, in json2disk
+    raise e
+  File "/www/data/task/views.py", line 104, in json2disk
+    timeline_list = data.get("timeline")
+                    ^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[INFO][2024-08-08 17:41:44,706][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 17:41:44,967][views.py:114]json2disk error
+[ERROR][2024-08-08 17:41:45,001][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 45, in post
+    self.json2disk(serializers.data["content"])
+  File "/www/data/task/views.py", line 115, in json2disk
+    raise e
+  File "/www/data/task/views.py", line 104, in json2disk
+    timeline_list = data.get("timeline")
+                    ^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[INFO][2024-08-08 18:16:22,791][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:16:23,228][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:18:06,134][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:18:06,529][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:18:17,362][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:18:22,589][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:18:41,947][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 18:18:42,112][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 45, in post
+    self.json2disk(data["content"])
+    ^^^^^^^^^^^^^^
+AttributeError: 'TaskLogic' object has no attribute 'json2disk'
+[INFO][2024-08-08 18:19:33,546][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 18:19:33,677][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 45, in post
+    self.pulish(data["content"])
+    ^^^^^^^^^^^^^^
+AttributeError: 'TaskLogic' object has no attribute 'json2disk'
+[INFO][2024-08-08 18:19:33,759][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:19:34,133][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:19:35,790][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:19:35,888][views.py:103]<class 'str'>
+[ERROR][2024-08-08 18:19:35,889][views.py:113]json2disk error
+[ERROR][2024-08-08 18:19:35,928][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 45, in post
+    self.pulish(data["content"])
+  File "/www/data/task/views.py", line 114, in pulish
+    raise e
+  File "/www/data/task/views.py", line 104, in pulish
+    timeline_list = content.get("timeline")
+                    ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[INFO][2024-08-08 18:21:40,793][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:21:41,254][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:21:42,249][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:21:42,337][views.py:104]<class 'dict'>
+[INFO][2024-08-08 18:21:42,337][views.py:112]{'title': '第一天的任务1', 'status': 'done', 'desc': '你好！这里是任务简介，可以在这里添加任务的简单描述！', 'content': '<h1 style="text-indent: 0em !important;" id="h-27250198">智慧笔匠 - 任务时间轴</h1><p style="text-indent: 0em !important;">你好！这里是智慧笔匠的任务时间轴，我可以帮助你安排并管理工作日程！</p><p style="text-indent: 0em !important;"></p><p style="text-indent: 0em !important;">你可以点击上方的日程栏切换每一天的任务项，并在下方修改您的任务标题、任务状态、任务简介和任务详情。</p><p style="text-indent: 0em !important;"></p><p style="text-indent: 0em !important;">你也可以使用AI助手自动规划工作内容并安排工作时间。</p><ai-plan2></ai-plan2><p style="text-indent: 0em !important;"></p>', 'id': '3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3'}
+[INFO][2024-08-08 18:21:42,337][views.py:112]{'title': '第一天的任务2', 'status': 'done', 'desc': '第一天要做的第二件事...', 'content': '<h1 style="text-indent: 0em !important;" id="h-b4506869">这里可以编写任务详情</h1><p style="text-indent: 0em !important;"></p>', 'id': 'e50ec2c2-59d7-465e-a241-3c398d5d655a'}
+[INFO][2024-08-08 18:21:42,338][views.py:112]{'id': '70567d88-f82f-4d9d-b845-f18e6bcd0117', 'title': '第二天的任务', 'status': 'done', 'desc': '第二天要做的工作简介', 'content': '<h1 style="text-indent: 0em !important;" id="h-037759ce">第二天的工作内容</h1><p style="text-indent: 0em !important;">...</p>'}
+[INFO][2024-08-08 18:21:42,339][views.py:112]{'id': '99455f69-8f9c-4e14-be73-cc7db1d19404', 'title': '第三天的任务1', 'status': 'ongoing', 'desc': '第三天要做的第一件事的工作简介', 'content': '<h1 style="text-indent: 0em !important;" id="h-037e3f96">第三天的第一项任务的具体内容</h1><p style="text-indent: 0em !important;"></p>'}
+[INFO][2024-08-08 18:21:42,339][views.py:112]{'id': '7add1a7f-42a3-4099-a4b2-7686b6e1e608', 'title': '第三天的任务2', 'status': 'pending', 'desc': '第三天要做的第二件事的工作简介', 'content': '<h1 style="text-indent: 0em !important;" id="h-1149b678">第三天的第二项任务的具体内容</h1><p style="text-indent: 0em !important;"></p>'}
+[INFO][2024-08-08 18:21:42,339][views.py:112]{'id': '7addb56c-f359-4d37-a21a-328dafaaf2b5', 'title': '第四天的任务', 'status': 'prime', 'desc': '这里是第四天的任务简介', 'content': '<h1 style="text-indent: 0em !important;" id="h-c5e15f4b">这里是第四天的任务内容</h1><p style="text-indent: 0em !important;"></p>'}
+[INFO][2024-08-08 18:21:42,339][views.py:112]{'id': 'c3da8f02-bf4f-4dbe-956d-5774d8470664', 'title': '第五天的任务', 'status': 'prime', 'desc': '这里是第五天的任务简介', 'content': '<h1 style="text-indent: 0em !important;" id="h-34863faa">这里是第五天的任务内容</h1><p style="text-indent: 0em !important;"></p>'}
+[INFO][2024-08-08 18:32:19,427][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:32:19,860][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:33:41,484][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['2']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:33:55,392][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 18:33:55,639][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2018, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 34, in get
+    task = models.Task.objects.get(uid=uid, task_id=task_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 636, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 341, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'task_id' expected a number but got ''.
+[INFO][2024-08-08 18:34:23,417][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 18:34:23,578][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2018, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 34, in get
+    task = models.Task.objects.get(uid=uid, task_id=task_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 636, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 341, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'task_id' expected a number but got ''.
+[INFO][2024-08-08 18:34:23,581][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:34:23,959][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:34:25,829][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:35:44,840][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:35:45,220][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:35:47,302][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 18:35:47,452][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 34, in get
+    serializers.data.pop("content")
+TypeError: 'str' object cannot be interpreted as an integer
+[INFO][2024-08-08 18:36:19,310][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:36:19,329][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:36:19,762][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:36:21,193][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 18:36:21,363][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 34, in get
+    serializers.fields.pop("content")
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'ListSerializer' object has no attribute 'fields'
+[INFO][2024-08-08 18:40:22,507][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:40:22,911][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:40:46,684][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 18:40:46,777][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 33, in get
+    res = serializers.data.pop('content', 0)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: pop expected at most 1 argument, got 2
+[INFO][2024-08-08 18:41:14,739][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['2']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:41:24,178][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 18:41:24,264][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 33, in get
+    res = serializers.data.pop('content', 0)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: pop expected at most 1 argument, got 2
+[INFO][2024-08-08 18:42:03,811][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 18:42:03,890][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 33, in get
+    serializers.data.pop('content')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: pop expected at most 1 argument, got 2
+[INFO][2024-08-08 18:42:04,150][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:42:04,571][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:42:07,724][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 18:42:07,874][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 33, in get
+    serializers.data.pop('content')
+TypeError: 'str' object cannot be interpreted as an integer
+[INFO][2024-08-08 18:42:58,003][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:42:58,418][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:43:01,055][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:43:01,322][views.py:33][{'task_id': 10, 'uid': 1, 'title': '行此林交教实', 'status': 0, 'content': '{"timeline": [{"id": "4853c05c-db56-4a11-b5a0-75f7e5cc5ea0", "time": "1719763200000", "task": [{"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a11", "status": "done", "desc": "\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u4efb\\u52a1\\u7b80\\u4ecb\\uff0c\\u53ef\\u4ee5\\u5728\\u8fd9\\u91cc\\u6dfb\\u52a0\\u4efb\\u52a1\\u7684\\u7b80\\u5355\\u63cf\\u8ff0\\uff01", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-27250198\\">\\u667a\\u6167\\u7b14\\u5320 - \\u4efb\\u52a1\\u65f6\\u95f4\\u8f74</h1><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u667a\\u6167\\u7b14\\u5320\\u7684\\u4efb\\u52a1\\u65f6\\u95f4\\u8f74\\uff0c\\u6211\\u53ef\\u4ee5\\u5e2e\\u52a9\\u4f60\\u5b89\\u6392\\u5e76\\u7ba1\\u7406\\u5de5\\u4f5c\\u65e5\\u7a0b\\uff01</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u53ef\\u4ee5\\u70b9\\u51fb\\u4e0a\\u65b9\\u7684\\u65e5\\u7a0b\\u680f\\u5207\\u6362\\u6bcf\\u4e00\\u5929\\u7684\\u4efb\\u52a1\\u9879\\uff0c\\u5e76\\u5728\\u4e0b\\u65b9\\u4fee\\u6539\\u60a8\\u7684\\u4efb\\u52a1\\u6807\\u9898\\u3001\\u4efb\\u52a1\\u72b6\\u6001\\u3001\\u4efb\\u52a1\\u7b80\\u4ecb\\u548c\\u4efb\\u52a1\\u8be6\\u60c5\\u3002</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u4e5f\\u53ef\\u4ee5\\u4f7f\\u7528AI\\u52a9\\u624b\\u81ea\\u52a8\\u89c4\\u5212\\u5de5\\u4f5c\\u5185\\u5bb9\\u5e76\\u5b89\\u6392\\u5de5\\u4f5c\\u65f6\\u95f4\\u3002</p><ai-plan2></ai-plan2><p style=\\"text-indent: 0em !important;\\"></p>", "id": "3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3"}, {"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a12", "status": "done", "desc": "\\u7b2c\\u4e00\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b...", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-b4506869\\">\\u8fd9\\u91cc\\u53ef\\u4ee5\\u7f16\\u5199\\u4efb\\u52a1\\u8be6\\u60c5</h1><p style=\\"text-indent: 0em !important;\\"></p>", "id": "e50ec2c2-59d7-465e-a241-3c398d5d655a"}]}, {"id": "0d67dc54-6427-439b-84e4-2e6db406d9b2", "time": "1719849600000", "task": [{"id": "70567d88-f82f-4d9d-b845-f18e6bcd0117", "title": "\\u7b2c\\u4e8c\\u5929\\u7684\\u4efb\\u52a1", "status": "done", "desc": "\\u7b2c\\u4e8c\\u5929\\u8981\\u505a\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037759ce\\">\\u7b2c\\u4e8c\\u5929\\u7684\\u5de5\\u4f5c\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\">...</p>"}]}, {"id": "014f0096-c57b-4eb5-8694-e7b0cc729c22", "time": "1719936000000", "task": [{"id": "99455f69-8f9c-4e14-be73-cc7db1d19404", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a11", "status": "ongoing", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e00\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037e3f96\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e00\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}, {"id": "7add1a7f-42a3-4099-a4b2-7686b6e1e608", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a12", "status": "pending", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-1149b678\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e8c\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "8c2490c5-7531-40f2-9512-b998e0e9bc8a", "time": "1720022400000", "task": [{"id": "7addb56c-f359-4d37-a21a-328dafaaf2b5", "title": "\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-c5e15f4b\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "5bb618af-1587-4eeb-ba22-eabc778dde72", "time": "1720108800000", "task": [{"id": "c3da8f02-bf4f-4dbe-956d-5774d8470664", "title": "\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-34863faa\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}], "comments": [{"time": "1630454400000", "content": "\\u8bc4\\u8bba\\u5185\\u5bb9\\u5bcc\\u6587\\u672c\\u5bcc\\u6587\\u672c"}]}', 'created_at': '2024-08-08T18:21:42.324381', 'updated_at': '2024-08-08T18:21:42.324414'}, {'task_id': 9, 'uid': 1, 'title': '行此林交教实', 'status': 0, 'content': '{"timeline": [{"id": "4853c05c-db56-4a11-b5a0-75f7e5cc5ea0", "time": "1719763200000", "task": [{"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a11", "status": "done", "desc": "\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u4efb\\u52a1\\u7b80\\u4ecb\\uff0c\\u53ef\\u4ee5\\u5728\\u8fd9\\u91cc\\u6dfb\\u52a0\\u4efb\\u52a1\\u7684\\u7b80\\u5355\\u63cf\\u8ff0\\uff01", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-27250198\\">\\u667a\\u6167\\u7b14\\u5320 - \\u4efb\\u52a1\\u65f6\\u95f4\\u8f74</h1><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u667a\\u6167\\u7b14\\u5320\\u7684\\u4efb\\u52a1\\u65f6\\u95f4\\u8f74\\uff0c\\u6211\\u53ef\\u4ee5\\u5e2e\\u52a9\\u4f60\\u5b89\\u6392\\u5e76\\u7ba1\\u7406\\u5de5\\u4f5c\\u65e5\\u7a0b\\uff01</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u53ef\\u4ee5\\u70b9\\u51fb\\u4e0a\\u65b9\\u7684\\u65e5\\u7a0b\\u680f\\u5207\\u6362\\u6bcf\\u4e00\\u5929\\u7684\\u4efb\\u52a1\\u9879\\uff0c\\u5e76\\u5728\\u4e0b\\u65b9\\u4fee\\u6539\\u60a8\\u7684\\u4efb\\u52a1\\u6807\\u9898\\u3001\\u4efb\\u52a1\\u72b6\\u6001\\u3001\\u4efb\\u52a1\\u7b80\\u4ecb\\u548c\\u4efb\\u52a1\\u8be6\\u60c5\\u3002</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u4e5f\\u53ef\\u4ee5\\u4f7f\\u7528AI\\u52a9\\u624b\\u81ea\\u52a8\\u89c4\\u5212\\u5de5\\u4f5c\\u5185\\u5bb9\\u5e76\\u5b89\\u6392\\u5de5\\u4f5c\\u65f6\\u95f4\\u3002</p><ai-plan2></ai-plan2><p style=\\"text-indent: 0em !important;\\"></p>", "id": "3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3"}, {"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a12", "status": "done", "desc": "\\u7b2c\\u4e00\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b...", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-b4506869\\">\\u8fd9\\u91cc\\u53ef\\u4ee5\\u7f16\\u5199\\u4efb\\u52a1\\u8be6\\u60c5</h1><p style=\\"text-indent: 0em !important;\\"></p>", "id": "e50ec2c2-59d7-465e-a241-3c398d5d655a"}]}, {"id": "0d67dc54-6427-439b-84e4-2e6db406d9b2", "time": "1719849600000", "task": [{"id": "70567d88-f82f-4d9d-b845-f18e6bcd0117", "title": "\\u7b2c\\u4e8c\\u5929\\u7684\\u4efb\\u52a1", "status": "done", "desc": "\\u7b2c\\u4e8c\\u5929\\u8981\\u505a\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037759ce\\">\\u7b2c\\u4e8c\\u5929\\u7684\\u5de5\\u4f5c\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\">...</p>"}]}, {"id": "014f0096-c57b-4eb5-8694-e7b0cc729c22", "time": "1719936000000", "task": [{"id": "99455f69-8f9c-4e14-be73-cc7db1d19404", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a11", "status": "ongoing", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e00\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037e3f96\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e00\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}, {"id": "7add1a7f-42a3-4099-a4b2-7686b6e1e608", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a12", "status": "pending", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-1149b678\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e8c\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "8c2490c5-7531-40f2-9512-b998e0e9bc8a", "time": "1720022400000", "task": [{"id": "7addb56c-f359-4d37-a21a-328dafaaf2b5", "title": "\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-c5e15f4b\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "5bb618af-1587-4eeb-ba22-eabc778dde72", "time": "1720108800000", "task": [{"id": "c3da8f02-bf4f-4dbe-956d-5774d8470664", "title": "\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-34863faa\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}], "comments": [{"time": "1630454400000", "content": "\\u8bc4\\u8bba\\u5185\\u5bb9\\u5bcc\\u6587\\u672c\\u5bcc\\u6587\\u672c"}]}', 'created_at': '2024-08-08T18:19:35.868372', 'updated_at': '2024-08-08T18:19:35.868402'}, {'task_id': 8, 'uid': 1, 'title': '行此林交教实', 'status': 0, 'content': '{"timeline": [{"id": "4853c05c-db56-4a11-b5a0-75f7e5cc5ea0", "time": "1719763200000", "task": [{"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a11", "status": "done", "desc": "\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u4efb\\u52a1\\u7b80\\u4ecb\\uff0c\\u53ef\\u4ee5\\u5728\\u8fd9\\u91cc\\u6dfb\\u52a0\\u4efb\\u52a1\\u7684\\u7b80\\u5355\\u63cf\\u8ff0\\uff01", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-27250198\\">\\u667a\\u6167\\u7b14\\u5320 - \\u4efb\\u52a1\\u65f6\\u95f4\\u8f74</h1><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u667a\\u6167\\u7b14\\u5320\\u7684\\u4efb\\u52a1\\u65f6\\u95f4\\u8f74\\uff0c\\u6211\\u53ef\\u4ee5\\u5e2e\\u52a9\\u4f60\\u5b89\\u6392\\u5e76\\u7ba1\\u7406\\u5de5\\u4f5c\\u65e5\\u7a0b\\uff01</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u53ef\\u4ee5\\u70b9\\u51fb\\u4e0a\\u65b9\\u7684\\u65e5\\u7a0b\\u680f\\u5207\\u6362\\u6bcf\\u4e00\\u5929\\u7684\\u4efb\\u52a1\\u9879\\uff0c\\u5e76\\u5728\\u4e0b\\u65b9\\u4fee\\u6539\\u60a8\\u7684\\u4efb\\u52a1\\u6807\\u9898\\u3001\\u4efb\\u52a1\\u72b6\\u6001\\u3001\\u4efb\\u52a1\\u7b80\\u4ecb\\u548c\\u4efb\\u52a1\\u8be6\\u60c5\\u3002</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u4e5f\\u53ef\\u4ee5\\u4f7f\\u7528AI\\u52a9\\u624b\\u81ea\\u52a8\\u89c4\\u5212\\u5de5\\u4f5c\\u5185\\u5bb9\\u5e76\\u5b89\\u6392\\u5de5\\u4f5c\\u65f6\\u95f4\\u3002</p><ai-plan2></ai-plan2><p style=\\"text-indent: 0em !important;\\"></p>", "id": "3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3"}, {"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a12", "status": "done", "desc": "\\u7b2c\\u4e00\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b...", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-b4506869\\">\\u8fd9\\u91cc\\u53ef\\u4ee5\\u7f16\\u5199\\u4efb\\u52a1\\u8be6\\u60c5</h1><p style=\\"text-indent: 0em !important;\\"></p>", "id": "e50ec2c2-59d7-465e-a241-3c398d5d655a"}]}, {"id": "0d67dc54-6427-439b-84e4-2e6db406d9b2", "time": "1719849600000", "task": [{"id": "70567d88-f82f-4d9d-b845-f18e6bcd0117", "title": "\\u7b2c\\u4e8c\\u5929\\u7684\\u4efb\\u52a1", "status": "done", "desc": "\\u7b2c\\u4e8c\\u5929\\u8981\\u505a\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037759ce\\">\\u7b2c\\u4e8c\\u5929\\u7684\\u5de5\\u4f5c\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\">...</p>"}]}, {"id": "014f0096-c57b-4eb5-8694-e7b0cc729c22", "time": "1719936000000", "task": [{"id": "99455f69-8f9c-4e14-be73-cc7db1d19404", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a11", "status": "ongoing", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e00\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037e3f96\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e00\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}, {"id": "7add1a7f-42a3-4099-a4b2-7686b6e1e608", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a12", "status": "pending", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-1149b678\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e8c\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "8c2490c5-7531-40f2-9512-b998e0e9bc8a", "time": "1720022400000", "task": [{"id": "7addb56c-f359-4d37-a21a-328dafaaf2b5", "title": "\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-c5e15f4b\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "5bb618af-1587-4eeb-ba22-eabc778dde72", "time": "1720108800000", "task": [{"id": "c3da8f02-bf4f-4dbe-956d-5774d8470664", "title": "\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-34863faa\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}], "comments": [{"time": "1630454400000", "content": "\\u8bc4\\u8bba\\u5185\\u5bb9\\u5bcc\\u6587\\u672c\\u5bcc\\u6587\\u672c"}]}', 'created_at': '2024-08-08T18:19:33.639662', 'updated_at': '2024-08-08T18:19:33.639696'}, {'task_id': 7, 'uid': 1, 'title': '行此林交教实', 'status': 0, 'content': '{"timeline": [{"id": "4853c05c-db56-4a11-b5a0-75f7e5cc5ea0", "time": "1719763200000", "task": [{"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a11", "status": "done", "desc": "\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u4efb\\u52a1\\u7b80\\u4ecb\\uff0c\\u53ef\\u4ee5\\u5728\\u8fd9\\u91cc\\u6dfb\\u52a0\\u4efb\\u52a1\\u7684\\u7b80\\u5355\\u63cf\\u8ff0\\uff01", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-27250198\\">\\u667a\\u6167\\u7b14\\u5320 - \\u4efb\\u52a1\\u65f6\\u95f4\\u8f74</h1><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u667a\\u6167\\u7b14\\u5320\\u7684\\u4efb\\u52a1\\u65f6\\u95f4\\u8f74\\uff0c\\u6211\\u53ef\\u4ee5\\u5e2e\\u52a9\\u4f60\\u5b89\\u6392\\u5e76\\u7ba1\\u7406\\u5de5\\u4f5c\\u65e5\\u7a0b\\uff01</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u53ef\\u4ee5\\u70b9\\u51fb\\u4e0a\\u65b9\\u7684\\u65e5\\u7a0b\\u680f\\u5207\\u6362\\u6bcf\\u4e00\\u5929\\u7684\\u4efb\\u52a1\\u9879\\uff0c\\u5e76\\u5728\\u4e0b\\u65b9\\u4fee\\u6539\\u60a8\\u7684\\u4efb\\u52a1\\u6807\\u9898\\u3001\\u4efb\\u52a1\\u72b6\\u6001\\u3001\\u4efb\\u52a1\\u7b80\\u4ecb\\u548c\\u4efb\\u52a1\\u8be6\\u60c5\\u3002</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u4e5f\\u53ef\\u4ee5\\u4f7f\\u7528AI\\u52a9\\u624b\\u81ea\\u52a8\\u89c4\\u5212\\u5de5\\u4f5c\\u5185\\u5bb9\\u5e76\\u5b89\\u6392\\u5de5\\u4f5c\\u65f6\\u95f4\\u3002</p><ai-plan2></ai-plan2><p style=\\"text-indent: 0em !important;\\"></p>", "id": "3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3"}, {"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a12", "status": "done", "desc": "\\u7b2c\\u4e00\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b...", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-b4506869\\">\\u8fd9\\u91cc\\u53ef\\u4ee5\\u7f16\\u5199\\u4efb\\u52a1\\u8be6\\u60c5</h1><p style=\\"text-indent: 0em !important;\\"></p>", "id": "e50ec2c2-59d7-465e-a241-3c398d5d655a"}]}, {"id": "0d67dc54-6427-439b-84e4-2e6db406d9b2", "time": "1719849600000", "task": [{"id": "70567d88-f82f-4d9d-b845-f18e6bcd0117", "title": "\\u7b2c\\u4e8c\\u5929\\u7684\\u4efb\\u52a1", "status": "done", "desc": "\\u7b2c\\u4e8c\\u5929\\u8981\\u505a\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037759ce\\">\\u7b2c\\u4e8c\\u5929\\u7684\\u5de5\\u4f5c\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\">...</p>"}]}, {"id": "014f0096-c57b-4eb5-8694-e7b0cc729c22", "time": "1719936000000", "task": [{"id": "99455f69-8f9c-4e14-be73-cc7db1d19404", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a11", "status": "ongoing", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e00\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037e3f96\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e00\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}, {"id": "7add1a7f-42a3-4099-a4b2-7686b6e1e608", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a12", "status": "pending", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-1149b678\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e8c\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "8c2490c5-7531-40f2-9512-b998e0e9bc8a", "time": "1720022400000", "task": [{"id": "7addb56c-f359-4d37-a21a-328dafaaf2b5", "title": "\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-c5e15f4b\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "5bb618af-1587-4eeb-ba22-eabc778dde72", "time": "1720108800000", "task": [{"id": "c3da8f02-bf4f-4dbe-956d-5774d8470664", "title": "\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-34863faa\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}], "comments": [{"time": "1630454400000", "content": "\\u8bc4\\u8bba\\u5185\\u5bb9\\u5bcc\\u6587\\u672c\\u5bcc\\u6587\\u672c"}]}', 'created_at': '2024-08-08T18:18:42.041241', 'updated_at': '2024-08-08T18:18:42.041274'}, {'task_id': 3, 'uid': 1, 'title': '行此林交教实', 'status': 0, 'content': '{"timeline": [{"id": "4853c05c-db56-4a11-b5a0-75f7e5cc5ea0", "time": "1719763200000", "task": [{"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a11", "status": "done", "desc": "\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u4efb\\u52a1\\u7b80\\u4ecb\\uff0c\\u53ef\\u4ee5\\u5728\\u8fd9\\u91cc\\u6dfb\\u52a0\\u4efb\\u52a1\\u7684\\u7b80\\u5355\\u63cf\\u8ff0\\uff01", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-27250198\\">\\u667a\\u6167\\u7b14\\u5320 - \\u4efb\\u52a1\\u65f6\\u95f4\\u8f74</h1><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u667a\\u6167\\u7b14\\u5320\\u7684\\u4efb\\u52a1\\u65f6\\u95f4\\u8f74\\uff0c\\u6211\\u53ef\\u4ee5\\u5e2e\\u52a9\\u4f60\\u5b89\\u6392\\u5e76\\u7ba1\\u7406\\u5de5\\u4f5c\\u65e5\\u7a0b\\uff01</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u53ef\\u4ee5\\u70b9\\u51fb\\u4e0a\\u65b9\\u7684\\u65e5\\u7a0b\\u680f\\u5207\\u6362\\u6bcf\\u4e00\\u5929\\u7684\\u4efb\\u52a1\\u9879\\uff0c\\u5e76\\u5728\\u4e0b\\u65b9\\u4fee\\u6539\\u60a8\\u7684\\u4efb\\u52a1\\u6807\\u9898\\u3001\\u4efb\\u52a1\\u72b6\\u6001\\u3001\\u4efb\\u52a1\\u7b80\\u4ecb\\u548c\\u4efb\\u52a1\\u8be6\\u60c5\\u3002</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u4e5f\\u53ef\\u4ee5\\u4f7f\\u7528AI\\u52a9\\u624b\\u81ea\\u52a8\\u89c4\\u5212\\u5de5\\u4f5c\\u5185\\u5bb9\\u5e76\\u5b89\\u6392\\u5de5\\u4f5c\\u65f6\\u95f4\\u3002</p><ai-plan2></ai-plan2><p style=\\"text-indent: 0em !important;\\"></p>", "id": "3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3"}, {"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a12", "status": "done", "desc": "\\u7b2c\\u4e00\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b...", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-b4506869\\">\\u8fd9\\u91cc\\u53ef\\u4ee5\\u7f16\\u5199\\u4efb\\u52a1\\u8be6\\u60c5</h1><p style=\\"text-indent: 0em !important;\\"></p>", "id": "e50ec2c2-59d7-465e-a241-3c398d5d655a"}]}, {"id": "0d67dc54-6427-439b-84e4-2e6db406d9b2", "time": "1719849600000", "task": [{"id": "70567d88-f82f-4d9d-b845-f18e6bcd0117", "title": "\\u7b2c\\u4e8c\\u5929\\u7684\\u4efb\\u52a1", "status": "done", "desc": "\\u7b2c\\u4e8c\\u5929\\u8981\\u505a\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037759ce\\">\\u7b2c\\u4e8c\\u5929\\u7684\\u5de5\\u4f5c\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\">...</p>"}]}, {"id": "014f0096-c57b-4eb5-8694-e7b0cc729c22", "time": "1719936000000", "task": [{"id": "99455f69-8f9c-4e14-be73-cc7db1d19404", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a11", "status": "ongoing", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e00\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037e3f96\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e00\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}, {"id": "7add1a7f-42a3-4099-a4b2-7686b6e1e608", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a12", "status": "pending", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-1149b678\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e8c\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "8c2490c5-7531-40f2-9512-b998e0e9bc8a", "time": "1720022400000", "task": [{"id": "7addb56c-f359-4d37-a21a-328dafaaf2b5", "title": "\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-c5e15f4b\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "5bb618af-1587-4eeb-ba22-eabc778dde72", "time": "1720108800000", "task": [{"id": "c3da8f02-bf4f-4dbe-956d-5774d8470664", "title": "\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-34863faa\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}], "comments": [{"time": "1630454400000", "content": "\\u8bc4\\u8bba\\u5185\\u5bb9\\u5bcc\\u6587\\u672c\\u5bcc\\u6587\\u672c"}]}', 'created_at': '2024-08-08T14:10:49.369485', 'updated_at': '2024-08-08T14:10:49.369536'}, {'task_id': 2, 'uid': 1, 'title': '行此林交教实', 'status': 0, 'content': '{"timeline": [{"id": "4853c05c-db56-4a11-b5a0-75f7e5cc5ea0", "time": "1719763200000", "task": [{"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a11", "status": "done", "desc": "\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u4efb\\u52a1\\u7b80\\u4ecb\\uff0c\\u53ef\\u4ee5\\u5728\\u8fd9\\u91cc\\u6dfb\\u52a0\\u4efb\\u52a1\\u7684\\u7b80\\u5355\\u63cf\\u8ff0\\uff01", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-27250198\\">\\u667a\\u6167\\u7b14\\u5320 - \\u4efb\\u52a1\\u65f6\\u95f4\\u8f74</h1><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u597d\\uff01\\u8fd9\\u91cc\\u662f\\u667a\\u6167\\u7b14\\u5320\\u7684\\u4efb\\u52a1\\u65f6\\u95f4\\u8f74\\uff0c\\u6211\\u53ef\\u4ee5\\u5e2e\\u52a9\\u4f60\\u5b89\\u6392\\u5e76\\u7ba1\\u7406\\u5de5\\u4f5c\\u65e5\\u7a0b\\uff01</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u53ef\\u4ee5\\u70b9\\u51fb\\u4e0a\\u65b9\\u7684\\u65e5\\u7a0b\\u680f\\u5207\\u6362\\u6bcf\\u4e00\\u5929\\u7684\\u4efb\\u52a1\\u9879\\uff0c\\u5e76\\u5728\\u4e0b\\u65b9\\u4fee\\u6539\\u60a8\\u7684\\u4efb\\u52a1\\u6807\\u9898\\u3001\\u4efb\\u52a1\\u72b6\\u6001\\u3001\\u4efb\\u52a1\\u7b80\\u4ecb\\u548c\\u4efb\\u52a1\\u8be6\\u60c5\\u3002</p><p style=\\"text-indent: 0em !important;\\"></p><p style=\\"text-indent: 0em !important;\\">\\u4f60\\u4e5f\\u53ef\\u4ee5\\u4f7f\\u7528AI\\u52a9\\u624b\\u81ea\\u52a8\\u89c4\\u5212\\u5de5\\u4f5c\\u5185\\u5bb9\\u5e76\\u5b89\\u6392\\u5de5\\u4f5c\\u65f6\\u95f4\\u3002</p><ai-plan2></ai-plan2><p style=\\"text-indent: 0em !important;\\"></p>", "id": "3e63d4c2-0b23-49eb-ad48-bf3bc050f6c3"}, {"title": "\\u7b2c\\u4e00\\u5929\\u7684\\u4efb\\u52a12", "status": "done", "desc": "\\u7b2c\\u4e00\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b...", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-b4506869\\">\\u8fd9\\u91cc\\u53ef\\u4ee5\\u7f16\\u5199\\u4efb\\u52a1\\u8be6\\u60c5</h1><p style=\\"text-indent: 0em !important;\\"></p>", "id": "e50ec2c2-59d7-465e-a241-3c398d5d655a"}]}, {"id": "0d67dc54-6427-439b-84e4-2e6db406d9b2", "time": "1719849600000", "task": [{"id": "70567d88-f82f-4d9d-b845-f18e6bcd0117", "title": "\\u7b2c\\u4e8c\\u5929\\u7684\\u4efb\\u52a1", "status": "done", "desc": "\\u7b2c\\u4e8c\\u5929\\u8981\\u505a\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037759ce\\">\\u7b2c\\u4e8c\\u5929\\u7684\\u5de5\\u4f5c\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\">...</p>"}]}, {"id": "014f0096-c57b-4eb5-8694-e7b0cc729c22", "time": "1719936000000", "task": [{"id": "99455f69-8f9c-4e14-be73-cc7db1d19404", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a11", "status": "ongoing", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e00\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-037e3f96\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e00\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}, {"id": "7add1a7f-42a3-4099-a4b2-7686b6e1e608", "title": "\\u7b2c\\u4e09\\u5929\\u7684\\u4efb\\u52a12", "status": "pending", "desc": "\\u7b2c\\u4e09\\u5929\\u8981\\u505a\\u7684\\u7b2c\\u4e8c\\u4ef6\\u4e8b\\u7684\\u5de5\\u4f5c\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-1149b678\\">\\u7b2c\\u4e09\\u5929\\u7684\\u7b2c\\u4e8c\\u9879\\u4efb\\u52a1\\u7684\\u5177\\u4f53\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "8c2490c5-7531-40f2-9512-b998e0e9bc8a", "time": "1720022400000", "task": [{"id": "7addb56c-f359-4d37-a21a-328dafaaf2b5", "title": "\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-c5e15f4b\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u56db\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}, {"id": "5bb618af-1587-4eeb-ba22-eabc778dde72", "time": "1720108800000", "task": [{"id": "c3da8f02-bf4f-4dbe-956d-5774d8470664", "title": "\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1", "status": "prime", "desc": "\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u7b80\\u4ecb", "content": "<h1 style=\\"text-indent: 0em !important;\\" id=\\"h-34863faa\\">\\u8fd9\\u91cc\\u662f\\u7b2c\\u4e94\\u5929\\u7684\\u4efb\\u52a1\\u5185\\u5bb9</h1><p style=\\"text-indent: 0em !important;\\"></p>"}]}], "comments": [{"time": "1630454400000", "content": "\\u8bc4\\u8bba\\u5185\\u5bb9\\u5bcc\\u6587\\u672c\\u5bcc\\u6587\\u672c"}]}', 'created_at': '2024-08-08T14:10:01.052605', 'updated_at': '2024-08-08T14:10:01.052638'}]
+[INFO][2024-08-08 18:43:01,327][views.py:34]<class 'rest_framework.utils.serializer_helpers.ReturnList'>
+[INFO][2024-08-08 18:47:04,078][autoreload.py:266]/www/data/task/serializer.py changed, reloading.
+[INFO][2024-08-08 18:47:04,499][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:47:05,603][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-08 18:47:05,711][log.py:241]Internal Server Error: /api/task/manage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/views.py", line 36, in get
+    return Response(serializers.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 714, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 523, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 1151, in get_field_names
+    assert not (fields is None and exclude is None), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ("Creating a ModelSerializer without either the 'fields' attribute or the 'exclude' attribute has been deprecated since 3.3.0, and is now disallowed. Add an explicit fields = '__all__' to the TaskDetailSerializer serializer.",)
+[INFO][2024-08-08 18:47:33,490][autoreload.py:266]/www/data/task/serializer.py changed, reloading.
+[INFO][2024-08-08 18:47:33,876][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:47:34,914][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:48:10,749][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['2']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:48:38,425][middleware.py:13]Received GET request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {'task_id': ['']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:49:11,580][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:49:11,660][middleware.py:13]Received GET request to /favicon.ico from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:49:11,783][middleware.py:13]Received GET request to /robots.txt from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:49:11,891][middleware.py:13]Received GET request to /.well-known/security.txt from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-08 18:50:52,664][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:50:53,057][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 18:53:49,015][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-08 18:53:49,500][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-08 23:54:41,194][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-09 01:38:10,476][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.

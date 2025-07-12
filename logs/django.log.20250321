@@ -1,0 +1,79 @@
+[INFO][2025-03-21 12:26:28,462][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-21 12:27:48,552][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-21 12:27:58,307][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 12:28:20,087][middleware.py:13]Received POST request to /api/user/email/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 14:21:38,713][middleware.py:13]Received POST request to /api/token/refresh/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 14:21:38,915][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 22:01:21,275][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 22:01:36,718][middleware.py:13]Received POST request to /api/user/email/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 22:01:37,096][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 22:07:31,597][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'image': ['file:///temp/549eddd8-7552-424c-8b2b-15abe379e4de'], 'color': ['#ffffff']}>
+[INFO][2025-03-21 22:11:06,225][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['#ffffff']}>
+[INFO][2025-03-21 22:11:48,562][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-21 22:15:46,261][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-21 22:17:39,946][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-21 22:19:13,562][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-21 22:24:46,758][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-21 22:25:40,124][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-21 22:26:24,433][middleware.py:13]Received GET request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 22:26:25,608][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 22:26:33,778][middleware.py:13]Received GET request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 22:26:34,628][middleware.py:13]Received GET request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 22:26:35,882][middleware.py:13]Received GET request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 22:27:07,342][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-21 22:28:17,308][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-21 22:32:14,210][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-21 22:33:48,362][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-21 22:41:45,163][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-21 22:55:40,867][middleware.py:13]Received GET request to /api/ai/translate/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 22:56:27,586][middleware.py:13]Received GET request to /api/ai/translate/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 23:07:44,105][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2025-03-21 23:07:44,531][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-21 23:07:53,366][middleware.py:13]Received POST request to /api/ai/translate/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-21 23:55:21,485][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 04:14:23,669][middleware.py:13]Received GET request to /httpd.conf from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 04:14:23,949][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 04:14:31,087][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 04:15:18,450][middleware.py:13]Received GET request to /httpd.conf from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:10:00,435][middleware.py:13]Received GET request to /robots.txt from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:10:00,881][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:10:01,899][middleware.py:13]Received GET request to /test_404_page/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:10:14,389][middleware.py:13]Received GET request to /robots.txt from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:10:43,025][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:10:45,915][middleware.py:13]Received GET request to /test_404_page/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:17:49,196][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:18:20,303][middleware.py:13]Received GET request to /test_404_page/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:19:20,376][middleware.py:13]Received GET request to /test_404_page from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:20:32,247][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:20:32,266][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:20:33,734][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:21:33,091][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 05:36:34,332][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 12:17:34,628][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 14:58:43,257][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 14:59:06,800][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:00:50,871][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:09:15,397][middleware.py:13]Received POST request to /api/ai/chat/new/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:09:15,626][middleware.py:13]Received POST request to /api/ai/chat/chat/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:09:15,815][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-22 15:10:01,343][middleware.py:13]Received POST request to /api/ai/chat/chat/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:10:01,496][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-22 15:10:21,694][middleware.py:13]Received POST request to /api/ai/chat/chat/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:10:21,874][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-22 15:10:52,488][middleware.py:13]Received POST request to /api/ai/chat/chat/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:10:52,504][middleware.py:13]Received POST request to /api/ai/chat/chat/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:10:52,699][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-22 15:10:52,713][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-22 15:12:03,007][middleware.py:13]Received POST request to /api/ai/chat/chat/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:12:03,209][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-22 15:12:33,144][middleware.py:13]Received POST request to /api/ai/chat/chat/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:12:33,376][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-22 15:13:02,649][middleware.py:13]Received POST request to /api/ai/chat/chat/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:13:02,866][_client.py:1025]HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO][2025-03-22 15:39:52,084][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:39:52,272][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:48:53,504][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 15:49:38,461][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 16:59:54,136][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 18:27:02,036][middleware.py:13]Received GET request to /.git/config from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 21:21:13,356][autoreload.py:266]/www/data/file/urls.py changed, reloading.

@@ -1,0 +1,9 @@
+.venv/
+.venv1/
+.git/
+__pycache__/
+.ide/
+.cadence/
+deploy.sh
+deploy.conf
+config.ini

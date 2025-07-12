@@ -1,0 +1,119 @@
+[INFO][2024-08-10 01:17:24,138][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 01:21:55,653][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 01:35:41,708][autoreload.py:266]/www/data/task/models.py changed, reloading.
+[INFO][2024-08-10 01:35:42,189][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 01:51:04,961][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-10 01:51:05,409][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 01:52:00,856][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-10 01:52:01,319][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 01:56:47,750][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-10 01:56:48,292][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:16:35,176][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:16:40,825][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:17:54,593][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 02:17:55,150][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:18:05,858][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 02:18:06,316][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:18:44,419][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 02:18:44,881][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:19:41,344][autoreload.py:266]/www/data/user/migrations/__init__.py changed, reloading.
+[INFO][2024-08-10 02:19:41,860][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:24:33,581][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:25:43,269][autoreload.py:266]/www/data/task/models.py changed, reloading.
+[INFO][2024-08-10 02:25:43,850][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:26:27,788][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:31:50,272][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 02:31:50,759][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:32:58,454][autoreload.py:266]/www/data/Editor/celery.py changed, reloading.
+[INFO][2024-08-10 02:32:58,901][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:33:53,378][autoreload.py:266]/www/data/Editor/__init__.py changed, reloading.
+[INFO][2024-08-10 02:33:53,782][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 02:34:29,763][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 10:24:19,553][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 11:56:44,176][autoreload.py:266]/www/data/file/migrations/0002_alter_file_user.py changed, reloading.
+[INFO][2024-08-10 11:56:44,574][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 11:56:47,133][autoreload.py:266]/www/data/user/migrations/0004_loginrecord.py changed, reloading.
+[INFO][2024-08-10 11:56:47,530][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 11:56:50,079][autoreload.py:266]/www/data/AI/urls.py changed, reloading.
+[INFO][2024-08-10 11:56:50,498][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 11:56:52,054][autoreload.py:266]/www/data/Editor/__init__.py changed, reloading.
+[INFO][2024-08-10 11:56:52,540][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 12:01:52,477][autoreload.py:266]/www/data/Editor/__init__.py changed, reloading.
+[INFO][2024-08-10 12:01:52,903][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 15:17:23,825][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 15:19:12,234][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 15:25:21,280][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 15:25:47,874][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 17:15:26,930][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 17:17:37,827][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 17:38:19,104][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 17:39:14,258][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 17:44:04,686][autoreload.py:266]/www/data/Editor/__init__.py changed, reloading.
+[INFO][2024-08-10 17:44:05,050][autoreload.py:266]/www/data/Editor/__init__.py changed, reloading.
+[INFO][2024-08-10 17:44:05,198][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 17:44:05,537][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 17:46:06,253][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 17:51:09,707][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-10 17:51:09,862][middleware.py:13]Received GET request to /favicon.ico from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-10 17:55:56,744][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 17:56:11,953][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-10 18:01:40,497][autoreload.py:266]/www/data/Editor/celery.py changed, reloading.
+[INFO][2024-08-10 18:01:41,083][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:01:57,205][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:11:36,881][autoreload.py:266]/www/data/Editor/celery.py changed, reloading.
+[INFO][2024-08-10 18:11:37,467][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:15:48,491][autoreload.py:266]/www/data/AI/apps.py changed, reloading.
+[INFO][2024-08-10 18:15:49,025][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:15:50,298][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 18:15:50,714][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:19:00,552][autoreload.py:266]/www/data/Editor/celery.py changed, reloading.
+[INFO][2024-08-10 18:19:01,054][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:22:34,288][autoreload.py:266]/www/data/Editor/celery.py changed, reloading.
+[INFO][2024-08-10 18:22:34,961][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:24:11,424][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 18:24:11,946][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:33:48,679][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 18:33:49,253][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:35:45,829][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 18:35:46,343][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:41:40,136][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 18:41:40,634][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:46:38,637][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:51:22,128][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 18:51:22,830][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:52:17,299][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 18:52:17,973][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:53:02,280][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 18:53:02,887][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:53:48,316][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 18:53:48,799][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:53:57,453][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 18:53:57,944][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 18:58:26,253][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 18:58:26,760][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 19:02:40,789][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 19:02:41,329][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 19:02:52,048][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 19:02:52,536][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 19:03:00,210][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 19:03:00,740][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 19:03:42,085][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 19:03:42,568][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 19:04:39,179][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-10 19:04:39,703][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 19:05:50,590][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 19:05:51,164][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 19:10:51,172][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-10 19:10:51,692][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-10 22:14:21,375][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-10 22:14:31,270][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-10 22:14:31,563][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-10 23:02:51,670][middleware.py:13]Received GET request to / from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-11 03:16:44,086][signals.py:57]All tables created successfully.
+[INFO][2024-08-11 03:16:44,119][signals.py:57]All tables created successfully.
+[INFO][2024-08-11 03:16:44,156][signals.py:57]All tables created successfully.
+[INFO][2024-08-11 03:16:44,180][signals.py:57]All tables created successfully.
+[INFO][2024-08-11 03:16:44,204][signals.py:57]All tables created successfully.
+[INFO][2024-08-11 03:16:44,246][signals.py:57]All tables created successfully.
+[INFO][2024-08-11 03:16:44,292][signals.py:57]All tables created successfully.
+[INFO][2024-08-11 03:16:44,316][signals.py:57]All tables created successfully.

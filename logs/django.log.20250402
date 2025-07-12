@@ -1,0 +1,174 @@
+[INFO][2025-04-02 17:17:23,532][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 20:44:03,297][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 21:05:11,723][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:05:12,443][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:05:36,218][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:05:46,232][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['2667845426@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:05:54,847][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:06:10,656][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:07:36,074][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:08:01,359][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 21:08:15,998][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:09:03,451][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:09:17,270][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2025-04-02 21:09:17,575][log.py:241]Internal Server Error: /api/ai/function_call/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f4f7026f850>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/requests/adapters.py", line 589, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.coze.cn', port=443): Max retries exceeded with url: /api/permission/oauth2/token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4f7026f850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/AI/views.py", line 1144, in post
+    access_token = self.get_access_token()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/AI/views.py", line 1130, in get_access_token
+    access_token = connect_coze()
+                   ^^^^^^^^^^^^^^
+  File "/www/data/utils/connect_coze.py", line 44, in connect_coze
+    resp = requests.post(url, headers=header, json=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/adapters.py", line 622, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.coze.cn', port=443): Max retries exceeded with url: /api/permission/oauth2/token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4f7026f850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[INFO][2025-04-02 21:11:38,128][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:14:44,329][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 21:17:24,090][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:23:51,162][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 21:23:52,511][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:22:08,100][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:22:45,177][middleware.py:13]Received POST request to /api/token/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:22:51,258][middleware.py:13]Received POST request to /api/token/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:23:05,273][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:23:07,903][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:24:08,073][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:24:10,579][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:24:11,785][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:24:12,265][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:24:12,730][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:24:13,186][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:32:47,043][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:40:56,367][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:42:21,910][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:42:22,147][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:42:45,682][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:44:15,235][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:44:38,498][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:45:07,600][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:45:15,475][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:49:04,966][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-04-02 22:49:05,449][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:49:05,989][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-04-02 22:49:06,451][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:49:10,592][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:50:28,318][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-04-02 22:50:28,351][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-04-02 22:50:28,850][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:50:28,853][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:50:34,366][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:53:05,786][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2025-04-02 22:53:05,792][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2025-04-02 22:53:06,286][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:53:06,291][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:53:13,068][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 22:54:05,158][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-04-02 22:54:05,511][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-04-02 22:54:05,647][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:54:05,978][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:54:11,852][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[ERROR][2025-04-02 22:54:11,874][views.py:478]无法连接SMTP服务器: [Errno 111] Connection refused. 请检查EMAIL_HOST和EMAIL_PORT配置
+[INFO][2025-04-02 22:59:26,406][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2025-04-02 22:59:26,426][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2025-04-02 22:59:26,909][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:59:26,938][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 22:59:33,136][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[ERROR][2025-04-02 22:59:33,202][views.py:478]无法连接SMTP服务器: [Errno 111] Connection refused. 请检查EMAIL_HOST和EMAIL_PORT配置
+[INFO][2025-04-02 23:00:13,344][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 23:00:33,847][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[ERROR][2025-04-02 23:00:33,916][views.py:478]无法连接SMTP服务器: [Errno 111] Connection refused. 请检查EMAIL_HOST和EMAIL_PORT配置
+[INFO][2025-04-02 23:00:55,466][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 23:01:30,849][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[ERROR][2025-04-02 23:01:30,855][views.py:478]无法连接SMTP服务器: [Errno 111] Connection refused. 请检查EMAIL_HOST和EMAIL_PORT配置
+[INFO][2025-04-02 23:25:13,605][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-04-02 23:26:13,772][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 23:26:33,725][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[ERROR][2025-04-02 23:26:33,751][views.py:353]邮件发送失败: 邮件发送失败: [Errno 111] Connection refused
+[INFO][2025-04-02 23:36:44,075][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-04-02 23:36:58,107][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[ERROR][2025-04-02 23:36:58,120][views.py:353]邮件发送失败: 邮件发送失败: [Errno 111] Connection refused
+[INFO][2025-04-02 23:41:37,004][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 23:41:43,503][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-04-02 23:42:03,658][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>

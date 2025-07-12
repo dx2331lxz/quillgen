@@ -1,0 +1,22 @@
+$:
+  api_trigger_vscode:
+    # 此处使用数组格式, 可覆盖掉默认配置中的对象格式
+    # 可根据实际情况修改下方配置
+    - docker:
+        build: .ide/Dockerfile
+      services:
+        - vscode
+      stages:
+        - name: 打印pwd
+          jobs:
+            - name: 打印ls
+              script: ls
+        - name: 下载依赖
+          jobs:
+            - name: 下载requirements.txt
+              script: pip install -r requirements.txt
+        - name: 开启云原生开发
+          type: vscode:go
+
+
+            

@@ -1,0 +1,1106 @@
+[2024-08-11 14:32:14,636: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 14:32:14,667: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 14:32:15,777: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 14:32:15,777: INFO/MainProcess] mingle: sync complete
+[2024-08-11 14:32:15,947: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 14:32:31,043: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 14:32:31,101: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 14:32:32,199: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 14:32:32,199: INFO/MainProcess] mingle: sync complete
+[2024-08-11 14:32:32,337: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 14:33:52,021: INFO/MainProcess] Task put_task_items[d51c61f5-64c8-4163-aa5e-6033f4280050] received
+[2024-08-11 14:33:52,166: INFO/ForkPoolWorker-1] Task put_task_items[d51c61f5-64c8-4163-aa5e-6033f4280050] succeeded in 0.143629789352417s: None
+[2024-08-11 14:38:14,597: INFO/MainProcess] Task put_task_items[b772b560-e77e-4930-a0d6-3f47e4ed1a9f] received
+[2024-08-11 14:38:14,611: INFO/MainProcess] Task put_task_items[bd5bc8c4-2110-4c65-9714-3f5e51885e7e] received
+[2024-08-11 14:38:14,625: INFO/MainProcess] Task put_task_items[df782f90-d02a-45b1-b75e-210b44af96f3] received
+[2024-08-11 14:38:14,724: INFO/ForkPoolWorker-1] Task put_task_items[b772b560-e77e-4930-a0d6-3f47e4ed1a9f] succeeded in 0.12571358680725098s: None
+[2024-08-11 14:38:14,752: INFO/ForkPoolWorker-2] Task put_task_items[bd5bc8c4-2110-4c65-9714-3f5e51885e7e] succeeded in 0.14033436216413975s: None
+[2024-08-11 14:38:14,843: INFO/ForkPoolWorker-1] Task put_task_items[df782f90-d02a-45b1-b75e-210b44af96f3] succeeded in 0.11772575415670872s: None
+[2024-08-11 14:38:32,225: INFO/MainProcess] Task put_task_items[42b8b406-21c9-4308-99e1-2585bb92d845] received
+[2024-08-11 14:38:32,240: INFO/MainProcess] Task put_task_items[5bd6501a-1c3d-4cca-af81-243dbd3e7076] received
+[2024-08-11 14:38:32,254: INFO/MainProcess] Task put_task_items[6ec525f6-8de2-4295-a98d-4133a4d6c94c] received
+[2024-08-11 14:38:32,365: ERROR/ForkPoolWorker-1] Task put_task_items[42b8b406-21c9-4308-99e1-2585bb92d845] raised unexpected: IntegrityError(1062, "Duplicate entry 'e50esc2c2-59d7-465e-a241-3c398d5d655a' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 929, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+task.models.TaskItem.DoesNotExist: TaskItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry 'e50esc2c2-59d7-465e-a241-3c398d5d655a' for key 'PRIMARY'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/tasks.py", line 10, in put_task_items
+    models.TaskItem.objects.update_or_create(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 962, in update_or_create
+    obj, created = self.select_for_update().get_or_create(defaults, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 936, in get_or_create
+    return self.create(**params), True
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'e50esc2c2-59d7-465e-a241-3c398d5d655a' for key 'PRIMARY'")
+[2024-08-11 14:38:32,367: ERROR/ForkPoolWorker-2] Task put_task_items[5bd6501a-1c3d-4cca-af81-243dbd3e7076] raised unexpected: IntegrityError(1062, "Duplicate entry '994551f69-8f9c-4e14-be73-cc7db1d19404' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 929, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+task.models.TaskItem.DoesNotExist: TaskItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '994551f69-8f9c-4e14-be73-cc7db1d19404' for key 'PRIMARY'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/tasks.py", line 10, in put_task_items
+    models.TaskItem.objects.update_or_create(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 962, in update_or_create
+    obj, created = self.select_for_update().get_or_create(defaults, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 936, in get_or_create
+    return self.create(**params), True
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '994551f69-8f9c-4e14-be73-cc7db1d19404' for key 'PRIMARY'")
+[2024-08-11 14:38:32,480: ERROR/ForkPoolWorker-1] Task put_task_items[6ec525f6-8de2-4295-a98d-4133a4d6c94c] raised unexpected: IntegrityError(1062, "Duplicate entry '7add2b56c-f359-4d37-a21a-328dafaaf2b5' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 929, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+task.models.TaskItem.DoesNotExist: TaskItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '7add2b56c-f359-4d37-a21a-328dafaaf2b5' for key 'PRIMARY'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/tasks.py", line 10, in put_task_items
+    models.TaskItem.objects.update_or_create(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 962, in update_or_create
+    obj, created = self.select_for_update().get_or_create(defaults, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 936, in get_or_create
+    return self.create(**params), True
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '7add2b56c-f359-4d37-a21a-328dafaaf2b5' for key 'PRIMARY'")
+[2024-08-11 14:39:45,852: INFO/MainProcess] Task put_task_items[0af24994-6572-4bde-8d69-af7545a7298b] received
+[2024-08-11 14:39:45,866: INFO/MainProcess] Task put_task_items[c09ee0cc-adcc-4861-9ba1-a77a6d3d8bd3] received
+[2024-08-11 14:39:45,879: INFO/MainProcess] Task put_task_items[16bc0e1c-0ddc-4a34-9824-fcd2b1278e0e] received
+[2024-08-11 14:39:45,962: INFO/ForkPoolWorker-2] Task put_task_items[c09ee0cc-adcc-4861-9ba1-a77a6d3d8bd3] succeeded in 0.09572608768939972s: None
+[2024-08-11 14:39:46,012: INFO/ForkPoolWorker-1] Task put_task_items[0af24994-6572-4bde-8d69-af7545a7298b] succeeded in 0.1595277413725853s: None
+[2024-08-11 14:39:46,060: INFO/ForkPoolWorker-2] Task put_task_items[16bc0e1c-0ddc-4a34-9824-fcd2b1278e0e] succeeded in 0.09700343571603298s: None
+[2024-08-11 14:43:17,140: INFO/MainProcess] Task delete_task_items[43a12033-7a6c-4dca-9284-aef15b629c32] received
+[2024-08-11 14:43:17,194: INFO/ForkPoolWorker-1] e50ec2c259d7465ea24112348d5d678b
+[2024-08-11 14:43:17,219: INFO/ForkPoolWorker-1] Task delete_task_items[43a12033-7a6c-4dca-9284-aef15b629c32] succeeded in 0.07864717952907085s: None
+[2024-08-11 14:46:27,480: INFO/MainProcess] missed heartbeat from w1@a802e07d8638
+[2024-08-11 14:46:34,542: INFO/MainProcess] sync with celery@f0fc6be8f9d3
+[2024-08-11 15:38:48,217: INFO/MainProcess] missed heartbeat from celery@f0fc6be8f9d3
+[2024-08-11 15:38:54,539: INFO/MainProcess] sync with celery@15686d9b7e43
+[2024-08-11 16:19:07,760: INFO/MainProcess] Task put_task_items[486a2ddd-3c8e-4cad-b77d-c7818162dd38] received
+[2024-08-11 16:19:07,778: INFO/MainProcess] Task put_task_items[7f29e193-d1ba-48f4-bc7d-6b7d26081645] received
+[2024-08-11 16:19:07,794: INFO/MainProcess] Task put_task_items[8eedb4c9-b57f-49bd-a20c-23c446de3efc] received
+[2024-08-11 16:19:07,881: INFO/ForkPoolWorker-2] Task put_task_items[7f29e193-d1ba-48f4-bc7d-6b7d26081645] succeeded in 0.10244831629097462s: None
+[2024-08-11 16:19:07,884: INFO/ForkPoolWorker-1] Task put_task_items[486a2ddd-3c8e-4cad-b77d-c7818162dd38] succeeded in 0.12223955616354942s: None
+[2024-08-11 16:19:07,985: INFO/ForkPoolWorker-2] Task put_task_items[8eedb4c9-b57f-49bd-a20c-23c446de3efc] succeeded in 0.10009559616446495s: None
+[2024-08-11 16:20:00,814: INFO/MainProcess] Task put_task_items[64623299-c0d6-4edc-ae08-ba4187482ba8] received
+[2024-08-11 16:20:00,828: INFO/MainProcess] Task put_task_items[09c1d970-7a12-49a0-a9ec-8f8d83414c55] received
+[2024-08-11 16:20:00,841: INFO/MainProcess] Task put_task_items[f33bb195-fde1-43b3-807d-a417e8842c7c] received
+[2024-08-11 16:20:00,853: INFO/MainProcess] Task delete_task_items[ff434f9e-69ad-49c1-b455-2ba9b465abbb] received
+[2024-08-11 16:20:00,902: INFO/ForkPoolWorker-1] Task put_task_items[64623299-c0d6-4edc-ae08-ba4187482ba8] succeeded in 0.08704808540642262s: None
+[2024-08-11 16:20:00,916: INFO/ForkPoolWorker-2] Task put_task_items[09c1d970-7a12-49a0-a9ec-8f8d83414c55] succeeded in 0.08781828545033932s: None
+[2024-08-11 16:20:00,965: INFO/ForkPoolWorker-2] 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 16:20:00,965: INFO/ForkPoolWorker-2] 70567d8899-f82f-4d9d-b845-f18e6bcd0117
+[2024-08-11 16:20:00,965: INFO/ForkPoolWorker-2] 7add1a7f-42a993-4099-a4b2-7686b6e1e608
+[2024-08-11 16:20:00,965: INFO/ForkPoolWorker-2] 7addb56c-f35999-4d37-a21a-328dafaaf2b5
+[2024-08-11 16:20:00,965: INFO/ForkPoolWorker-2] 99455f69-8f999c-4e14-be73-cc7db1d19404
+[2024-08-11 16:20:00,965: INFO/ForkPoolWorker-2] c3da8f02-bf4f-4d99be-956d-5774d8470664
+[2024-08-11 16:20:00,965: INFO/ForkPoolWorker-2] e50ec2c299-59d7-465e-a241-3c398d5d655a
+[2024-08-11 16:20:00,977: INFO/ForkPoolWorker-2] Task delete_task_items[ff434f9e-69ad-49c1-b455-2ba9b465abbb] succeeded in 0.05985632538795471s: None
+[2024-08-11 16:20:00,995: INFO/ForkPoolWorker-1] Task put_task_items[f33bb195-fde1-43b3-807d-a417e8842c7c] succeeded in 0.09077446162700653s: None
+[2024-08-11 16:21:11,655: INFO/MainProcess] Task put_task_items[0197113d-332a-47bc-8ef6-da706857bc96] received
+[2024-08-11 16:21:11,668: INFO/MainProcess] Task put_task_items[8f0bdd56-08e0-40f8-ba3f-faffa579292b] received
+[2024-08-11 16:21:11,681: INFO/MainProcess] Task put_task_items[bcd22b75-700b-4488-ac82-f0bea1256e32] received
+[2024-08-11 16:21:11,693: INFO/MainProcess] Task delete_task_items[70c3d47d-e8f0-4997-bc23-ee4b870286c9] received
+[2024-08-11 16:21:11,744: INFO/ForkPoolWorker-1] Task put_task_items[0197113d-332a-47bc-8ef6-da706857bc96] succeeded in 0.08804507739841938s: None
+[2024-08-11 16:21:11,758: INFO/ForkPoolWorker-2] Task put_task_items[8f0bdd56-08e0-40f8-ba3f-faffa579292b] succeeded in 0.08842793107032776s: None
+[2024-08-11 16:21:11,807: INFO/ForkPoolWorker-2] 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 16:21:11,807: INFO/ForkPoolWorker-2] 70567d8899-f82f-4d9d-b845-f18e6bcd0117
+[2024-08-11 16:21:11,807: INFO/ForkPoolWorker-2] 7add1a7f-42a993-4099-a4b2-7686b6e1e608
+[2024-08-11 16:21:11,807: INFO/ForkPoolWorker-2] 7addb56c-f35999-4d37-a21a-328dafaaf2b5
+[2024-08-11 16:21:11,807: INFO/ForkPoolWorker-2] 99455f69-8f999c-4e14-be73-cc7db1d19404
+[2024-08-11 16:21:11,807: INFO/ForkPoolWorker-2] c3da8f02-bf4f-4d99be-956d-5774d8470664
+[2024-08-11 16:21:11,807: INFO/ForkPoolWorker-2] e50ec2c299-59d7-465e-a241-3c398d5d655a
+[2024-08-11 16:21:11,820: INFO/ForkPoolWorker-2] Task delete_task_items[70c3d47d-e8f0-4997-bc23-ee4b870286c9] succeeded in 0.06169051118195057s: None
+[2024-08-11 16:21:11,831: INFO/ForkPoolWorker-1] Task put_task_items[bcd22b75-700b-4488-ac82-f0bea1256e32] succeeded in 0.08545110747218132s: None
+[2024-08-11 16:24:25,480: INFO/MainProcess] Task put_task_items[cc0ff76a-c8a3-4536-a2b8-9f27524c829d] received
+[2024-08-11 16:24:25,494: INFO/MainProcess] Task put_task_items[f6d6fda5-7321-4a7d-a2a7-cdd6d05e37ea] received
+[2024-08-11 16:24:25,508: INFO/MainProcess] Task put_task_items[df8b0036-4204-4b27-831f-ba3921661ec6] received
+[2024-08-11 16:24:25,520: INFO/MainProcess] Task delete_task_items[07f74c86-04e0-49a6-b754-7a2245e151dc] received
+[2024-08-11 16:24:25,565: INFO/ForkPoolWorker-1] Task put_task_items[cc0ff76a-c8a3-4536-a2b8-9f27524c829d] succeeded in 0.08433184027671814s: None
+[2024-08-11 16:24:25,582: INFO/ForkPoolWorker-2] Task put_task_items[f6d6fda5-7321-4a7d-a2a7-cdd6d05e37ea] succeeded in 0.08710194937884808s: None
+[2024-08-11 16:24:25,627: INFO/ForkPoolWorker-2] 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 16:24:25,627: INFO/ForkPoolWorker-2] 70567d8899-f82f-4d9d-b845-f18e6bcd0117
+[2024-08-11 16:24:25,627: INFO/ForkPoolWorker-2] 7add1a7f-42a993-4099-a4b2-7686b6e1e608
+[2024-08-11 16:24:25,628: INFO/ForkPoolWorker-2] 7addb56c-f35999-4d37-a21a-328dafaaf2b5
+[2024-08-11 16:24:25,628: INFO/ForkPoolWorker-2] 99455f69-8f999c-4e14-be73-cc7db1d19404
+[2024-08-11 16:24:25,628: INFO/ForkPoolWorker-2] c3da8f02-bf4f-4d99be-956d-5774d8470664
+[2024-08-11 16:24:25,628: INFO/ForkPoolWorker-2] e50ec2c299-59d7-465e-a241-3c398d5d655a
+[2024-08-11 16:24:25,639: INFO/ForkPoolWorker-2] Task delete_task_items[07f74c86-04e0-49a6-b754-7a2245e151dc] succeeded in 0.05605097860097885s: None
+[2024-08-11 16:24:25,650: INFO/ForkPoolWorker-1] Task put_task_items[df8b0036-4204-4b27-831f-ba3921661ec6] succeeded in 0.08435417897999287s: None
+[2024-08-11 16:29:24,054: INFO/MainProcess] Task put_task_items[d9e98821-6974-4c06-9da9-4bedb236ff66] received
+[2024-08-11 16:29:24,069: INFO/MainProcess] Task put_task_items[91866d17-b9f1-4aaf-a82d-528132193050] received
+[2024-08-11 16:29:24,083: INFO/MainProcess] Task put_task_items[0af9bfb7-3e76-4b20-aa21-a8d9007493b0] received
+[2024-08-11 16:29:24,099: INFO/MainProcess] Task delete_task_items[84cdc618-a6a3-4647-b467-2758f44b916e] received
+[2024-08-11 16:29:24,152: INFO/ForkPoolWorker-1] Task put_task_items[d9e98821-6974-4c06-9da9-4bedb236ff66] succeeded in 0.09692161343991756s: None
+[2024-08-11 16:29:24,161: INFO/ForkPoolWorker-2] Task put_task_items[91866d17-b9f1-4aaf-a82d-528132193050] succeeded in 0.09193534962832928s: None
+[2024-08-11 16:29:24,228: INFO/ForkPoolWorker-2] 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 16:29:24,228: INFO/ForkPoolWorker-2] 70567d8899-f82f-4d9d-b845-f18e6bcd0117
+[2024-08-11 16:29:24,228: INFO/ForkPoolWorker-2] 7add1a7f-42a993-4099-a4b2-7686b6e1e608
+[2024-08-11 16:29:24,228: INFO/ForkPoolWorker-2] 7addb56c-f35999-4d37-a21a-328dafaaf2b5
+[2024-08-11 16:29:24,228: INFO/ForkPoolWorker-2] 99455f69-8f999c-4e14-be73-cc7db1d19404
+[2024-08-11 16:29:24,228: INFO/ForkPoolWorker-2] c3da8f02-bf4f-4d99be-956d-5774d8470664
+[2024-08-11 16:29:24,228: INFO/ForkPoolWorker-2] e50ec2c299-59d7-465e-a241-3c398d5d655a
+[2024-08-11 16:29:24,235: INFO/ForkPoolWorker-1] Task put_task_items[0af9bfb7-3e76-4b20-aa21-a8d9007493b0] succeeded in 0.08213408291339874s: None
+[2024-08-11 16:29:24,240: INFO/ForkPoolWorker-2] Task delete_task_items[84cdc618-a6a3-4647-b467-2758f44b916e] succeeded in 0.07742971368134022s: None
+[2024-08-11 16:36:35,986: INFO/MainProcess] Task put_task_items[3b461b7d-df38-42bd-b72b-e7bcc74094b2] received
+[2024-08-11 16:36:35,999: INFO/MainProcess] Task put_task_items[72a72d3b-5b1f-4e1b-b7c9-4500cb04f577] received
+[2024-08-11 16:36:36,011: INFO/MainProcess] Task put_task_items[2d1e981f-0f60-432d-b11f-a260e5bb743a] received
+[2024-08-11 16:36:36,023: INFO/MainProcess] Task delete_task_items[a00d8598-937a-4188-87b8-50945bf19ade] received
+[2024-08-11 16:36:36,069: INFO/ForkPoolWorker-1] Task put_task_items[3b461b7d-df38-42bd-b72b-e7bcc74094b2] succeeded in 0.08241819776594639s: None
+[2024-08-11 16:36:36,085: INFO/ForkPoolWorker-2] Task put_task_items[72a72d3b-5b1f-4e1b-b7c9-4500cb04f577] succeeded in 0.08572233654558659s: None
+[2024-08-11 16:36:36,130: INFO/ForkPoolWorker-2] 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 16:36:36,134: INFO/ForkPoolWorker-2] 70567d8899-f82f-4d9d-b845-f18e6bcd0117
+[2024-08-11 16:36:36,134: INFO/ForkPoolWorker-2] 7add1a7f-42a993-4099-a4b2-7686b6e1e608
+[2024-08-11 16:36:36,134: INFO/ForkPoolWorker-2] 7addb56c-f35999-4d37-a21a-328dafaaf2b5
+[2024-08-11 16:36:36,134: INFO/ForkPoolWorker-2] 99455f69-8f999c-4e14-be73-cc7db1d19404
+[2024-08-11 16:36:36,134: INFO/ForkPoolWorker-2] c3da8f02-bf4f-4d99be-956d-5774d8470664
+[2024-08-11 16:36:36,134: INFO/ForkPoolWorker-2] e50ec2c299-59d7-465e-a241-3c398d5d655a
+[2024-08-11 16:36:36,146: INFO/ForkPoolWorker-2] Task delete_task_items[a00d8598-937a-4188-87b8-50945bf19ade] succeeded in 0.05980170890688896s: None
+[2024-08-11 16:36:36,159: INFO/ForkPoolWorker-1] Task put_task_items[2d1e981f-0f60-432d-b11f-a260e5bb743a] succeeded in 0.08885516226291656s: None
+[2024-08-11 16:37:31,822: INFO/MainProcess] Task put_task_items[1bd27e52-4a15-4025-a629-780960260a52] received
+[2024-08-11 16:37:31,835: INFO/MainProcess] Task put_task_items[d7b1c613-218f-4b28-bbaa-0aa7b55f0ecf] received
+[2024-08-11 16:37:31,848: INFO/MainProcess] Task put_task_items[6316e7bb-07cf-4121-9559-cc8c4054173f] received
+[2024-08-11 16:37:31,862: INFO/MainProcess] Task delete_task_items[9bcd4043-dd6d-44ae-ae30-ce8cb48f5788] received
+[2024-08-11 16:37:31,910: INFO/ForkPoolWorker-1] Task put_task_items[1bd27e52-4a15-4025-a629-780960260a52] succeeded in 0.08714591152966022s: None
+[2024-08-11 16:37:31,919: INFO/ForkPoolWorker-2] Task put_task_items[d7b1c613-218f-4b28-bbaa-0aa7b55f0ecf] succeeded in 0.08245997317135334s: None
+[2024-08-11 16:37:31,968: INFO/ForkPoolWorker-2] 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 16:37:31,968: INFO/ForkPoolWorker-2] 70567d8899-f82f-4d9d-b845-f18e6bcd0117
+[2024-08-11 16:37:31,968: INFO/ForkPoolWorker-2] 7add1a7f-42a993-4099-a4b2-7686b6e1e608
+[2024-08-11 16:37:31,968: INFO/ForkPoolWorker-2] 7addb56c-f35999-4d37-a21a-328dafaaf2b5
+[2024-08-11 16:37:31,968: INFO/ForkPoolWorker-2] 99455f69-8f999c-4e14-be73-cc7db1d19404
+[2024-08-11 16:37:31,968: INFO/ForkPoolWorker-2] c3da8f02-bf4f-4d99be-956d-5774d8470664
+[2024-08-11 16:37:31,968: INFO/ForkPoolWorker-2] e50ec2c299-59d7-465e-a241-3c398d5d655a
+[2024-08-11 16:37:31,979: INFO/ForkPoolWorker-2] Task delete_task_items[9bcd4043-dd6d-44ae-ae30-ce8cb48f5788] succeeded in 0.0600256621837616s: None
+[2024-08-11 16:37:31,997: INFO/ForkPoolWorker-1] Task put_task_items[6316e7bb-07cf-4121-9559-cc8c4054173f] succeeded in 0.0857245922088623s: None
+[2024-08-11 16:44:07,515: INFO/MainProcess] Task put_task_items[619320d9-02e3-4e0a-a8a3-50921308df9f] received
+[2024-08-11 16:44:07,529: INFO/MainProcess] Task put_task_items[25be33f7-d834-4e72-86cb-3b989645f657] received
+[2024-08-11 16:44:07,549: INFO/MainProcess] Task put_task_items[64832b86-b183-4bfe-bf76-da5fe45fe8f3] received
+[2024-08-11 16:44:07,570: INFO/MainProcess] Task delete_task_items[d8122c6b-fb45-49fd-9cd4-a29be2f6876d] received
+[2024-08-11 16:44:07,606: INFO/ForkPoolWorker-1] Task put_task_items[619320d9-02e3-4e0a-a8a3-50921308df9f] succeeded in 0.09006883017718792s: None
+[2024-08-11 16:44:07,619: INFO/ForkPoolWorker-2] Task put_task_items[25be33f7-d834-4e72-86cb-3b989645f657] succeeded in 0.08888302743434906s: None
+[2024-08-11 16:44:07,664: INFO/ForkPoolWorker-2] 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 16:44:07,664: INFO/ForkPoolWorker-2] 70567d8899-f82f-4d9d-b845-f18e6bcd0117
+[2024-08-11 16:44:07,664: INFO/ForkPoolWorker-2] 7add1a7f-42a993-4099-a4b2-7686b6e1e608
+[2024-08-11 16:44:07,664: INFO/ForkPoolWorker-2] 7addb56c-f35999-4d37-a21a-328dafaaf2b5
+[2024-08-11 16:44:07,664: INFO/ForkPoolWorker-2] 99455f69-8f999c-4e14-be73-cc7db1d19404
+[2024-08-11 16:44:07,664: INFO/ForkPoolWorker-2] c3da8f02-bf4f-4d99be-956d-5774d8470664
+[2024-08-11 16:44:07,664: INFO/ForkPoolWorker-2] e50ec2c299-59d7-465e-a241-3c398d5d655a
+[2024-08-11 16:44:07,676: INFO/ForkPoolWorker-2] Task delete_task_items[d8122c6b-fb45-49fd-9cd4-a29be2f6876d] succeeded in 0.05614642798900604s: None
+[2024-08-11 16:44:07,693: INFO/ForkPoolWorker-1] Task put_task_items[64832b86-b183-4bfe-bf76-da5fe45fe8f3] succeeded in 0.08620554022490978s: None
+[2024-08-11 16:53:49,607: INFO/MainProcess] Task put_task_items[149a7d63-e257-477f-b30d-387d1608dd12] received
+[2024-08-11 16:53:49,620: INFO/MainProcess] Task put_task_items[7db6cc1a-d40a-40e3-b0fb-2934976dd3a9] received
+[2024-08-11 16:53:49,634: INFO/MainProcess] Task put_task_items[6c311236-8b59-4458-a014-d605cae10924] received
+[2024-08-11 16:53:49,646: INFO/MainProcess] Task delete_task_items[929ad631-a555-479a-9c7f-04841bfca279] received
+[2024-08-11 16:53:49,695: INFO/ForkPoolWorker-1] Task put_task_items[149a7d63-e257-477f-b30d-387d1608dd12] succeeded in 0.08683853782713413s: None
+[2024-08-11 16:53:49,709: INFO/ForkPoolWorker-2] Task put_task_items[7db6cc1a-d40a-40e3-b0fb-2934976dd3a9] succeeded in 0.08774418011307716s: None
+[2024-08-11 16:53:49,757: INFO/ForkPoolWorker-2] 3e6993d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 16:53:49,757: INFO/ForkPoolWorker-2] 70567d8899-f82f-4d9d-b845-f18e6bcd0117
+[2024-08-11 16:53:49,757: INFO/ForkPoolWorker-2] 7add1a7f-42a993-4099-a4b2-7686b6e1e608
+[2024-08-11 16:53:49,757: INFO/ForkPoolWorker-2] 7addb56c-f35999-4d37-a21a-328dafaaf2b5
+[2024-08-11 16:53:49,757: INFO/ForkPoolWorker-2] 99455f69-8f999c-4e14-be73-cc7db1d19404
+[2024-08-11 16:53:49,757: INFO/ForkPoolWorker-2] c3da8f02-bf4f-4d99be-956d-5774d8470664
+[2024-08-11 16:53:49,757: INFO/ForkPoolWorker-2] e50ec2c299-59d7-465e-a241-3c398d5d655a
+[2024-08-11 16:53:49,769: INFO/ForkPoolWorker-2] Task delete_task_items[929ad631-a555-479a-9c7f-04841bfca279] succeeded in 0.059180039912462234s: None
+[2024-08-11 16:53:49,786: INFO/ForkPoolWorker-1] Task put_task_items[6c311236-8b59-4458-a014-d605cae10924] succeeded in 0.08921957947313786s: None
+[2024-08-11 16:55:14,406: INFO/MainProcess] Task put_task_items[8bd579a8-2e5f-4fb6-96da-9ee88efc9ced] received
+[2024-08-11 16:55:14,419: INFO/MainProcess] Task put_task_items[826a9e0a-7438-40bf-b4f0-23ce0481f00a] received
+[2024-08-11 16:55:14,433: INFO/MainProcess] Task put_task_items[778c1858-bd1d-46a7-b410-d99be8f44a0b] received
+[2024-08-11 16:55:14,445: INFO/MainProcess] Task put_task_items[0b3da40f-85a1-49b5-b547-dd0894e9d7b4] received
+[2024-08-11 16:55:14,491: INFO/ForkPoolWorker-1] Task put_task_items[8bd579a8-2e5f-4fb6-96da-9ee88efc9ced] succeeded in 0.08482039906084538s: None
+[2024-08-11 16:55:14,505: INFO/ForkPoolWorker-2] Task put_task_items[826a9e0a-7438-40bf-b4f0-23ce0481f00a] succeeded in 0.08545650355517864s: None
+[2024-08-11 16:55:14,577: INFO/ForkPoolWorker-1] Task put_task_items[778c1858-bd1d-46a7-b410-d99be8f44a0b] succeeded in 0.08472687564790249s: None
+[2024-08-11 16:55:14,593: INFO/ForkPoolWorker-2] Task put_task_items[0b3da40f-85a1-49b5-b547-dd0894e9d7b4] succeeded in 0.08728639967739582s: None
+[2024-08-11 17:02:46,640: INFO/MainProcess] Task put_task_items[8bf45f41-a8fe-4f52-a5d6-3a354d2d9618] received
+[2024-08-11 17:02:46,736: INFO/ForkPoolWorker-1] Task put_task_items[8bf45f41-a8fe-4f52-a5d6-3a354d2d9618] succeeded in 0.09487390890717506s: None
+[2024-08-11 17:03:21,404: INFO/MainProcess] Task put_task_items[62a05c68-ab13-41d1-ad8b-d5f3a0055bda] received
+[2024-08-11 17:03:21,488: INFO/ForkPoolWorker-1] Task put_task_items[62a05c68-ab13-41d1-ad8b-d5f3a0055bda] succeeded in 0.08365029655396938s: None
+[2024-08-11 17:05:13,527: INFO/MainProcess] Task put_task_items[20bb3920-ae4e-47db-b03c-607689b70678] received
+[2024-08-11 17:05:13,613: INFO/ForkPoolWorker-1] Task put_task_items[20bb3920-ae4e-47db-b03c-607689b70678] succeeded in 0.0843951515853405s: None
+[2024-08-11 17:07:19,596: INFO/MainProcess] Task put_task_items[75b7e6a0-5980-48ca-90c0-d83e27eb12e7] received
+[2024-08-11 17:07:19,689: INFO/ForkPoolWorker-1] Task put_task_items[75b7e6a0-5980-48ca-90c0-d83e27eb12e7] succeeded in 0.09159243106842041s: None
+[2024-08-11 17:08:15,915: INFO/MainProcess] Task put_task_items[05fbb507-2e88-470a-bc85-5c61eaf7a721] received
+[2024-08-11 17:08:15,930: ERROR/MainProcess] Received unregistered task of type 'change_task_status'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {"uid": 1, "task_id": 40, "score": 4, "task_item_num": 2}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (132b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'change_task_status', 'id': '83142cb2-cb01-4425-8096-2e0d613a18ea', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '83142cb2-cb01-4425-8096-2e0d613a18ea', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': "{'uid': 1, 'task_id': 40, 'score': 4, 'task_item_num': 2}", 'origin': 'gen185@7b7b0b97af77', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'change_task_status'
+[2024-08-11 17:08:15,998: INFO/ForkPoolWorker-1] Task put_task_items[05fbb507-2e88-470a-bc85-5c61eaf7a721] succeeded in 0.08090212941169739s: None
+[2024-08-11 17:09:22,838: INFO/MainProcess] Task put_task_items[2cb1461b-e59d-4144-a4bb-5b7187cc5207] received
+[2024-08-11 17:09:22,852: ERROR/MainProcess] Received unregistered task of type 'change_task_status'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {"uid": 1, "task_id": 40, "score": 2, "task_item_num": 1}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (132b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'change_task_status', 'id': 'a1d4c5d7-0579-46d1-a5b6-4777933aa2a5', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'a1d4c5d7-0579-46d1-a5b6-4777933aa2a5', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': "{'uid': 1, 'task_id': 40, 'score': 2, 'task_item_num': 1}", 'origin': 'gen185@7b7b0b97af77', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'change_task_status'
+[2024-08-11 17:09:22,939: INFO/ForkPoolWorker-1] Task put_task_items[2cb1461b-e59d-4144-a4bb-5b7187cc5207] succeeded in 0.09987332299351692s: None
+[2024-08-11 17:10:03,115: INFO/MainProcess] Task delete_task_items[917c2856-5329-4365-afb2-cc246313802a] received
+[2024-08-11 17:10:03,160: INFO/ForkPoolWorker-1] 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 17:10:03,172: INFO/ForkPoolWorker-1] Task delete_task_items[917c2856-5329-4365-afb2-cc246313802a] succeeded in 0.05552960932254791s: None
+[2024-08-11 17:10:36,086: INFO/MainProcess] Task delete_task_items[d9e34f81-4bb1-437c-a45a-4d6d23af3244] received
+[2024-08-11 17:10:36,134: INFO/ForkPoolWorker-1] 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 17:10:36,145: INFO/ForkPoolWorker-1] Task delete_task_items[d9e34f81-4bb1-437c-a45a-4d6d23af3244] succeeded in 0.05918644368648529s: None
+[2024-08-11 17:34:24,206: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 17:34:24,236: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 17:34:25,339: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 17:34:25,339: INFO/MainProcess] mingle: sync complete
+[2024-08-11 17:34:25,507: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 17:34:51,957: INFO/MainProcess] Task delete_task_items[f203105e-2267-4316-af95-149b664c3c3b] received
+[2024-08-11 17:34:52,016: INFO/ForkPoolWorker-1] 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 17:34:52,050: INFO/ForkPoolWorker-1] Task delete_task_items[f203105e-2267-4316-af95-149b664c3c3b] succeeded in 0.09123155660927296s: None
+[2024-08-11 17:39:30,622: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 17:39:30,653: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 17:39:31,754: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 17:39:31,755: INFO/MainProcess] mingle: sync complete
+[2024-08-11 17:39:31,923: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 17:39:35,649: INFO/MainProcess] Task delete_task_items[fad0a0ee-6827-43c3-96ea-fb950677ecef] received
+[2024-08-11 17:39:35,708: INFO/ForkPoolWorker-1] 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 17:39:35,742: INFO/ForkPoolWorker-1] Task delete_task_items[fad0a0ee-6827-43c3-96ea-fb950677ecef] succeeded in 0.0923998523503542s: None
+[2024-08-11 17:47:19,789: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 17:47:19,820: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 17:47:20,920: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 17:47:20,920: INFO/MainProcess] mingle: sync complete
+[2024-08-11 17:47:21,090: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 17:49:09,449: INFO/MainProcess] Task delete_task_items[5f4794a4-e161-433e-88d2-86fb99cd4491] received
+[2024-08-11 17:49:09,513: INFO/ForkPoolWorker-1] 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 17:49:09,549: INFO/ForkPoolWorker-1] Task delete_task_items[5f4794a4-e161-433e-88d2-86fb99cd4491] succeeded in 0.09935800358653069s: None
+[2024-08-11 17:50:49,365: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 17:50:49,397: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 17:50:50,499: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 17:50:50,500: INFO/MainProcess] mingle: sync complete
+[2024-08-11 17:50:50,669: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 17:52:43,181: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 17:52:43,240: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 17:52:44,347: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 17:52:44,348: INFO/MainProcess] mingle: sync complete
+[2024-08-11 17:52:44,487: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 17:53:07,459: INFO/MainProcess] Task delete_task_items[cc7bc0d1-d7a9-4b32-8026-b443a363214e] received
+[2024-08-11 17:53:07,520: INFO/ForkPoolWorker-1] 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 17:53:07,557: INFO/ForkPoolWorker-1] Task delete_task_items[cc7bc0d1-d7a9-4b32-8026-b443a363214e] succeeded in 0.0964322853833437s: None
+[2024-08-11 17:56:47,045: INFO/MainProcess] Task delete_task_items[2cc08e36-218e-403b-b749-7dd318cf9a85] received
+[2024-08-11 17:56:47,093: INFO/ForkPoolWorker-1] 3e69903d4c2-0b23-49eb-ad48-bf3bc050f6c3
+[2024-08-11 17:56:47,105: INFO/ForkPoolWorker-1] Task delete_task_items[2cc08e36-218e-403b-b749-7dd318cf9a85] succeeded in 0.05848859250545502s: None
+[2024-08-11 17:57:30,162: INFO/MainProcess] Task put_task_items[df5f02e4-6352-47e5-b42f-ae4f160ff04e] received
+[2024-08-11 17:57:30,179: ERROR/ForkPoolWorker-1] Task put_task_items[df5f02e4-6352-47e5-b42f-ae4f160ff04e] raised unexpected: TypeError("unsupported operand type(s) for /: 'str' and 'float'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/tasks.py", line 14, in put_task_items
+    task_time = task_time / 1000.0
+                ~~~~~~~~~~^~~~~~~~
+TypeError: unsupported operand type(s) for /: 'str' and 'float'
+[2024-08-11 17:59:59,079: INFO/MainProcess] Task put_task_items[324d22d5-aedb-477b-b9a7-b16a2df0f17f] received
+[2024-08-11 17:59:59,093: ERROR/ForkPoolWorker-1] Task put_task_items[324d22d5-aedb-477b-b9a7-b16a2df0f17f] raised unexpected: TypeError("unsupported operand type(s) for /: 'str' and 'float'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/tasks.py", line 14, in put_task_items
+    task_time = float(task_time) / 1000.0
+                ^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for /: 'str' and 'float'
+[2024-08-11 18:01:37,302: INFO/MainProcess] Task put_task_items[776600a8-5bc8-4fd2-ab0d-0b691b77999e] received
+[2024-08-11 18:01:37,316: ERROR/ForkPoolWorker-1] Task put_task_items[776600a8-5bc8-4fd2-ab0d-0b691b77999e] raised unexpected: TypeError("unsupported operand type(s) for /: 'str' and 'float'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/tasks.py", line 14, in put_task_items
+    print(type(task_time))
+                ^^^^^^^^^^^
+TypeError: unsupported operand type(s) for /: 'str' and 'float'
+[2024-08-11 18:02:16,976: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 18:02:17,006: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 18:02:18,109: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 18:02:18,109: INFO/MainProcess] mingle: sync complete
+[2024-08-11 18:02:18,277: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 18:02:49,999: INFO/MainProcess] Task put_task_items[db1d2c84-5dd7-4f2f-a7ce-9bfeef41a662] received
+[2024-08-11 18:02:50,001: WARNING/ForkPoolWorker-1] <class 'str'>
+[2024-08-11 18:02:50,171: INFO/ForkPoolWorker-1] Task put_task_items[db1d2c84-5dd7-4f2f-a7ce-9bfeef41a662] succeeded in 0.17058024369180202s: None
+[2024-08-11 18:13:46,440: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 18:13:46,470: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 18:13:47,572: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 18:13:47,572: INFO/MainProcess] mingle: sync complete
+[2024-08-11 18:13:47,744: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 18:15:30,719: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 18:15:30,749: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 18:15:31,850: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 18:15:31,851: INFO/MainProcess] mingle: sync complete
+[2024-08-11 18:15:32,019: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 18:16:10,623: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 18:16:10,653: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 18:16:11,759: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 18:16:11,760: INFO/MainProcess] mingle: sync complete
+[2024-08-11 18:16:11,930: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 18:20:32,365: INFO/MainProcess] Task put_task_items[b92eafd4-24d6-4261-82d1-70bfbe1fee46] received
+[2024-08-11 18:20:32,366: WARNING/ForkPoolWorker-1] <class 'str'>
+[2024-08-11 18:20:32,502: INFO/ForkPoolWorker-1] Task put_task_items[b92eafd4-24d6-4261-82d1-70bfbe1fee46] succeeded in 0.13663105480372906s: None
+[2024-08-11 18:22:48,048: INFO/MainProcess] Task put_task_items[ef3e6107-51c9-48d7-ae80-7624ca071c2a] received
+[2024-08-11 18:22:48,049: WARNING/ForkPoolWorker-1] <class 'str'>
+[2024-08-11 18:22:48,061: INFO/MainProcess] Task change_task_status[d8b2a6d8-3f8e-49c0-b675-80a807277d4b] received
+[2024-08-11 18:22:48,136: INFO/ForkPoolWorker-2] task_id: 45, status: 100
+[2024-08-11 18:22:48,138: INFO/ForkPoolWorker-1] Task put_task_items[ef3e6107-51c9-48d7-ae80-7624ca071c2a] succeeded in 0.08916204050183296s: None
+[2024-08-11 18:22:48,175: INFO/ForkPoolWorker-2] Task change_task_status[d8b2a6d8-3f8e-49c0-b675-80a807277d4b] succeeded in 0.11207111738622189s: None
+[2024-08-11 18:33:07,878: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 18:33:07,937: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 18:33:09,040: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 18:33:09,040: INFO/MainProcess] mingle: sync complete
+[2024-08-11 18:33:09,180: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 18:34:59,975: INFO/MainProcess] Task put_task_items[6c820aa4-912f-4cf4-b701-3558ff310d0d] received
+[2024-08-11 18:34:59,976: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-11 18:35:00,115: INFO/ForkPoolWorker-1] Task put_task_items[6c820aa4-912f-4cf4-b701-3558ff310d0d] succeeded in 0.13941804505884647s: None
+[2024-08-11 18:35:26,952: INFO/MainProcess] Task put_task_items[c9ea9b2f-268d-4663-8d4c-c1ea2f355ec3] received
+[2024-08-11 18:35:26,953: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-11 18:35:26,965: INFO/MainProcess] Task delete_task_items[f4a9031f-048a-4e2e-afe0-659dcefb829c] received
+[2024-08-11 18:35:27,025: INFO/ForkPoolWorker-2] 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3
+[2024-08-11 18:35:27,025: INFO/ForkPoolWorker-2] e50ec2c002889-5977d7-465e-a241-3c398d5d655a
+[2024-08-11 18:35:27,038: INFO/ForkPoolWorker-1] Task put_task_items[c9ea9b2f-268d-4663-8d4c-c1ea2f355ec3] succeeded in 0.0853231567889452s: None
+[2024-08-11 18:35:27,068: INFO/ForkPoolWorker-2] Task delete_task_items[f4a9031f-048a-4e2e-afe0-659dcefb829c] succeeded in 0.10089925676584244s: None
+[2024-08-11 18:36:13,460: INFO/MainProcess] Task put_task_items[271e9cf1-f3c3-496e-9676-cc7fddb8b95f] received
+[2024-08-11 18:36:13,461: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-11 18:36:13,474: INFO/MainProcess] Task delete_task_items[f2c116d4-b7f4-48e4-8c18-31f16c973964] received
+[2024-08-11 18:36:13,521: INFO/ForkPoolWorker-2] 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3
+[2024-08-11 18:36:13,521: INFO/ForkPoolWorker-2] e50ec2c002889-5977d7-465e-a241-3c398d5d655a
+[2024-08-11 18:36:13,533: INFO/ForkPoolWorker-2] Task delete_task_items[f2c116d4-b7f4-48e4-8c18-31f16c973964] succeeded in 0.05821693502366543s: None
+[2024-08-11 18:36:13,547: INFO/ForkPoolWorker-1] Task put_task_items[271e9cf1-f3c3-496e-9676-cc7fddb8b95f] succeeded in 0.08590235002338886s: None
+[2024-08-11 18:39:33,716: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 18:39:33,746: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 18:39:34,851: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 18:39:34,852: INFO/MainProcess] mingle: sync complete
+[2024-08-11 18:39:35,023: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 18:40:48,546: INFO/MainProcess] Task put_task_items[644c0219-e807-4cb2-83c2-be0adcba5387] received
+[2024-08-11 18:40:48,547: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-11 18:40:48,561: INFO/MainProcess] Task change_task_status[a552abb2-db89-4f58-b874-27652c0bed8f] received
+[2024-08-11 18:40:48,637: INFO/ForkPoolWorker-2] task_id: 46, status: 100
+[2024-08-11 18:40:48,674: INFO/ForkPoolWorker-1] Task put_task_items[644c0219-e807-4cb2-83c2-be0adcba5387] succeeded in 0.1273007094860077s: None
+[2024-08-11 18:40:48,679: INFO/ForkPoolWorker-2] Task change_task_status[a552abb2-db89-4f58-b874-27652c0bed8f] succeeded in 0.11746871098876s: None
+[2024-08-11 18:44:12,084: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 18:44:12,115: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 18:44:13,216: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 18:44:13,216: INFO/MainProcess] mingle: sync complete
+[2024-08-11 18:44:13,384: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 18:44:58,752: INFO/MainProcess] Task put_task_items[afbbb6d3-c97d-481a-87c2-3f7567cb48a0] received
+[2024-08-11 18:44:58,754: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-11 18:44:58,765: INFO/MainProcess] Task change_task_status[f49f6d07-a06b-4f4c-8a97-a2c85e940a1b] received
+[2024-08-11 18:44:58,833: INFO/ForkPoolWorker-2] task_id: 46, status: 100
+[2024-08-11 18:44:58,873: INFO/ForkPoolWorker-2] Task change_task_status[f49f6d07-a06b-4f4c-8a97-a2c85e940a1b] succeeded in 0.10729795508086681s: None
+[2024-08-11 18:44:58,881: INFO/ForkPoolWorker-1] Task put_task_items[afbbb6d3-c97d-481a-87c2-3f7567cb48a0] succeeded in 0.1283321101218462s: None
+[2024-08-11 18:46:49,837: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 18:46:49,868: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 18:46:50,972: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 18:46:50,972: INFO/MainProcess] mingle: sync complete
+[2024-08-11 18:46:51,145: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 18:46:53,925: INFO/MainProcess] Task put_task_items[b87cc875-04dc-4e71-976a-35d5d1946e9c] received
+[2024-08-11 18:46:53,926: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-11 18:46:53,944: INFO/MainProcess] Task delete_task_items[11707c40-fb30-4549-b1f1-e64a91a4a052] received
+[2024-08-11 18:46:54,004: INFO/ForkPoolWorker-2] 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3
+[2024-08-11 18:46:54,005: INFO/ForkPoolWorker-2] e50ec2c002889-5977d7-465e-a241-3c398d5d655a
+[2024-08-11 18:46:54,044: INFO/ForkPoolWorker-2] Task delete_task_items[11707c40-fb30-4549-b1f1-e64a91a4a052] succeeded in 0.09861551225185394s: None
+[2024-08-11 18:46:54,054: INFO/ForkPoolWorker-1] Task put_task_items[b87cc875-04dc-4e71-976a-35d5d1946e9c] succeeded in 0.12828811444342136s: None
+[2024-08-11 19:00:24,480: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 19:00:24,510: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 19:00:25,613: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 19:00:25,613: INFO/MainProcess] mingle: sync complete
+[2024-08-11 19:00:25,783: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 19:00:57,628: INFO/MainProcess] Task put_task_items[0400512c-8a5c-439a-a5df-9216c10bd4e2] received
+[2024-08-11 19:00:57,629: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-11 19:00:57,642: INFO/MainProcess] Task change_task_status[6d04d06c-dfcf-45ca-a844-e87434049bf4] received
+[2024-08-11 19:00:57,709: INFO/ForkPoolWorker-2] task_id: 46, status: 100
+[2024-08-11 19:00:57,749: INFO/ForkPoolWorker-2] Task change_task_status[6d04d06c-dfcf-45ca-a844-e87434049bf4] succeeded in 0.10535876825451851s: None
+[2024-08-11 19:00:57,756: INFO/ForkPoolWorker-1] Task put_task_items[0400512c-8a5c-439a-a5df-9216c10bd4e2] succeeded in 0.12662931717932224s: None
+[2024-08-11 19:03:40,610: INFO/MainProcess] Connected to redis://:**@81.70.143.162:6379/0
+[2024-08-11 19:03:40,644: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-11 19:03:41,747: INFO/MainProcess] mingle: sync with 1 nodes
+[2024-08-11 19:03:41,748: INFO/MainProcess] mingle: sync complete
+[2024-08-11 19:03:41,917: INFO/MainProcess] celery@7b7b0b97af77 ready.
+[2024-08-11 19:03:57,233: INFO/MainProcess] Task put_task_items[36f4f662-83a8-471d-8f94-cbc009f98e1b] received
+[2024-08-11 19:03:57,235: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-11 19:03:57,248: INFO/MainProcess] Task delete_task_items[59056856-e729-4e31-87a7-9a157f3aa7ac] received
+[2024-08-11 19:03:57,314: INFO/ForkPoolWorker-2] 3e69903d4009-0b2773-49eb-ad48-bf3bc050f6c3
+[2024-08-11 19:03:57,314: INFO/ForkPoolWorker-2] e50ec2c002889-5977d7-465e-a241-3c398d5d655a
+[2024-08-11 19:03:57,356: INFO/ForkPoolWorker-2] Task delete_task_items[59056856-e729-4e31-87a7-9a157f3aa7ac] succeeded in 0.10709269158542156s: None
+[2024-08-11 19:03:57,371: INFO/ForkPoolWorker-1] Task put_task_items[36f4f662-83a8-471d-8f94-cbc009f98e1b] succeeded in 0.1360372882336378s: None
+[2024-08-12 00:15:35,384: INFO/MainProcess] Task put_task_items[566b44cc-07ea-4486-a2b7-1e9acc8afdd7] received
+[2024-08-12 00:15:35,391: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-12 00:15:35,487: INFO/ForkPoolWorker-1] Task put_task_items[566b44cc-07ea-4486-a2b7-1e9acc8afdd7] succeeded in 0.09597119130194187s: None
+[2024-08-12 00:21:54,764: INFO/MainProcess] Task put_task_items[875900da-eab0-4766-85e5-b8728b457fc0] received
+[2024-08-12 00:21:54,765: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-12 00:21:54,777: INFO/MainProcess] Task delete_task_items[9786be02-2da0-4853-8583-f55f49ba1189] received
+[2024-08-12 00:21:54,834: INFO/ForkPoolWorker-2] Task delete_task_items[9786be02-2da0-4853-8583-f55f49ba1189] succeeded in 0.055366404354572296s: None
+[2024-08-12 00:21:54,889: ERROR/ForkPoolWorker-1] Task put_task_items[875900da-eab0-4766-85e5-b8728b457fc0] raised unexpected: IntegrityError(1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 929, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+task.models.TaskItem.DoesNotExist: TaskItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/tasks.py", line 19, in put_task_items
+    models.TaskItem.objects.update_or_create(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 962, in update_or_create
+    obj, created = self.select_for_update().get_or_create(defaults, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 936, in get_or_create
+    return self.create(**params), True
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")
+[2024-08-12 00:26:18,597: INFO/MainProcess] Task put_task_items[31b0286c-4e16-454a-b2b3-086279b421a2] received
+[2024-08-12 00:26:18,598: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-12 00:26:18,610: INFO/MainProcess] Task delete_task_items[0ce6a7b1-0e2a-44b8-959a-4fa0c20db783] received
+[2024-08-12 00:26:18,668: INFO/ForkPoolWorker-2] Task delete_task_items[0ce6a7b1-0e2a-44b8-959a-4fa0c20db783] succeeded in 0.05765653774142265s: None
+[2024-08-12 00:26:18,710: ERROR/ForkPoolWorker-1] Task put_task_items[31b0286c-4e16-454a-b2b3-086279b421a2] raised unexpected: IntegrityError(1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 929, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+task.models.TaskItem.DoesNotExist: TaskItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/tasks.py", line 19, in put_task_items
+    models.TaskItem.objects.update_or_create(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 962, in update_or_create
+    obj, created = self.select_for_update().get_or_create(defaults, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 936, in get_or_create
+    return self.create(**params), True
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")
+[2024-08-12 00:28:58,899: INFO/MainProcess] Task put_task_items[cf005619-3b63-4dcc-ab20-8096d92413c2] received
+[2024-08-12 00:28:58,901: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-12 00:28:58,915: INFO/MainProcess] Task delete_task_items[c534b981-63f8-46e1-a217-995a3281effd] received
+[2024-08-12 00:28:58,973: INFO/ForkPoolWorker-2] Task delete_task_items[c534b981-63f8-46e1-a217-995a3281effd] succeeded in 0.05614976026117802s: None
+[2024-08-12 00:28:59,017: ERROR/ForkPoolWorker-1] Task put_task_items[cf005619-3b63-4dcc-ab20-8096d92413c2] raised unexpected: IntegrityError(1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 929, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+task.models.TaskItem.DoesNotExist: TaskItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/tasks.py", line 19, in put_task_items
+    print(f"type of uid: {type(uid)}, type of task_id: {type(task_id)}, type of task_item_id: {type(task_item_id)}")
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 962, in update_or_create
+    obj, created = self.select_for_update().get_or_create(defaults, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 936, in get_or_create
+    return self.create(**params), True
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")
+[2024-08-12 00:33:26,919: INFO/MainProcess] Task put_task_items[3a5e296c-fd67-4ab8-bdd4-7e2923678340] received
+[2024-08-12 00:33:26,920: WARNING/ForkPoolWorker-1] task_time: 1719763200000
+[2024-08-12 00:33:26,933: INFO/MainProcess] Task delete_task_items[813c5069-3ed5-4688-88d8-9fd835b7f00c] received
+[2024-08-12 00:33:26,991: INFO/ForkPoolWorker-2] Task delete_task_items[813c5069-3ed5-4688-88d8-9fd835b7f00c] succeeded in 0.05725189112126827s: None
+[2024-08-12 00:33:27,035: ERROR/ForkPoolWorker-1] Task put_task_items[3a5e296c-fd67-4ab8-bdd4-7e2923678340] raised unexpected: IntegrityError(1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 929, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+task.models.TaskItem.DoesNotExist: TaskItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/task/tasks.py", line 19, in put_task_items
+    print(f"type of uid: {type(uid)}, type of task_id: {type(task_id)}, type of task_item_id: {type(task_item_id)}")
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 962, in update_or_create
+    obj, created = self.select_for_update().get_or_create(defaults, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 936, in get_or_create
+    return self.create(**params), True
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.11/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '3e6990000-0b23-49eb-ad48-bf3bc050f6c3' for key 'PRIMARY'")

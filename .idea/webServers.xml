@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3dbb0d29-7ede-4dcc-aa76-8e9458d71185" name="还得是腾讯云">
+        <fileTransfer rootFolder="/www/wwwroot/editor" accessType="SFTP" host="81.70.143.162" port="22" sshConfigId="a2709a48-869b-457f-8893-c9d0262fd340" sshConfig="root@81.70.143.162:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="8267e989-59a6-406c-9ca2-d8fec576315b" name="云开发机docker">
+        <fileTransfer accessType="SFTP" sshConfigId="b09fabad-a965-488f-b70c-871d91bf5d06" sshConfig="root@81.70.143.162:2222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="100000" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="32710033-4b2f-4570-9bca-878a85ba68fd" name="开发机">
+        <fileTransfer accessType="SFTP" sshConfigId="b09fabad-a965-488f-b70c-871d91bf5d06" sshConfig="root@81.70.143.162:2222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="100000" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

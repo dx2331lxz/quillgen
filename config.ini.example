@@ -1,0 +1,33 @@
+[COZE]
+URL = 
+TOKEN = 
+CHAT_BOT = 
+
+[OSS]
+ENDPOINT = 
+BUCKET = 
+ACCESS_KEY_ID = 
+ACCESS_KEY_SECRET = 
+
+[BAIDU]
+APP_ID = 
+API_KEY = 
+SECRET_KEY = 
+KNOWLEDGE_BASE = 
+TABLE = 
+CODE_COMPLETION_1 = 
+CHATOCR = 
+DOCUMENT_OCR = 
+
+[SMS]
+SMS_AccessKey_Secret = YOUR_SMS_ACCESS_KEY_SECRET
+SMS_AccessKeyID = YOUR_SMS_ACCESS_KEY_ID
+
+[DeepSeek]
+API_KEY = YOUR_DEEPSEEK_API_KEY
+Chat_URL = https://api.deepseek.com
+Completion_URL = https://api.deepseek.com/beta
+
+[SILICONFLOW]
+API_KEY = YOUR_SILICONFLOW_API_KEY
+URL = https://api.siliconflow.cn/v1

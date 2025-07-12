@@ -1,0 +1,12 @@
+[INFO][2025-03-22 21:21:13,839][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-22 22:58:22,390][middleware.py:13]Received POST request to /api/token/refresh/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 22:58:22,451][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 23:00:48,969][middleware.py:13]Received GET request to /.env from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 23:00:49,319][middleware.py:13]Received POST request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'0x[]': ['androxgh0st']}>
+[INFO][2025-03-22 23:08:19,759][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-22 23:27:19,380][autoreload.py:266]/www/data/utils/middleware.py changed, reloading.
+[INFO][2025-03-22 23:27:19,807][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-23 01:33:27,217][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 01:33:27,341][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 10:05:41,291][middleware.py:13]Received GET request to /.git/config from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 11:12:14,106][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>

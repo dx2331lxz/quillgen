@@ -1,0 +1,7 @@
+[INFO][2024-08-07 23:35:20,876][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-07 23:36:59,984][autoreload.py:266]/www/data/Editor/settings.py changed, reloading.
+[INFO][2024-08-07 23:37:00,367][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-07 23:37:02,700][middleware.py:13]Received GET request to /api/task/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-07 23:37:02,701][views.py:18]get
+[INFO][2024-08-07 23:38:54,282][middleware.py:13]Received GET request to /api/task/ from AnonymousUser with query params: <QueryDict: {'id': ['1']}> and POST data: <QueryDict: {}>
+[INFO][2024-08-07 23:38:54,283][views.py:18]get

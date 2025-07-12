@@ -1,0 +1,755 @@
+[INFO][2025-03-17 00:17:39,690][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:17:56,214][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:18:16,929][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:18:29,761][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:19:59,657][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:21:27,118][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:22:17,315][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:22:17,764][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:22:55,387][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/urls.py changed, reloading.
+[INFO][2025-03-17 00:22:55,797][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:24:53,775][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-17 00:25:06,374][middleware.py:13]Received POST request to /api/token/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 00:25:18,387][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 00:25:19,185][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 00:26:27,463][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:26:32,000][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 00:26:32,253][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 00:29:25,309][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:29:25,878][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:29:30,491][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 00:29:30,789][log.py:241]Internal Server Error: /api/ai/idphoto/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py", line 1279, in post
+    print(response.json())
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[INFO][2025-03-17 00:29:50,798][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:29:51,229][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:31:59,029][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 00:31:59,316][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 00:32:41,487][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:32:42,293][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:32:54,808][middleware.py:13]Received POST request to /image/upload/temp from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 00:33:33,726][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:33:34,457][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:33:37,425][middleware.py:13]Received POST request to /image/upload/temp from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 00:34:28,477][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 00:34:28,729][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 00:34:47,050][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:34:48,328][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:34:49,675][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 00:34:50,010][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 00:35:06,307][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:35:07,339][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:35:10,457][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 00:35:10,709][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 00:35:19,263][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:35:19,736][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:36:50,214][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:36:50,886][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:37:00,481][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 00:37:03,398][log.py:241]Internal Server Error: /api/ai/idphoto/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py", line 1283, in post
+    image_url = res.get('data').get('filepath')
+AttributeError: 'NoneType' object has no attribute 'get'
+[INFO][2025-03-17 00:38:01,226][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:38:01,897][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:38:05,680][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 00:38:08,619][log.py:241]Internal Server Error: /api/ai/idphoto/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/jwt/api_jws.py", line 95, in get_algorithm_by_name
+    return self._algorithms[alg_name]
+KeyError: 'RS256'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py", line 1286, in post
+    access_token = connect_coze()
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/utils/connect_coze.py", line 32, in connect_coze
+    token = jwt.encode(payload, private_key, algorithm="RS256", headers=header)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 73, in encode
+    return api_jws.encode(
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/jwt/api_jws.py", line 159, in encode
+    alg_obj = self.get_algorithm_by_name(algorithm_)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/jwt/api_jws.py", line 98, in get_algorithm_by_name
+    raise NotImplementedError(
+NotImplementedError: Algorithm 'RS256' could not be found. Do you have cryptography installed?
+[INFO][2025-03-17 00:39:18,228][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 00:39:20,995][log.py:241]Internal Server Error: /api/ai/idphoto/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/jwt/api_jws.py", line 95, in get_algorithm_by_name
+    return self._algorithms[alg_name]
+KeyError: 'RS256'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py", line 1286, in post
+    access_token = connect_coze()
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/utils/connect_coze.py", line 32, in connect_coze
+    token = jwt.encode(payload, private_key, algorithm="RS256", headers=header)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 73, in encode
+    return api_jws.encode(
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/jwt/api_jws.py", line 159, in encode
+    alg_obj = self.get_algorithm_by_name(algorithm_)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.9/site-packages/jwt/api_jws.py", line 98, in get_algorithm_by_name
+    raise NotImplementedError(
+NotImplementedError: Algorithm 'RS256' could not be found. Do you have cryptography installed?
+[INFO][2025-03-17 00:39:30,860][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:39:35,403][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-17 00:40:06,536][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:40:07,281][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:40:21,164][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-17 00:43:11,225][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:43:11,930][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 00:43:17,934][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-17 00:44:48,152][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 00:44:48,845][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:14:10,188][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:16:01,905][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:31:17,736][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:31:55,372][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-17 13:32:04,354][middleware.py:13]Received POST request to /api/token/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 13:32:20,189][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 13:32:23,278][log.py:241]Internal Server Error: /api/ai/idphoto/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/jwt/api_jws.py", line 95, in get_algorithm_by_name
+    return self._algorithms[alg_name]
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'RS256'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py", line 1286, in post
+    access_token = connect_coze()
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/utils/connect_coze.py", line 32, in connect_coze
+    token = jwt.encode(payload, private_key, algorithm="RS256", headers=header)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/jwt/api_jwt.py", line 73, in encode
+    return api_jws.encode(
+           ~~~~~~~~~~~~~~^
+        json_payload,
+        ^^^^^^^^^^^^^
+    ...<4 lines>...
+        sort_headers=sort_headers,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/jwt/api_jws.py", line 159, in encode
+    alg_obj = self.get_algorithm_by_name(algorithm_)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/jwt/api_jws.py", line 98, in get_algorithm_by_name
+    raise NotImplementedError(
+        f"Algorithm '{alg_name}' could not be found. Do you have cryptography installed?"
+    ) from e
+NotImplementedError: Algorithm 'RS256' could not be found. Do you have cryptography installed?
+[INFO][2025-03-17 13:33:09,611][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 13:33:12,626][log.py:241]Internal Server Error: /api/ai/idphoto/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/jwt/api_jws.py", line 95, in get_algorithm_by_name
+    return self._algorithms[alg_name]
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'RS256'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py", line 1286, in post
+    access_token = connect_coze()
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/utils/connect_coze.py", line 32, in connect_coze
+    token = jwt.encode(payload, private_key, algorithm="RS256", headers=header)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/jwt/api_jwt.py", line 73, in encode
+    return api_jws.encode(
+           ~~~~~~~~~~~~~~^
+        json_payload,
+        ^^^^^^^^^^^^^
+    ...<4 lines>...
+        sort_headers=sort_headers,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/jwt/api_jws.py", line 159, in encode
+    alg_obj = self.get_algorithm_by_name(algorithm_)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/jwt/api_jws.py", line 98, in get_algorithm_by_name
+    raise NotImplementedError(
+        f"Algorithm '{alg_name}' could not be found. Do you have cryptography installed?"
+    ) from e
+NotImplementedError: Algorithm 'RS256' could not be found. Do you have cryptography installed?
+[INFO][2025-03-17 13:33:23,116][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:33:27,837][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-17 13:37:39,999][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:37:40,560][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:38:30,563][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:38:31,100][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:38:39,790][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:38:40,127][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:39:08,181][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:39:08,526][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:39:30,657][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:39:31,049][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:39:36,807][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 13:39:50,412][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 13:44:53,683][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:44:54,534][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:44:59,588][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 13:45:12,247][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 13:45:57,857][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:45:58,268][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:46:01,041][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 13:46:13,553][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 13:47:47,751][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:47:48,471][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:47:53,214][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 13:48:05,623][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 13:50:23,754][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:50:24,291][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:51:26,392][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 13:51:38,714][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 13:52:30,093][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:52:30,534][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:52:34,728][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 13:52:44,738][log.py:241]Internal Server Error: /api/ai/idphoto/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'requests.models.Response'>`
+[INFO][2025-03-17 13:53:06,404][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:53:07,006][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:53:09,385][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 13:53:24,253][log.py:241]Internal Server Error: /api/ai/idphoto/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/renderers.py", line 99, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/utils/encoders.py", line 52, in default
+    return obj.decode()
+           ~~~~~~~~~~^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+[INFO][2025-03-17 13:54:26,434][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:54:26,921][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:54:41,709][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:54:42,118][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:55:12,547][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 13:55:13,001][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 13:55:16,656][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 13:55:29,531][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 14:00:10,631][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:00:11,227][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:01:11,681][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:01:12,090][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:01:34,332][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:01:35,104][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:01:59,545][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 14:02:13,138][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 14:02:35,251][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:02:35,700][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:02:45,332][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:02:45,763][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:02:50,934][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 14:03:03,313][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 14:04:52,968][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:06:32,539][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:06:32,997][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:06:38,623][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 14:06:48,568][log.py:241]Internal Server Error: /api/ai/idphoto/
+[INFO][2025-03-17 14:10:41,580][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:10:42,125][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:10:52,459][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:10:52,778][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:10:57,577][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 14:11:07,334][log.py:241]Internal Server Error: /api/ai/idphoto/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/renderers.py", line 99, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/utils/encoders.py", line 52, in default
+    return obj.decode()
+           ~~~~~~~~~~^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+[INFO][2025-03-17 14:13:08,057][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:13:08,660][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:13:58,381][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:13:58,809][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:14:01,880][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[ERROR][2025-03-17 14:14:11,960][log.py:241]Internal Server Error: /api/ai/idphoto/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/renderers.py", line 99, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/utils/encoders.py", line 52, in default
+    return obj.decode()
+           ~~~~~~~~~~^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+[INFO][2025-03-17 14:15:20,411][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:15:20,993][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:15:25,299][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-17 14:16:28,003][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:16:28,436][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:16:32,661][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-17 14:17:56,776][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 14:17:57,295][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 14:18:02,227][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-17 14:20:30,790][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['蓝色']}>
+[INFO][2025-03-17 14:20:58,153][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['灰色']}>
+[INFO][2025-03-17 14:21:31,318][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['灰色']}>
+[INFO][2025-03-17 14:21:53,305][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['灰色']}>
+[INFO][2025-03-17 14:22:09,836][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['灰色']}>
+[INFO][2025-03-17 14:22:28,687][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['白色']}>
+[INFO][2025-03-17 14:23:46,775][middleware.py:13]Received POST request to /api/ai/idphoto/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'color': ['灰色']}>
+[INFO][2025-03-17 15:48:18,096][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/urls.py changed, reloading.
+[INFO][2025-03-17 15:48:19,095][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 16:02:44,220][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['导出为pdf'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 16:02:44,543][views.py:1110]{'refresh_token': '25.b8ef78f4a6191a7b6c16e07aed4a08d2.315360000.2057558564.282335-106324455', 'expires_in': 2592000, 'session_key': '9mzdWBbasRDnPcjbfPD5r4riqX6vswa0dMIChcNHDOMGJ5tvC83IevHTCJGJ+tjBd64tXhUhnFQkR7PMzYZ2wC0jX+piGa4=', 'access_token': '24.cf2c9d668ffbd6b3fdf00c87d66e2fb7.2592000.1744790564.282335-106324455', 'scope': 'public brain_all_scope brain_rpc_ernievilg_v2 brain_rpc_wenxin_basic brain_rpc_wenxin_extreme brain_ttv_material wise_adapt lebo_resource_base lightservice_public hetu_basic lightcms_map_poi kaidian_kaidian ApsMisTest_Test权限 vis-classify_flower lpq_开放 cop_helloScope ApsMis_fangdi_permission smartapp_snsapi_base smartapp_mapp_dev_manage iop_autocar oauth_tp_app smartapp_smart_game_openapi oauth_sessionkey smartapp_swanid_verify smartapp_opensource_openapi smartapp_opensource_recapi fake_face_detect_开放Scope vis-ocr_虚拟人物助理 idl-video_虚拟人物助理 smartapp_component smartapp_search_plugin avatar_video_test b2b_tp_openapi b2b_tp_openapi_online smartapp_gov_aladin_to_xcx', 'session_secret': '71c9c9a283c467532fc735fce395a0e9'}
+[ERROR][2025-03-17 16:02:44,992][log.py:241]Internal Server Error: /api/ai/function_call/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py", line 1259, in post
+    data = json.loads(res.get('data'))
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+                    f'not {s.__class__.__name__}')
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+[INFO][2025-03-17 16:03:17,565][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 16:03:18,489][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 16:03:21,912][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['导出为pdf'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 16:03:22,113][views.py:1110]{'refresh_token': '25.3a6f2d7997ddf3c9c126a355312771f4.315360000.2057558602.282335-106324455', 'expires_in': 2592000, 'session_key': '9mzdWWvbSKAkDapMOGNim8tj6ymbGZuVTaq/mPyrXPUc3mG47dVKqu/0MfMhxKt/toSCrs55U60+S4LRuFqa8c3IF68yCc8=', 'access_token': '24.b152657355052537a289d238e12a5ecb.2592000.1744790602.282335-106324455', 'scope': 'public brain_all_scope brain_rpc_ernievilg_v2 brain_rpc_wenxin_basic brain_rpc_wenxin_extreme brain_ttv_material wise_adapt lebo_resource_base lightservice_public hetu_basic lightcms_map_poi kaidian_kaidian ApsMisTest_Test权限 vis-classify_flower lpq_开放 cop_helloScope ApsMis_fangdi_permission smartapp_snsapi_base smartapp_mapp_dev_manage iop_autocar oauth_tp_app smartapp_smart_game_openapi oauth_sessionkey smartapp_swanid_verify smartapp_opensource_openapi smartapp_opensource_recapi fake_face_detect_开放Scope vis-ocr_虚拟人物助理 idl-video_虚拟人物助理 smartapp_component smartapp_search_plugin avatar_video_test b2b_tp_openapi b2b_tp_openapi_online smartapp_gov_aladin_to_xcx', 'session_secret': '469ae74a54a9a6de12ed1bd4f14a8942'}
+[ERROR][2025-03-17 16:03:22,301][log.py:241]Internal Server Error: /api/ai/function_call/
+Traceback (most recent call last):
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py", line 1260, in post
+    data = json.loads(res.get('data'))
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+                    f'not {s.__class__.__name__}')
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+[INFO][2025-03-17 16:04:21,837][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 16:04:22,642][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 16:04:46,718][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 16:04:47,191][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 16:04:54,075][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['导出为pdf'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 16:06:42,257][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 16:06:43,133][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 16:06:46,814][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['导出为pdf'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 16:07:52,113][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['导出为pdf'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 16:08:01,659][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['导出为pdf'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 16:09:24,505][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['给寓意的内容加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 16:10:04,257][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['选中标题加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 16:59:51,326][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['选中标题加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 17:00:03,096][middleware.py:13]Received POST request to /api/token/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 17:00:16,632][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['选中标题加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 17:00:18,674][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['选中标题加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 17:00:33,418][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['选中标题加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 17:00:48,410][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 17:00:57,963][middleware.py:13]Received POST request to /api/token/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 17:01:21,210][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['选中标题加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 17:02:20,653][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['给文章中寓意的内容加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 17:03:10,582][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['给文章的寓意的内容加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 17:05:40,911][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['给文章的寓意的内容加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 17:06:19,174][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['给文章的寓意的内容加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 17:06:53,598][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 17:06:54,622][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 17:07:04,386][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['给文章的寓意的内容加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 17:07:33,263][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 17:07:33,663][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 17:08:09,021][autoreload.py:266]/Users/luxiuzhe/Library/CloudStorage/OneDrive-stu.ouc.edu.cn/桌面/pythonproject/Editor/AI/views.py changed, reloading.
+[INFO][2025-03-17 17:08:09,436][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 17:09:10,659][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['给文章的寓意的内容加粗'], 'text': ['《月亮与星星的约定》\n\n夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。\n\n一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。\n\n地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”\n\n小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”\n\n月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”\n\n小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”\n\n星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”\n\n于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。\n\n小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”\n\n星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”\n\n从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。\n\n---\n\n寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 22:46:54,236][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 22:47:38,224][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-17 22:48:08,835][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['给文章的寓意的内容加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 22:48:18,795][middleware.py:13]Received POST request to /api/token/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 22:48:33,641][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['给文章的寓意的内容加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-17 22:49:11,093][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 22:49:26,106][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 22:52:30,478][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 22:58:27,346][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 22:58:28,004][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 22:59:27,675][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 23:33:34,298][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 23:55:47,868][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 23:55:49,901][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 23:55:52,005][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 23:55:54,047][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 23:55:56,085][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 23:58:30,287][middleware.py:13]Received POST request to /api/token/refresh/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-17 23:58:30,378][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 03:21:43,130][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 04:32:01,632][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 04:32:01,865][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 04:43:31,081][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 05:49:45,707][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 05:50:05,626][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 05:50:06,621][middleware.py:13]Received GET request to /robots.txt from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 05:50:09,011][middleware.py:13]Received GET request to /sitemap.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 09:18:10,669][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 09:18:12,118][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 09:18:14,715][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 09:33:27,906][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 10:42:55,808][middleware.py:13]Received POST request to /api/token/refresh/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 10:42:55,898][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 10:57:08,113][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 11:21:32,172][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['导出为pdf'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-18 11:21:47,689][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 11:22:06,387][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 11:30:03,674][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 11:41:07,437][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 11:41:13,064][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 11:50:26,329][middleware.py:13]Received POST request to /api/token/refresh/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 11:50:26,394][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 11:52:13,380][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 11:53:43,520][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 11:55:13,712][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 11:55:28,247][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:09:04,841][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:17:35,184][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:19:24,257][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:19:59,700][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:20:30,541][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:23:12,970][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:23:30,017][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:26:47,831][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:27:11,166][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:28:06,988][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:31:23,399][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:32:17,473][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:33:19,368][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:34:04,271][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:35:03,021][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:36:09,339][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:38:50,419][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:39:20,474][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:39:38,348][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:40:31,733][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:41:43,382][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:43:49,436][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 12:45:56,704][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 15:41:35,281][middleware.py:13]Received POST request to /api/token/refresh/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 15:41:35,337][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 15:43:01,284][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 15:53:49,917][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 15:56:25,344][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 15:56:52,055][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:00:14,482][middleware.py:13]Received GET request to /api/user/phone/ from None with query params: <QueryDict: {'phone': ['18105437939']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:00:30,917][middleware.py:13]Received POST request to /api/user/phone/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:00:31,016][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:00:35,932][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:04:59,754][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:05:18,975][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:05:19,957][middleware.py:13]Received GET request to /robots.txt from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:05:20,847][middleware.py:13]Received GET request to /sitemap.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:06:04,849][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:07:03,648][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:08:32,181][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:20:53,091][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:21:24,852][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:34:19,413][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:40:13,777][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:02,732][middleware.py:13]Received GET request to /.env from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:03,627][middleware.py:13]Received GET request to /env.js from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:04,372][middleware.py:13]Received GET request to /api/.env from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:05,108][middleware.py:13]Received GET request to /.env.save from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:05,842][middleware.py:13]Received GET request to /.env.prod from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:06,575][middleware.py:13]Received GET request to /login/.env from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:07,303][middleware.py:13]Received GET request to /local/.env from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:08,154][middleware.py:13]Received GET request to /admin/.env from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:08,997][middleware.py:13]Received GET request to /dev/.env from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:09,830][middleware.py:13]Received GET request to /application/.env from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:10,588][middleware.py:13]Received GET request to /phpinfo.php from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:11,352][middleware.py:13]Received GET request to /phpinfo from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:12,175][middleware.py:13]Received GET request to /php_info.php from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:13,022][middleware.py:13]Received GET request to /_profiler/phpinfo from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:43:13,842][middleware.py:13]Received POST request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'0x[]': ['akia_checker']}>
+[INFO][2025-03-18 16:43:19,682][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:44:56,719][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:46:49,944][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2025-03-18 16:46:52,975][log.py:241]Internal Server Error: /api/ai/function_call/
+[INFO][2025-03-18 16:49:23,538][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2025-03-18 16:49:26,849][log.py:241]Internal Server Error: /api/ai/function_call/
+[INFO][2025-03-18 16:49:29,023][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:53:15,296][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:55:54,625][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:56:09,331][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:56:42,244][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:57:17,104][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:58:30,248][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 16:59:39,888][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:02:27,577][middleware.py:13]Received POST request to /api/token/refresh/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:02:27,629][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:04:02,035][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:04:43,144][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:05:52,775][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:06:51,422][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:07:25,746][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:13:49,158][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:15:36,402][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:16:04,710][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['给所有出现的月亮加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-18 17:16:12,925][middleware.py:13]Received POST request to /api/token/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:16:31,224][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {'input': ['给所有出现的月亮加粗'], 'text': ['《月亮与星星的约定》夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。---寓意：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。'], 'html_text': ['<h2 id="h-507fa80f">《月亮与星星的约定》</h2><p>夜空中，月亮和星星是形影不离的好朋友。月亮总是温柔地洒下银色的光芒，而星星则调皮地眨着眼睛，点缀着漆黑的夜空。</p><p>一天，星星突然对月亮说：“月亮姐姐，我听说地球上的人们都许愿呢！我们也去看看吧！”月亮微笑着答应了。于是，它们悄悄溜到了地球上空，躲在云朵后面。</p><p>地上，一个小女孩正坐在窗前，望着星空发呆。她的眼睛里闪烁着泪光，似乎有什么心事。星星忍不住跳了出来，轻轻地问：“小女孩，你为什么哭呀？”</p><p>小女孩吓了一跳，抬头看到一颗闪闪发光的星星，还有一轮温柔的月亮。她擦了擦眼泪，小声说：“我……我想许个愿，但怕愿望不会实现。”</p><p>月亮温柔地说：“别担心，告诉我们你的愿望吧，也许我们能帮你。”</p><p>小女孩犹豫了一下，低声说：“我希望妈妈能早点回家。她已经很久没有陪我了。”</p><p>星星和月亮对视一眼，星星调皮地眨了眨眼睛：“这个愿望很简单！我们来帮你！”</p><p>于是，星星们聚集在一起，拼成了一个巨大的箭头，指向远处的城市。月亮则洒下柔和的光芒，照亮了小女孩家的路。没过多久，小女孩的妈妈真的回来了！她推开家门，紧紧抱住了小女孩。</p><p>小女孩开心地笑了，对着夜空喊道：“谢谢你们，月亮和星星！”</p><p>星星得意地眨着眼睛，月亮则温柔地说：“记住，只要你相信，愿望总会实现的。”</p><p>从那以后，每当夜晚来临，小女孩都会抬头看看夜空，寻找她的好朋友——月亮和星星。而月亮和星星也总是默默守护着她，陪伴她度过每一个夜晚。</p><p>---</p><p><strong>寓意</strong>：这个故事告诉我们，只要心怀希望，并勇敢地表达自己的愿望，总会有人愿意帮助你。无论是家人、朋友，还是那些默默守护你的“星星和月亮”，他们都会在你需要的时候出现，给你温暖和力量。</p>']}>
+[INFO][2025-03-18 17:16:53,945][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:17:44,344][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:17:49,178][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:18:06,414][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:18:26,128][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:18:41,502][middleware.py:13]Received POST request to /api/ai/mysystem/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[WARNING][2025-03-18 17:18:49,907][views.py:556]Empty response
+[INFO][2025-03-18 17:21:38,456][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:22:09,043][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:23:10,567][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:27:42,726][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:30:30,142][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:30:35,853][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:38:49,562][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:39:37,729][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 17:58:48,909][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 18:04:09,858][middleware.py:13]Received POST request to /api/token/refresh/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 18:04:09,912][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 18:04:16,650][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 18:05:11,096][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 18:05:22,226][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 21:01:51,927][middleware.py:13]Received POST request to /api/token/refresh/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 21:01:51,979][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 21:02:00,852][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 21:02:23,352][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 21:02:45,484][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 21:03:27,722][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 21:03:43,881][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 21:03:51,458][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 21:04:43,160][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 22:07:15,666][middleware.py:13]Received POST request to /api/token/refresh/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 22:07:15,729][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 22:07:53,147][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 22:08:01,931][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 22:08:27,003][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 22:09:03,626][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 22:14:39,538][middleware.py:13]Received POST request to /api/ai/function_call/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-18 22:28:15,513][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-19 00:48:40,244][autoreload.py:266]/www/data/AI/migrations/0002_remove_chart_bar_remove_chart_line_remove_chart_pie_and_more.py changed, reloading.

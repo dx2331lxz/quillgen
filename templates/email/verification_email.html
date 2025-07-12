@@ -1,0 +1,69 @@
+<!-- templates/email/verification_email.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>验证码邮件</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007BFF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .code {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007BFF;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-radius: 4px;
+        }
+        .footer {
+            font-size: 14px;
+            color: #777;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">验证码邮件</div>
+        <div class="content">
+            <p>尊敬的用户，您好！</p>
+            <p>您正在注册或登录我们的编辑器服务，以下是您的验证码：</p>
+            <div class="code">{{ verification_code }}</div>
+            <p>请在 10 分钟内使用该验证码完成验证。</p>
+            <p>如果您未进行此操作，请忽略此邮件。</p>
+        </div>
+        <div class="footer">
+            <p>此邮件由系统自动发送，请勿直接回复。</p>
+            <p>&copy; 2025 爱特工作室. 保留所有权利。</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+[INFO][2024-08-12 00:00:36,311][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 00:00:37,164][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:05:11,025][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2024-08-12 00:05:13,029][log.py:241]Internal Server Error: /api/ai/document/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/AI/views.py", line 663, in post
+    return Response(response.json(), status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[INFO][2024-08-12 00:05:57,692][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-12 00:05:58,283][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 00:05:59,138][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:06:01,046][views.py:663]<Response [200]>
+[INFO][2024-08-12 00:06:56,845][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-12 00:06:57,359][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 00:06:59,584][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:07:01,487][views.py:663]b'no'
+[INFO][2024-08-12 00:14:20,729][autoreload.py:266]/www/data/AI/views.py changed, reloading.
+[INFO][2024-08-12 00:14:21,337][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 00:14:22,463][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:14:22,920][views.py:663]b'<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'
+[INFO][2024-08-12 00:15:35,105][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:15:35,378][views.py:154]task_id: 47, task_item_id: 3e6990000-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-12 00:15:35,385][views.py:154]task_id: 47, task_item_id: e50ec2c299-59d7000-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-12 00:21:54,685][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:21:54,753][views.py:177]task_id: 17, task_item_id: 3e6990000-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-12 00:21:54,760][views.py:177]task_id: 17, task_item_id: e50ec2c299-59d7000-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-12 00:26:18,518][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:26:18,584][views.py:177]task_id: 17, task_item_id: 3e6990000-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-12 00:26:18,591][views.py:177]task_id: 17, task_item_id: e50ec2c299-59d7000-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-12 00:28:09,962][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-12 00:28:10,621][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 00:28:14,209][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:28:15,832][views.py:663]b'<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'
+[INFO][2024-08-12 00:28:32,723][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:28:32,999][views.py:663]b'<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'
+[INFO][2024-08-12 00:28:34,421][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:28:35,798][views.py:663]b'<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'
+[INFO][2024-08-12 00:28:49,938][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-12 00:28:50,452][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 00:28:58,657][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:28:58,893][views.py:177]task_id: 17, task_item_id: 3e6990000-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-12 00:28:58,900][views.py:177]task_id: 17, task_item_id: e50ec2c299-59d7000-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-12 00:32:14,650][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:32:15,249][views.py:663]b'<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'
+[INFO][2024-08-12 00:33:24,102][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-12 00:33:24,695][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 00:33:26,656][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:33:26,905][views.py:177]task_id: 17, task_item_id: 3e6990000-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-12 00:33:26,914][views.py:177]task_id: 17, task_item_id: e50ec2c299-59d7000-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-12 00:53:21,745][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 00:53:28,561][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 00:54:03,101][middleware.py:13]Received POST request to /api/ai/document/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:56:13,569][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:56:13,817][views.py:154]task_id: 48, task_item_id: 123456-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-12 00:56:13,824][views.py:154]task_id: 48, task_item_id: 123456-59d7000-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-12 00:57:50,936][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-12 00:57:51,715][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 00:58:13,948][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 00:58:41,993][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:59:04,651][middleware.py:13]Received POST request to /api/token/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:59:25,868][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 00:59:26,085][views.py:154]task_id: 49, task_item_id: 123456-0b23-49eb-ad48-bf3bc050f6c3, task_time: 1719763200000
+[INFO][2024-08-12 00:59:26,092][views.py:154]task_id: 49, task_item_id: 123456-59d7000-465e-a241-3c398d5d655a, task_time: 1719763200000
+[INFO][2024-08-12 01:02:04,416][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 01:02:04,480][views.py:154]task_id: 50, task_item_id: 123456, task_time: 1719763200000
+[INFO][2024-08-12 01:02:04,487][views.py:154]task_id: 50, task_item_id: 123456888, task_time: 1719763200000
+[INFO][2024-08-12 01:06:18,944][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 01:06:19,013][views.py:154]task_id: 51, task_item_id: 123456, task_time: 1719763200000
+[INFO][2024-08-12 01:06:19,020][views.py:154]task_id: 51, task_item_id: 123456888, task_time: 1719763200000
+[INFO][2024-08-12 01:06:19,027][views.py:154]task_id: 51, task_item_id: 1234568898, task_time: 1719763200000
+[INFO][2024-08-12 01:06:19,033][views.py:154]task_id: 51, task_item_id: 12345688899, task_time: 1719763200000
+[INFO][2024-08-12 01:06:19,040][views.py:154]task_id: 51, task_item_id: 12345688867, task_time: 1719763200000
+[INFO][2024-08-12 01:15:32,490][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-12 01:15:33,033][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 01:21:47,110][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-12 01:21:47,680][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 01:22:13,879][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 01:22:15,110][views.py:157]task_id: 52, task_item_id: 12345699, task_time: 1719763200000
+[INFO][2024-08-12 01:22:16,118][views.py:157]task_id: 52, task_item_id: 12345688899, task_time: 1719763200000
+[INFO][2024-08-12 01:22:17,125][views.py:157]task_id: 52, task_item_id: 1234568898929, task_time: 1719763200000
+[INFO][2024-08-12 01:22:18,133][views.py:157]task_id: 52, task_item_id: 123456888992, task_time: 1719763200000
+[INFO][2024-08-12 01:22:19,140][views.py:157]task_id: 52, task_item_id: 12345688867999, task_time: 1719763200000
+[INFO][2024-08-12 01:23:32,472][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 01:23:33,537][views.py:157]task_id: 53, task_item_id: 12345699, task_time: 1719763200000
+[INFO][2024-08-12 01:23:34,545][views.py:157]task_id: 53, task_item_id: 12345688899, task_time: 1719763200000
+[INFO][2024-08-12 01:23:35,552][views.py:157]task_id: 53, task_item_id: 1234568898929, task_time: 1719763200000
+[INFO][2024-08-12 01:23:36,560][views.py:157]task_id: 53, task_item_id: 123456888992, task_time: 1719763200000
+[INFO][2024-08-12 01:23:37,568][views.py:157]task_id: 53, task_item_id: 12345688867999, task_time: 1719763200000
+[INFO][2024-08-12 01:29:23,502][autoreload.py:266]/www/data/task/views.py changed, reloading.
+[INFO][2024-08-12 01:29:23,992][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 01:29:39,075][middleware.py:13]Received POST request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 01:29:39,155][views.py:160]task_id: 54, task_item_id: 123456990, task_time: 1719763200000
+[INFO][2024-08-12 01:29:39,165][views.py:160]task_id: 54, task_item_id: 123456888990, task_time: 1719763200000
+[INFO][2024-08-12 01:29:39,180][views.py:160]task_id: 54, task_item_id: 12345688989290, task_time: 1719763200000
+[INFO][2024-08-12 01:29:39,193][views.py:160]task_id: 54, task_item_id: 1234568889920, task_time: 1719763200000
+[INFO][2024-08-12 01:29:39,204][views.py:160]task_id: 54, task_item_id: 123456888679990, task_time: 1719763200000
+[INFO][2024-08-12 01:30:38,366][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 01:30:38,426][views.py:185]task_id: 17, task_item_id: 123456888990, task_time: 1719763200000
+[INFO][2024-08-12 01:30:38,432][views.py:185]task_id: 17, task_item_id: 12345688989290, task_time: 1719763200000
+[INFO][2024-08-12 01:30:38,438][views.py:185]task_id: 17, task_item_id: 1234568889920, task_time: 1719763200000
+[INFO][2024-08-12 01:30:38,445][views.py:185]task_id: 17, task_item_id: 123456888679990, task_time: 1719763200000
+[INFO][2024-08-12 01:30:38,463][views.py:240]task_id: 17, status: 100
+[INFO][2024-08-12 01:30:59,421][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 01:30:59,480][views.py:185]task_id: 17, task_item_id: 123456888990, task_time: 1719763200000
+[INFO][2024-08-12 01:30:59,486][views.py:185]task_id: 17, task_item_id: 12345688989290, task_time: 1719763200000
+[INFO][2024-08-12 01:30:59,492][views.py:185]task_id: 17, task_item_id: 1234568889920, task_time: 1719763200000
+[INFO][2024-08-12 01:30:59,499][views.py:185]task_id: 17, task_item_id: 123456888679990, task_time: 1719763200000
+[INFO][2024-08-12 01:30:59,517][views.py:240]task_id: 17, status: 100
+[INFO][2024-08-12 01:31:21,040][middleware.py:13]Received GET request to /http:/passport.baidu.com/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 01:35:03,544][autoreload.py:266]/www/data/task/tasks.py changed, reloading.
+[INFO][2024-08-12 01:35:04,066][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2024-08-12 01:35:07,176][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 01:35:07,245][views.py:185]task_id: 17, task_item_id: 123456888990, task_time: 1719763200000
+[INFO][2024-08-12 01:35:07,252][views.py:185]task_id: 17, task_item_id: 12345688989290, task_time: 1719763200000
+[INFO][2024-08-12 01:35:07,258][views.py:185]task_id: 17, task_item_id: 1234568889920, task_time: 1719763200000
+[INFO][2024-08-12 01:35:07,264][views.py:185]task_id: 17, task_item_id: 123456888679990, task_time: 1719763200000
+[INFO][2024-08-12 01:35:07,282][views.py:240]task_id: 17, status: 100
+[INFO][2024-08-12 01:35:31,507][middleware.py:13]Received PUT request to /api/task/manage/ from AnonymousUser with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2024-08-12 01:35:31,568][views.py:185]task_id: 54, task_item_id: 123456888990, task_time: 1719763200000
+[INFO][2024-08-12 01:35:31,575][views.py:185]task_id: 54, task_item_id: 12345688989290, task_time: 1719763200000
+[INFO][2024-08-12 01:35:31,586][views.py:185]task_id: 54, task_item_id: 1234568889920, task_time: 1719763200000
+[INFO][2024-08-12 01:35:31,599][views.py:185]task_id: 54, task_item_id: 123456888679990, task_time: 1719763200000
+[INFO][2024-08-12 01:35:31,606][views.py:228]123456888679990
+[INFO][2024-08-12 01:35:31,606][views.py:228]123456888990
+[INFO][2024-08-12 01:35:31,606][views.py:228]1234568889920
+[INFO][2024-08-12 01:35:31,606][views.py:228]12345688989290
+[INFO][2024-08-12 01:35:31,606][views.py:228]123456990
+[INFO][2024-08-12 01:35:31,637][views.py:240]task_id: 54, status: 100

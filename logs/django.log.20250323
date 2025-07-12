@@ -1,0 +1,128 @@
+[INFO][2025-03-23 13:39:03,551][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-23 13:49:43,159][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-23 13:56:43,547][middleware.py:13]Received POST request to /api/token/refresh/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 13:56:43,607][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 13:56:48,508][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 13:56:51,615][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:08:06,083][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:18,822][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:19,151][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:19,429][middleware.py:13]Received GET request to /wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:19,735][middleware.py:13]Received GET request to /xmlrpc.php from None with query params: <QueryDict: {'rsd': ['']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:20,016][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:20,294][middleware.py:13]Received GET request to /blog/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:20,578][middleware.py:13]Received GET request to /web/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:20,865][middleware.py:13]Received GET request to /wordpress/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:21,143][middleware.py:13]Received GET request to /website/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:21,433][middleware.py:13]Received GET request to /wp/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:21,711][middleware.py:13]Received GET request to /news/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:22,003][middleware.py:13]Received GET request to /2018/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:22,290][middleware.py:13]Received GET request to /2019/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:22,578][middleware.py:13]Received GET request to /shop/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:22,888][middleware.py:13]Received GET request to /wp1/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:23,176][middleware.py:13]Received GET request to /test/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:23,468][middleware.py:13]Received GET request to /media/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:23,749][middleware.py:13]Received GET request to /wp2/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:24,036][middleware.py:13]Received GET request to /site/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:24,317][middleware.py:13]Received GET request to /cms/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:25:24,600][middleware.py:13]Received GET request to /sito/wp-includes/wlwmanifest.xml from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:28:05,532][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:28:07,462][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:28:07,905][middleware.py:13]Received GET request to /xmlrpc.php from None with query params: <QueryDict: {'rsd': ['']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 14:29:04,049][middleware.py:13]Received GET request to /xmlrpc.php from None with query params: <QueryDict: {'rsd': ['']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 21:48:32,898][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-23 21:53:17,625][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-23 22:05:44,274][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 22:05:45,056][middleware.py:13]Received GET request to /favicon.ico from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 22:08:38,057][middleware.py:13]Received POST request to /api/token/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 22:09:29,124][middleware.py:13]Received POST request to /api/token/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 22:10:07,932][middleware.py:13]Received GET request to /api/user/phone/ from None with query params: <QueryDict: {'phone': ['15946477908']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 22:49:55,028][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 22:52:53,296][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2025-03-23 22:52:53,351][log.py:241]Internal Server Error: /api/user/userinfo/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/user/views.py", line 279, in get
+    user = User.objects.get(id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+[INFO][2025-03-23 22:56:26,023][autoreload.py:266]/www/data/user/views.py changed, reloading.
+[INFO][2025-03-23 22:56:26,541][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-23 22:57:00,280][autoreload.py:266]/www/data/user/urls.py changed, reloading.
+[INFO][2025-03-23 22:57:00,766][autoreload.py:677]Watching for file changes with StatReloader
+[INFO][2025-03-23 22:58:14,589][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['3434055686@qq.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 22:58:40,251][middleware.py:13]Received POST request to /api/user/email/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 23:32:27,790][middleware.py:13]Received GET request to /api/user/phone/ from None with query params: <QueryDict: {'phone': ['15285156055']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 23:32:30,717][middleware.py:13]Received GET request to /api/user/phone/ from None with query params: <QueryDict: {'phone': ['15285156055']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 23:32:55,160][middleware.py:13]Received POST request to /api/user/login/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 23:40:14,521][middleware.py:13]Received GET request to /api/user/phone/ from None with query params: <QueryDict: {'phone': ['15285156055']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 23:40:17,468][middleware.py:13]Received GET request to /api/user/phone/ from None with query params: <QueryDict: {'phone': ['15285156055']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 23:40:19,330][middleware.py:13]Received GET request to /api/user/phone/ from None with query params: <QueryDict: {'phone': ['15285156055']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 23:40:36,126][middleware.py:13]Received POST request to /api/user/login/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-23 23:40:38,033][middleware.py:13]Received POST request to /api/user/login/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-24 05:33:31,181][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-24 05:33:32,447][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-24 05:33:35,059][middleware.py:13]Received GET request to / from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-24 13:43:42,659][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[ERROR][2025-03-24 13:43:42,704][log.py:241]Internal Server Error: /api/user/userinfo/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/www/data/user/views.py", line 279, in get
+    user = User.objects.get(id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+[INFO][2025-03-24 13:43:56,787][middleware.py:13]Received GET request to /api/user/email/ from None with query params: <QueryDict: {'email': ['funny233xyz@foxmail.com']}> and POST data: <QueryDict: {}>
+[INFO][2025-03-24 13:44:17,543][middleware.py:13]Received POST request to /api/user/email/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
+[INFO][2025-03-24 13:44:18,079][middleware.py:13]Received GET request to /api/user/userinfo/ from None with query params: <QueryDict: {}> and POST data: <QueryDict: {}>
