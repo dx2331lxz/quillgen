@@ -37,3 +37,22 @@ chmod +x control.sh
 ## 访问项目
 当前使用云开发环境，访问 http://${主机ip}:${主机映射端口}/ 即可看到项目页面。
 例如：http://81.70.143.162:8808/
+
+## 配置文件设置
+
+在开始使用之前，请按照以下步骤设置配置文件：
+
+1. 复制 `config.ini.example` 文件并重命名为 `config.ini`：
+   ```bash
+   cp config.ini.example config.ini
+   ```
+
+2. 编辑 `config.ini` 文件，填入您的实际配置值：
+   - COZE API 配置
+   - 阿里云 OSS 配置
+   - 百度 API 配置
+   - SMS 服务配置
+   - DeepSeek API 配置
+   - SILICONFLOW API 配置
+
+⚠️ **重要提醒**: `config.ini` 文件包含敏感信息，已被添加到 `.gitignore` 中，不会被提交到版本控制。请妥善保管您的配置文件。
