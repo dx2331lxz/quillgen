@@ -1,4 +1,4 @@
-> 源项目地址：https://daoxuan.coding.net/p/editor/d/Editor/git，由于coding的更新策略迁移至此
+> 由于coding的更新策略迁移至此，源项目地址：https://daoxuan.coding.net/p/editor/d/Editor/git 
 # 项目名称
 
 ## 简介
